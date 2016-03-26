@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<findings>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="cz.vutbr.fit.airlines.InternetSeller" name="sold" type="Ljava/lang/Integer;" key="0" filename="InternetSeller.java" line="8"/>
+      <instruction className="cz.vutbr.fit.airlines.InternetSeller" method="getSold" offset="1" desc="()I" key="1" label="relevant_sync_read" filename="InternetSeller.java" line="15"/>
+      <instruction className="cz.vutbr.fit.airlines.InternetSeller" method="sellTicket" offset="64" desc="()Lcz/vutbr/fit/airlines/FlightTicket;" key="2" label="relevant_unsync_read" filename="InternetSeller.java" line="70"/>
+      <instruction className="cz.vutbr.fit.airlines.InternetSeller" method="sellTicket" offset="70" desc="()Lcz/vutbr/fit/airlines/FlightTicket;" key="3" label="relevant_sync_read" filename="InternetSeller.java" line="71"/>
+      <instruction className="cz.vutbr.fit.airlines.InternetSeller" method="getNumSolds" offset="1" desc="()I" key="4" label="relevant_unsync_read" filename="InternetSeller.java" line="85"/>
+      <instruction className="cz.vutbr.fit.airlines.InternetSeller" method="&lt;init&gt;" offset="7" desc="()V" key="5" label="irrelevant_unsync_write" filename="InternetSeller.java" line="8"/>
+      <instruction className="cz.vutbr.fit.airlines.InternetSeller" method="sellTicket" offset="75" desc="()Lcz/vutbr/fit/airlines/FlightTicket;" key="6" label="relevant_sync_write" filename="InternetSeller.java" line="71"/>
+      <class name="cz.vutbr.fit.airlines.InternetSeller" key="7" label="guard_type" filename="InternetSeller.java"/>
+      <field className="cz.vutbr.fit.airlines.InternetSeller" name="sold" type="Ljava/lang/Integer;" key="8" label="guard_field" filename="InternetSeller.java" line="8"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'sold' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="7" key="1" intrinsic="true">
+          <guardPath>
+            <locationRef key="8"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+        <guardRelative typeRef="7" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="5" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="6" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_FIELD_LOCK_WRITE">
+    <locations>
+      <instruction className="cz.vutbr.fit.airlines.InternetSeller" method="sellTicket" offset="75" desc="()Lcz/vutbr/fit/airlines/FlightTicket;" key="0" filename="InternetSeller.java" line="71"/>
+      <instruction className="cz.vutbr.fit.airlines.InternetSeller" method="sellTicket" offset="67" desc="()Lcz/vutbr/fit/airlines/FlightTicket;" key="1" label="Lock acquired" filename="InternetSeller.java" line="70"/>
+    </locations>
+    <info>
+      <message value="Field 'sold' re-assigned while holding an intrinsic lock on its value."/>
+    </info>
+  </finding>
+</findings>

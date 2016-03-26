@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1458945983358" analysisTimestamp="1458945983109" release="">
+  <Project projectName="crawler">
+    <Jar>/Users/soniamarginean/Documents/workspace/crawler/bin</Jar>
+    <AuxClasspathEntry>/Users/soniamarginean/Documents/workspace/crawler/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/soniamarginean/Documents/workspace/crawler</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="com.ibm.crawler.Connection">
+      <SourceLine classname="com.ibm.crawler.Connection" sourcefile="Connection.java" sourcepath="com/ibm/crawler/Connection.java"/>
+    </Class>
+    <Field classname="com.ibm.crawler.Connection" name="state" signature="I" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.Connection" sourcefile="Connection.java" sourcepath="com/ibm/crawler/Connection.java"/>
+    </Field>
+    <SourceLine classname="com.ibm.crawler.Connection" start="90" end="90" startBytecode="10" endBytecode="10" sourcefile="Connection.java" sourcepath="com/ibm/crawler/Connection.java"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE" first="1">
+    <Class classname="com.ibm.crawler.ConnectionEvent">
+      <SourceLine classname="com.ibm.crawler.ConnectionEvent" start="21" end="29" sourcefile="ConnectionEvent.java" sourcepath="com/ibm/crawler/ConnectionEvent.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.ConnectionManager">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Class>
+    <Field classname="com.ibm.crawler.ConnectionManager" name="managerThread" signature="Ljava/lang/Thread;" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Field>
+    <Int value="66" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="com.ibm.crawler.ConnectionManager" start="79" end="79" startBytecode="9" endBytecode="9" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="com.ibm.crawler.ConnectionManager" start="171" end="171" startBytecode="19" endBytecode="19" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="com.ibm.crawler.ConnectionManager" start="172" end="172" startBytecode="26" endBytecode="26" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.ConnectionManager">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.ConnectionManager" name="connectionStateChanged" signature="(Lcom/ibm/crawler/ConnectionEvent;)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" start="129" end="152" startBytecode="0" endBytecode="222" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.ConnectionManager" start="148" end="148" startBytecode="103" endBytecode="103" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+  </BugInstance>
+  <BugInstance type="SC_START_IN_CTOR" priority="3" rank="17" abbrev="SC" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.ConnectionManager">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.ConnectionManager" name="&lt;init&gt;" signature="(Lcom/ibm/crawler/Crawler;)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" start="56" end="67" startBytecode="0" endBytecode="272" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Method>
+    <Method classname="java.lang.Thread" name="start" signature="()V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Thread" start="704" end="726" startBytecode="0" endBytecode="222" sourcefile="Thread.java" sourcepath="java/lang/Thread.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.ConnectionManager" start="66" end="66" startBytecode="102" endBytecode="102" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    <SourceLine classname="com.ibm.crawler.ConnectionManager" start="66" end="66" startBytecode="102" endBytecode="102" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="com.ibm.crawler.ConnectionManager">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.ConnectionManager" name="connectionStateChanged" signature="(Lcom/ibm/crawler/ConnectionEvent;)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" start="129" end="152" startBytecode="0" endBytecode="222" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.ConnectionManager" start="130" end="148" startBytecode="12" endBytecode="105" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    <SourceLine classname="com.ibm.crawler.ConnectionManager" start="130" end="148" startBytecode="12" endBytecode="105" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.ConnectionManager">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.ConnectionManager" name="connectionStateChanged" signature="(Lcom/ibm/crawler/ConnectionEvent;)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" start="129" end="152" startBytecode="0" endBytecode="222" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Method>
+    <Field classname="com.ibm.crawler.ConnectionManager" name="numberOfLiveConnections" signature="I" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Field>
+    <SourceLine classname="com.ibm.crawler.ConnectionManager" start="133" end="133" startBytecode="52" endBytecode="52" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.ConnectionManager">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.ConnectionManager" name="connectionStateChanged" signature="(Lcom/ibm/crawler/ConnectionEvent;)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" start="129" end="152" startBytecode="0" endBytecode="222" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Method>
+    <Field classname="com.ibm.crawler.ConnectionManager" name="numberOfLiveConnections" signature="I" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Field>
+    <SourceLine classname="com.ibm.crawler.ConnectionManager" start="138" end="138" startBytecode="70" endBytecode="70" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.ConnectionManager">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.ConnectionManager" name="connectionStateChanged" signature="(Lcom/ibm/crawler/ConnectionEvent;)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" start="129" end="152" startBytecode="0" endBytecode="222" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Method>
+    <Field classname="com.ibm.crawler.ConnectionManager" name="numberOfLiveConnections" signature="I" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionManager" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+    </Field>
+    <SourceLine classname="com.ibm.crawler.ConnectionManager" start="144" end="144" startBytecode="92" endBytecode="92" sourcefile="ConnectionManager.java" sourcepath="com/ibm/crawler/ConnectionManager.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.ConnectionQueue">
+      <SourceLine classname="com.ibm.crawler.ConnectionQueue" sourcefile="ConnectionQueue.java" sourcepath="com/ibm/crawler/ConnectionQueue.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.ConnectionQueue" name="dequeue" signature="()Lcom/ibm/crawler/Connection;" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionQueue" start="42" end="52" startBytecode="0" endBytecode="166" sourcefile="ConnectionQueue.java" sourcepath="com/ibm/crawler/ConnectionQueue.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.ConnectionQueue" start="50" end="50" startBytecode="62" endBytecode="62" sourcefile="ConnectionQueue.java" sourcepath="com/ibm/crawler/ConnectionQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.ConnectionQueue">
+      <SourceLine classname="com.ibm.crawler.ConnectionQueue" sourcefile="ConnectionQueue.java" sourcepath="com/ibm/crawler/ConnectionQueue.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.ConnectionQueue" name="enqueue" signature="(Lcom/ibm/crawler/Connection;)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionQueue" start="64" end="72" startBytecode="0" endBytecode="143" sourcefile="ConnectionQueue.java" sourcepath="com/ibm/crawler/ConnectionQueue.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.ConnectionQueue" start="71" end="71" startBytecode="49" endBytecode="49" sourcefile="ConnectionQueue.java" sourcepath="com/ibm/crawler/ConnectionQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.ConnectionQueue">
+      <SourceLine classname="com.ibm.crawler.ConnectionQueue" sourcefile="ConnectionQueue.java" sourcepath="com/ibm/crawler/ConnectionQueue.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.ConnectionQueue" name="forceEnqueue" signature="(Lcom/ibm/crawler/Connection;)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.ConnectionQueue" start="81" end="87" startBytecode="0" endBytecode="108" sourcefile="ConnectionQueue.java" sourcepath="com/ibm/crawler/ConnectionQueue.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.ConnectionQueue" start="86" end="86" startBytecode="28" endBytecode="28" sourcefile="ConnectionQueue.java" sourcepath="com/ibm/crawler/ConnectionQueue.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="com.ibm.crawler.FilteredConnectionQueue">
+      <SourceLine classname="com.ibm.crawler.FilteredConnectionQueue" sourcefile="FilteredConnectionQueue.java" sourcepath="com/ibm/crawler/FilteredConnectionQueue.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.FilteredConnectionQueue" name="getHostnameFromConnection" signature="(Lcom/ibm/crawler/Connection;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.FilteredConnectionQueue" start="117" end="117" startBytecode="0" endBytecode="61" sourcefile="FilteredConnectionQueue.java" sourcepath="com/ibm/crawler/FilteredConnectionQueue.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.FilteredConnectionQueue" start="117" end="117" startBytecode="6" endBytecode="6" sourcefile="FilteredConnectionQueue.java" sourcepath="com/ibm/crawler/FilteredConnectionQueue.java"/>
+    <SourceLine classname="com.ibm.crawler.FilteredConnectionQueue" start="117" end="117" startBytecode="6" endBytecode="6" sourcefile="FilteredConnectionQueue.java" sourcepath="com/ibm/crawler/FilteredConnectionQueue.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="com.ibm.crawler.FilteredConnectionQueue">
+      <SourceLine classname="com.ibm.crawler.FilteredConnectionQueue" sourcefile="FilteredConnectionQueue.java" sourcepath="com/ibm/crawler/FilteredConnectionQueue.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.FilteredConnectionQueue" name="connectionStateChanged" signature="(Lcom/ibm/crawler/ConnectionEvent;)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.FilteredConnectionQueue" start="88" end="108" startBytecode="0" endBytecode="385" sourcefile="FilteredConnectionQueue.java" sourcepath="com/ibm/crawler/FilteredConnectionQueue.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.FilteredConnectionQueue" start="89" end="106" startBytecode="12" endBytecode="148" sourcefile="FilteredConnectionQueue.java" sourcepath="com/ibm/crawler/FilteredConnectionQueue.java"/>
+    <SourceLine classname="com.ibm.crawler.FilteredConnectionQueue" start="89" end="106" startBytecode="12" endBytecode="148" sourcefile="FilteredConnectionQueue.java" sourcepath="com/ibm/crawler/FilteredConnectionQueue.java"/>
+  </BugInstance>
+  <BugInstance type="ISC_INSTANTIATE_STATIC_CLASS" priority="3" rank="19" abbrev="ISC" category="BAD_PRACTICE" first="1">
+    <Class classname="com.ibm.crawler.RobotFilter">
+      <SourceLine classname="com.ibm.crawler.RobotFilter" sourcefile="RobotFilter.java" sourcepath="com/ibm/crawler/RobotFilter.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.RobotFilter" name="isAllowed" signature="(Lcom/ibm/crawler/Connection;)Z" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.RobotFilter" start="33" end="33" startBytecode="0" endBytecode="85" sourcefile="RobotFilter.java" sourcepath="com/ibm/crawler/RobotFilter.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.RobotFilter" start="33" end="33" startBytecode="3" endBytecode="3" sourcefile="RobotFilter.java" sourcepath="com/ibm/crawler/RobotFilter.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE" first="1">
+    <Class classname="com.ibm.crawler.RobotFilter">
+      <SourceLine classname="com.ibm.crawler.RobotFilter" sourcefile="RobotFilter.java" sourcepath="com/ibm/crawler/RobotFilter.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.RobotFilter" name="isAllowed" signature="(Lcom/ibm/crawler/Connection;)Z" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.RobotFilter" start="33" end="33" startBytecode="0" endBytecode="85" sourcefile="RobotFilter.java" sourcepath="com/ibm/crawler/RobotFilter.java"/>
+    </Method>
+    <Method classname="com.ibm.crawler.Random" name="&lt;init&gt;" signature="()V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.ibm.crawler.Random" start="2" end="2" startBytecode="0" endBytecode="46" sourcefile="Random.java" sourcepath="com/ibm/crawler/Random.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.RobotFilter" start="33" end="33" startBytecode="3" endBytecode="3" sourcefile="RobotFilter.java" sourcepath="com/ibm/crawler/RobotFilter.java"/>
+    <SourceLine classname="com.ibm.crawler.RobotFilter" start="33" end="33" startBytecode="3" endBytecode="3" sourcefile="RobotFilter.java" sourcepath="com/ibm/crawler/RobotFilter.java"/>
+  </BugInstance>
+  <BugInstance type="ISC_INSTANTIATE_STATIC_CLASS" priority="3" rank="19" abbrev="ISC" category="BAD_PRACTICE" first="1">
+    <Class classname="com.ibm.crawler.TestConnection">
+      <SourceLine classname="com.ibm.crawler.TestConnection" sourcefile="TestConnection.java" sourcepath="com/ibm/crawler/TestConnection.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.TestConnection" name="perform" signature="()V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.TestConnection" start="34" end="49" startBytecode="0" endBytecode="269" sourcefile="TestConnection.java" sourcepath="com/ibm/crawler/TestConnection.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.TestConnection" start="45" end="45" startBytecode="65" endBytecode="65" sourcefile="TestConnection.java" sourcepath="com/ibm/crawler/TestConnection.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE" first="1">
+    <Class classname="com.ibm.crawler.TestConnection">
+      <SourceLine classname="com.ibm.crawler.TestConnection" sourcefile="TestConnection.java" sourcepath="com/ibm/crawler/TestConnection.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.TestConnection" name="perform" signature="()V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.TestConnection" start="34" end="49" startBytecode="0" endBytecode="269" sourcefile="TestConnection.java" sourcepath="com/ibm/crawler/TestConnection.java"/>
+    </Method>
+    <Method classname="com.ibm.crawler.Random" name="&lt;init&gt;" signature="()V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.ibm.crawler.Random" start="2" end="2" startBytecode="0" endBytecode="46" sourcefile="Random.java" sourcepath="com/ibm/crawler/Random.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.TestConnection" start="45" end="45" startBytecode="65" endBytecode="65" sourcefile="TestConnection.java" sourcepath="com/ibm/crawler/TestConnection.java"/>
+    <SourceLine classname="com.ibm.crawler.TestConnection" start="45" end="45" startBytecode="65" endBytecode="65" sourcefile="TestConnection.java" sourcepath="com/ibm/crawler/TestConnection.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="com.ibm.crawler.TestConnection">
+      <SourceLine classname="com.ibm.crawler.TestConnection" sourcefile="TestConnection.java" sourcepath="com/ibm/crawler/TestConnection.java"/>
+    </Class>
+    <Field classname="com.ibm.crawler.TestConnection" name="node" signature="Lcom/ibm/crawler/Node;" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.TestConnection" sourcefile="TestConnection.java" sourcepath="com/ibm/crawler/TestConnection.java"/>
+    </Field>
+    <SourceLine classname="com.ibm.crawler.TestConnection" start="26" end="26" startBytecode="11" endBytecode="11" sourcefile="TestConnection.java" sourcepath="com/ibm/crawler/TestConnection.java"/>
+  </BugInstance>
+  <BugInstance type="SC_START_IN_CTOR" priority="3" rank="17" abbrev="SC" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.Timer">
+      <SourceLine classname="com.ibm.crawler.Timer" sourcefile="Timer.java" sourcepath="com/ibm/crawler/Timer.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.Timer" name="&lt;init&gt;" signature="(Lcom/ibm/crawler/Timed;J)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.Timer" start="32" end="36" startBytecode="0" endBytecode="112" sourcefile="Timer.java" sourcepath="com/ibm/crawler/Timer.java"/>
+    </Method>
+    <Method classname="java.lang.Thread" name="start" signature="()V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Thread" start="704" end="726" startBytecode="0" endBytecode="222" sourcefile="Thread.java" sourcepath="java/lang/Thread.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.Timer" start="35" end="35" startBytecode="27" endBytecode="27" sourcefile="Timer.java" sourcepath="com/ibm/crawler/Timer.java"/>
+    <SourceLine classname="com.ibm.crawler.Timer" start="35" end="35" startBytecode="27" endBytecode="27" sourcefile="Timer.java" sourcepath="com/ibm/crawler/Timer.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.Worker">
+      <SourceLine classname="com.ibm.crawler.Worker" sourcefile="Worker.java" sourcepath="com/ibm/crawler/Worker.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.Worker" name="assignConnection" signature="(Lcom/ibm/crawler/Connection;)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.Worker" start="81" end="84" startBytecode="0" endBytecode="81" sourcefile="Worker.java" sourcepath="com/ibm/crawler/Worker.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.Worker" start="83" end="83" startBytecode="14" endBytecode="14" sourcefile="Worker.java" sourcepath="com/ibm/crawler/Worker.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.WorkerPool">
+      <SourceLine classname="com.ibm.crawler.WorkerPool" sourcefile="WorkerPool.java" sourcepath="com/ibm/crawler/WorkerPool.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.WorkerPool" name="returnWorker" signature="(Lcom/ibm/crawler/Worker;)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.WorkerPool" start="58" end="64" startBytecode="0" endBytecode="109" sourcefile="WorkerPool.java" sourcepath="com/ibm/crawler/WorkerPool.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.WorkerPool" start="63" end="63" startBytecode="29" endBytecode="29" sourcefile="WorkerPool.java" sourcepath="com/ibm/crawler/WorkerPool.java"/>
+  </BugInstance>
+  <BugInstance type="SC_START_IN_CTOR" priority="2" rank="14" abbrev="SC" category="MT_CORRECTNESS" first="1">
+    <Class classname="com.ibm.crawler.WorkerPool">
+      <SourceLine classname="com.ibm.crawler.WorkerPool" sourcefile="WorkerPool.java" sourcepath="com/ibm/crawler/WorkerPool.java"/>
+    </Class>
+    <Method classname="com.ibm.crawler.WorkerPool" name="&lt;init&gt;" signature="(I)V" isStatic="false">
+      <SourceLine classname="com.ibm.crawler.WorkerPool" start="28" end="37" startBytecode="0" endBytecode="201" sourcefile="WorkerPool.java" sourcepath="com/ibm/crawler/WorkerPool.java"/>
+    </Method>
+    <Method classname="java.lang.Thread" name="start" signature="()V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Thread" start="704" end="726" startBytecode="0" endBytecode="222" sourcefile="Thread.java" sourcepath="java/lang/Thread.java"/>
+    </Method>
+    <SourceLine classname="com.ibm.crawler.WorkerPool" start="35" end="35" startBytecode="61" endBytecode="61" sourcefile="WorkerPool.java" sourcepath="com/ibm/crawler/WorkerPool.java"/>
+    <SourceLine classname="com.ibm.crawler.WorkerPool" start="35" end="35" startBytecode="61" endBytecode="61" sourcefile="WorkerPool.java" sourcepath="com/ibm/crawler/WorkerPool.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 25 Mar 2016 17:46:18 -0500" total_classes="20" referenced_classes="43" total_bugs="23" total_size="464" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="0.35" clock_seconds="0.25" peak_mbytes="915.52" alloc_mbytes="910.50" gc_seconds="0.00" priority_3="11" priority_2="12">
+    <PackageStats package="com.ibm.crawler" total_bugs="23" total_types="20" total_size="464" priority_3="11" priority_2="12">
+      <ClassStats class="com.ibm.crawler.Connection" sourceFile="Connection.java" interface="false" size="33" bugs="1" priority_2="1"/>
+      <ClassStats class="com.ibm.crawler.ConnectionEvent" sourceFile="ConnectionEvent.java" interface="false" size="8" bugs="1" priority_3="1"/>
+      <ClassStats class="com.ibm.crawler.ConnectionFactory" sourceFile="ConnectionFactory.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.ibm.crawler.ConnectionListener" sourceFile="ConnectionListener.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.ibm.crawler.ConnectionManager" sourceFile="ConnectionManager.java" interface="false" size="77" bugs="7" priority_3="2" priority_2="5"/>
+      <ClassStats class="com.ibm.crawler.ConnectionQueue" sourceFile="ConnectionQueue.java" interface="false" size="33" bugs="3" priority_3="3"/>
+      <ClassStats class="com.ibm.crawler.Crawler" sourceFile="Crawler.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="com.ibm.crawler.Database" sourceFile="Database.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="com.ibm.crawler.Debug" sourceFile="Debug.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="com.ibm.crawler.FilteredConnectionQueue" sourceFile="FilteredConnectionQueue.java" interface="false" size="46" bugs="2" priority_2="2"/>
+      <ClassStats class="com.ibm.crawler.Node" sourceFile="Node.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.ibm.crawler.Random" sourceFile="Random.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.ibm.crawler.RobotFilter" sourceFile="RobotFilter.java" interface="false" size="10" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="com.ibm.crawler.RobotFilterConnection" sourceFile="RobotFilterConnection.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.ibm.crawler.TestConnection" sourceFile="TestConnection.java" interface="false" size="20" bugs="3" priority_3="1" priority_2="2"/>
+      <ClassStats class="com.ibm.crawler.Timed" sourceFile="Timed.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.ibm.crawler.Timer" sourceFile="Timer.java" interface="false" size="26" bugs="1" priority_3="1"/>
+      <ClassStats class="com.ibm.crawler.Worker" sourceFile="Worker.java" interface="false" size="43" bugs="1" priority_3="1"/>
+      <ClassStats class="com.ibm.crawler.WorkerManager" sourceFile="WorkerManager.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="com.ibm.crawler.WorkerPool" sourceFile="WorkerPool.java" interface="false" size="29" bugs="2" priority_3="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="64" invocations="414" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="3304" standardDeviationMircosecondsPerInvocation="326"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="41" invocations="2" avgMicrosecondsPerInvocation="20550" maxMicrosecondsPerInvocation="36158" standardDeviationMircosecondsPerInvocation="15608"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="11" invocations="43" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="1987" standardDeviationMircosecondsPerInvocation="435"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458945983358" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,416 @@
+INFO: Analyser start at 2016-02-25 22:21:55 (UTC)
+INFO: Constructing classpaths for analysis
+INFO: Analysis classpath: [Directory "/Users/soniamarginean/Documents/workspace/animator/bin"]
+INFO: Library classpath: [Jarfile "/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar"]
+INFO: Stub classpath: [Jarfile "/Users/soniamarginean/eclipse/java-mars/Eclipse.app/Contents/MacOS/../../../../../.p2/pool/plugins/com.contemplateltd.analyser.macosx.x86_64_1.3.4.20150302-1149/jdk-stubs.jar"]
+INFO: Classes to analyse: all
+INFO: Reading class "XtangoAnimation/AnimatorAction"
+INFO: Class "XtangoAnimation/AnimatorAction" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/AnimatorCanvas"
+INFO: Class "XtangoAnimation/AnimatorCanvas" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/awt/Canvas"
+INFO: Class "java/awt/Canvas" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Component"
+INFO: Class "java/awt/Component" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/Object"
+INFO: Class "java/lang/Object" discovered in library classpath; replaced by stub class
+INFO: Reading class "javax/accessibility/Accessible"
+INFO: Class "javax/accessibility/Accessible" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Runnable"
+INFO: Class "java/lang/Runnable" discovered in library classpath; replaced by stub class
+INFO: Reading class "XtangoAnimation/AnimatorCommand"
+INFO: Class "XtangoAnimation/AnimatorCommand" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/AnimatorFrame"
+INFO: Class "XtangoAnimation/AnimatorFrame" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/awt/Frame"
+INFO: Class "java/awt/Frame" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Window"
+INFO: Class "java/awt/Window" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Container"
+INFO: Class "java/awt/Container" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/MenuContainer"
+INFO: Class "java/awt/MenuContainer" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/event/ActionListener"
+INFO: Class "java/awt/event/ActionListener" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/EventListener"
+INFO: Class "java/util/EventListener" discovered in library classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/AnimatorIcon"
+INFO: Class "XtangoAnimation/AnimatorIcon" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/AnimatorShape"
+INFO: Class "XtangoAnimation/AnimatorShape" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Cbg"
+INFO: Class "XtangoAnimation/Cbg" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Ccolor"
+INFO: Class "XtangoAnimation/Ccolor" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Ccoords"
+INFO: Class "XtangoAnimation/Ccoords" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Cdelay"
+INFO: Class "XtangoAnimation/Cdelay" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Cdelete"
+INFO: Class "XtangoAnimation/Cdelete" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Cend"
+INFO: Class "XtangoAnimation/Cend" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/CexchangePos"
+INFO: Class "XtangoAnimation/CexchangePos" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Cfill"
+INFO: Class "XtangoAnimation/Cfill" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Cjump"
+INFO: Class "XtangoAnimation/Cjump" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/CjumpRelative"
+INFO: Class "XtangoAnimation/CjumpRelative" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/CjumpTo"
+INFO: Class "XtangoAnimation/CjumpTo" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Cmove"
+INFO: Class "XtangoAnimation/Cmove" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/CmoveRelative"
+INFO: Class "XtangoAnimation/CmoveRelative" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/CmoveTo"
+INFO: Class "XtangoAnimation/CmoveTo" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/CswapIds"
+INFO: Class "XtangoAnimation/CswapIds" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/CswitchPos"
+INFO: Class "XtangoAnimation/CswitchPos" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Cvis"
+INFO: Class "XtangoAnimation/Cvis" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Icircle"
+INFO: Class "XtangoAnimation/Icircle" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Iline"
+INFO: Class "XtangoAnimation/Iline" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Irectangle"
+INFO: Class "XtangoAnimation/Irectangle" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Itext"
+INFO: Class "XtangoAnimation/Itext" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Itriangle"
+INFO: Class "XtangoAnimation/Itriangle" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Position"
+INFO: Class "XtangoAnimation/Position" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/Size"
+INFO: Class "XtangoAnimation/Size" discovered in analysis classpath; no matching stub class
+INFO: Reading class "XtangoAnimation/XtangoAnimator"
+INFO: Class "XtangoAnimation/XtangoAnimator" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/awt/event/WindowListener"
+INFO: Class "java/awt/event/WindowListener" discovered in library classpath; no matching stub class
+INFO: Analysing package "XtangoAnimation" at 2016-02-25 22:21:55 (UTC)
+INFO: Analysing class "XtangoAnimation/AnimatorAction"
+INFO: Analysing class "XtangoAnimation/AnimatorCanvas"
+INFO: Reading class "java/lang/System"
+INFO: Class "java/lang/System" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/Rectangle"
+INFO: Class "java/awt/Rectangle" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/EventQueue"
+INFO: Class "java/awt/EventQueue" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/io/PrintStream"
+INFO: Class "java/io/PrintStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Graphics"
+INFO: Class "java/awt/Graphics" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/Vector"
+INFO: Class "java/util/Vector" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/AbstractList"
+INFO: Class "java/util/AbstractList" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/AbstractCollection"
+INFO: Class "java/util/AbstractCollection" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/StringBuilder"
+INFO: Class "java/lang/StringBuilder" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/AbstractStringBuilder"
+INFO: Class "java/lang/AbstractStringBuilder" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/Math"
+INFO: Class "java/lang/Math" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Image"
+INFO: Class "java/awt/Image" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Thread"
+INFO: Class "java/lang/Thread" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/Toolkit"
+INFO: Class "java/awt/Toolkit" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/peer/CanvasPeer"
+INFO: Class "java/awt/peer/CanvasPeer" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/event/MouseListener"
+INFO: Class "java/awt/event/MouseListener" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/event/KeyListener"
+INFO: Class "java/awt/event/KeyListener" discovered in library classpath; replaced by stub class
+INFO: Analysing class "XtangoAnimation/AnimatorCommand"
+INFO: Analysing class "XtangoAnimation/AnimatorFrame"
+INFO: Reading class "java/awt/Color"
+INFO: Class "java/awt/Color" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/MenuComponent"
+INFO: Class "java/awt/MenuComponent" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/MenuBar"
+INFO: Class "java/awt/MenuBar" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Window$Type"
+INFO: Class "java/awt/Window$Type" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/AWTEvent"
+INFO: Class "java/awt/AWTEvent" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/EventObject"
+INFO: Class "java/util/EventObject" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/Dimension"
+INFO: Class "java/awt/Dimension" discovered in library classpath; no matching stub class
+INFO: Reading class "sun/security/util/SecurityConstants$AWT"
+INFO: Class "sun/security/util/SecurityConstants$AWT" discovered in library classpath; no matching stub class
+INFO: Reading class "sun/awt/CausedFocusEvent$Cause"
+INFO: Class "sun/awt/CausedFocusEvent$Cause" discovered in library classpath; no matching stub class
+INFO: Reading class "sun/util/logging/PlatformLogger$Level"
+INFO: Class "sun/util/logging/PlatformLogger$Level" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Point"
+INFO: Class "java/awt/Point" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Dialog$ModalExclusionType"
+INFO: Class "java/awt/Dialog$ModalExclusionType" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Panel"
+INFO: Class "java/awt/Panel" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Button"
+INFO: Class "java/awt/Button" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/TextField"
+INFO: Class "java/awt/TextField" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/TextComponent"
+INFO: Class "java/awt/TextComponent" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/event/ActionEvent"
+INFO: Class "java/awt/event/ActionEvent" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/String"
+INFO: Class "java/lang/String" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/GraphicsEnvironment"
+INFO: Class "java/awt/GraphicsEnvironment" discovered in library classpath; no matching stub class
+INFO: Reading class "sun/awt/AWTAccessor"
+INFO: Class "sun/awt/AWTAccessor" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/peer/FramePeer"
+INFO: Class "java/awt/peer/FramePeer" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Cursor"
+INFO: Class "java/awt/Cursor" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/List"
+INFO: Class "java/util/List" discovered in library classpath; replaced by stub class
+INFO: Reading class "sun/awt/SunToolkit"
+INFO: Class "sun/awt/SunToolkit" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/event/KeyEvent"
+INFO: Class "java/awt/event/KeyEvent" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/event/InputEvent"
+INFO: Class "java/awt/event/InputEvent" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/event/ComponentEvent"
+INFO: Class "java/awt/event/ComponentEvent" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/GraphicsDevice$WindowTranslucency"
+INFO: Class "java/awt/GraphicsDevice$WindowTranslucency" discovered in library classpath; no matching stub class
+INFO: Reading class "sun/util/logging/PlatformLogger"
+INFO: Class "sun/util/logging/PlatformLogger" discovered in library classpath; no matching stub class
+INFO: Reading class "java/security/AccessController"
+INFO: Class "java/security/AccessController" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Insets"
+INFO: Class "java/awt/Insets" discovered in library classpath; no matching stub class
+INFO: Reading class "sun/awt/util/IdentityArrayList"
+INFO: Class "sun/awt/util/IdentityArrayList" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/AWTEventMulticaster"
+INFO: Class "java/awt/AWTEventMulticaster" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/ResourceBundle"
+INFO: Class "java/util/ResourceBundle" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/ResourceBundle$RBClassLoader"
+INFO: Class "java/util/ResourceBundle$RBClassLoader" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/ResourceBundle$Control"
+INFO: Class "java/util/ResourceBundle$Control" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/ResourceBundle$CacheKey"
+INFO: Class "java/util/ResourceBundle$CacheKey" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/ComponentOrientation"
+INFO: Class "java/awt/ComponentOrientation" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/concurrent/atomic/AtomicBoolean"
+INFO: Class "java/util/concurrent/atomic/AtomicBoolean" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/SplashScreen"
+INFO: Class "java/awt/SplashScreen" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Window$WindowDisposerRecord"
+INFO: Class "java/awt/Window$WindowDisposerRecord" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Window$1DisposeAction"
+INFO: Class "java/awt/Window$1DisposeAction" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/InterruptedException"
+INFO: Class "java/lang/InterruptedException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Exception"
+INFO: Class "java/lang/Exception" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Throwable"
+INFO: Class "java/lang/Throwable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/reflect/InvocationTargetException"
+INFO: Class "java/lang/reflect/InvocationTargetException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/ReflectiveOperationException"
+INFO: Class "java/lang/ReflectiveOperationException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/KeyboardFocusManager"
+INFO: Class "java/awt/KeyboardFocusManager" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/im/InputContext"
+INFO: Class "java/awt/im/InputContext" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/Locale"
+INFO: Class "java/util/Locale" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/Locale$LocaleNameGetter"
+INFO: Class "java/util/Locale$LocaleNameGetter" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/FocusTraversalPolicy"
+INFO: Class "java/awt/FocusTraversalPolicy" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/ref/WeakReference"
+INFO: Class "java/lang/ref/WeakReference" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/ref/Reference"
+INFO: Class "java/lang/ref/Reference" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/Arrays"
+INFO: Class "java/util/Arrays" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/Dialog"
+INFO: Class "java/awt/Dialog" discovered in library classpath; no matching stub class
+INFO: Reading class "sun/awt/AppContext"
+INFO: Class "sun/awt/AppContext" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Enum"
+INFO: Class "java/lang/Enum" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/AlphaComposite"
+INFO: Class "java/awt/AlphaComposite" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Graphics2D"
+INFO: Class "java/awt/Graphics2D" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Event"
+INFO: Class "java/awt/Event" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/event/WindowEvent"
+INFO: Class "java/awt/event/WindowEvent" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/event/WindowFocusListener"
+INFO: Class "java/awt/event/WindowFocusListener" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/event/WindowStateListener"
+INFO: Class "java/awt/event/WindowStateListener" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/SecurityManager"
+INFO: Class "java/lang/SecurityManager" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/peer/WindowPeer"
+INFO: Class "java/awt/peer/WindowPeer" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/GraphicsConfiguration"
+INFO: Class "java/awt/GraphicsConfiguration" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/GraphicsDevice"
+INFO: Class "java/awt/GraphicsDevice" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/ArrayList"
+INFO: Class "java/util/ArrayList" discovered in library classpath; replaced by stub class
+INFO: Reading class "javax/swing/RootPaneContainer"
+INFO: Class "javax/swing/RootPaneContainer" discovered in library classpath; no matching stub class
+INFO: Reading class "javax/swing/JRootPane"
+INFO: Class "javax/swing/JRootPane" discovered in library classpath; no matching stub class
+INFO: Reading class "javax/swing/JLayeredPane"
+INFO: Class "javax/swing/JLayeredPane" discovered in library classpath; no matching stub class
+INFO: Reading class "javax/swing/JComponent"
+INFO: Class "javax/swing/JComponent" discovered in library classpath; replaced by stub class
+INFO: Reading class "sun/java2d/pipe/Region"
+INFO: Class "sun/java2d/pipe/Region" discovered in library classpath; no matching stub class
+INFO: Reading class "sun/java2d/Disposer"
+INFO: Class "sun/java2d/Disposer" discovered in library classpath; no matching stub class
+INFO: Analysing class "XtangoAnimation/AnimatorIcon"
+INFO: Analysing class "XtangoAnimation/AnimatorShape"
+INFO: Analysing class "XtangoAnimation/Cbg"
+INFO: Analysing class "XtangoAnimation/Ccolor"
+INFO: Reading class "java/util/Hashtable"
+INFO: Class "java/util/Hashtable" discovered in library classpath; replaced by stub class
+INFO: Analysing class "XtangoAnimation/Ccoords"
+INFO: Analysing class "XtangoAnimation/Cdelay"
+INFO: Analysing class "XtangoAnimation/Cdelete"
+INFO: Analysing class "XtangoAnimation/Cend"
+INFO: Analysing class "XtangoAnimation/CexchangePos"
+INFO: Analysing class "XtangoAnimation/Cfill"
+INFO: Analysing class "XtangoAnimation/Cjump"
+INFO: Analysing class "XtangoAnimation/CjumpRelative"
+INFO: Analysing class "XtangoAnimation/CjumpTo"
+INFO: Analysing class "XtangoAnimation/Cmove"
+INFO: Analysing class "XtangoAnimation/CmoveRelative"
+INFO: Analysing class "XtangoAnimation/CmoveTo"
+INFO: Analysing class "XtangoAnimation/CswapIds"
+INFO: Analysing class "XtangoAnimation/CswitchPos"
+INFO: Analysing class "XtangoAnimation/Cvis"
+INFO: Analysing class "XtangoAnimation/Icircle"
+INFO: Analysing class "XtangoAnimation/Iline"
+INFO: Analysing class "XtangoAnimation/Irectangle"
+INFO: Analysing class "XtangoAnimation/Itext"
+INFO: Reading class "java/awt/FontMetrics"
+INFO: Class "java/awt/FontMetrics" discovered in library classpath; no matching stub class
+INFO: Analysing class "XtangoAnimation/Itriangle"
+INFO: Analysing class "XtangoAnimation/Position"
+INFO: Analysing class "XtangoAnimation/Size"
+INFO: Analysing class "XtangoAnimation/XtangoAnimator"
+INFO: Reading class "java/lang/Math$RandomNumberGeneratorHolder"
+INFO: Class "java/lang/Math$RandomNumberGeneratorHolder" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/CharSequence"
+INFO: Class "java/lang/CharSequence" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/io/Serializable"
+INFO: Class "java/io/Serializable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/geom/Point2D"
+INFO: Class "java/awt/geom/Point2D" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Cloneable"
+INFO: Class "java/lang/Cloneable" discovered in library classpath; no matching stub class
+INFO: Reading class "javax/accessibility/AccessibleContext"
+INFO: Class "javax/accessibility/AccessibleContext" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Shape"
+INFO: Class "java/awt/Shape" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/geom/Rectangle2D"
+INFO: Class "java/awt/geom/Rectangle2D" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/geom/RectangularShape"
+INFO: Class "java/awt/geom/RectangularShape" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Comparable"
+INFO: Class "java/lang/Comparable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Paint"
+INFO: Class "java/awt/Paint" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Transparency"
+INFO: Class "java/awt/Transparency" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/image/BufferStrategy"
+INFO: Class "java/awt/image/BufferStrategy" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/Set"
+INFO: Class "java/util/Set" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Collection"
+INFO: Class "java/util/Collection" discovered in library classpath; replaced by stub class
+INFO: Running FieldClassifier at 2016-02-25 22:21:55 (UTC)
+INFO: Reading class "java/awt/geom/Path2D$Float"
+INFO: Class "java/awt/geom/Path2D$Float" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/geom/Path2D"
+INFO: Class "java/awt/geom/Path2D" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Canvas$AccessibleAWTCanvas"
+INFO: Class "java/awt/Canvas$AccessibleAWTCanvas" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Component$AccessibleAWTComponent"
+INFO: Class "java/awt/Component$AccessibleAWTComponent" discovered in library classpath; no matching stub class
+INFO: Reading class "javax/accessibility/AccessibleComponent"
+INFO: Class "javax/accessibility/AccessibleComponent" discovered in library classpath; no matching stub class
+INFO: Reading class "sun/java2d/DisposerRecord"
+INFO: Class "sun/java2d/DisposerRecord" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/Map"
+INFO: Class "java/util/Map" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Dictionary"
+INFO: Class "java/util/Dictionary" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/awt/Frame$AccessibleAWTFrame"
+INFO: Class "java/awt/Frame$AccessibleAWTFrame" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Window$AccessibleAWTWindow"
+INFO: Class "java/awt/Window$AccessibleAWTWindow" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Container$AccessibleAWTContainer"
+INFO: Class "java/awt/Container$AccessibleAWTContainer" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/Font"
+INFO: Class "java/awt/Font" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/RandomAccess"
+INFO: Class "java/util/RandomAccess" discovered in library classpath; no matching stub class
+INFO: Running ThreadStructure at 2016-02-25 22:21:55 (UTC)
+INFO: Running FieldAccesses.Fields at 2016-02-25 22:21:55 (UTC)
+INFO: Running FieldAccesses.Arrays at 2016-02-25 22:21:55 (UTC)
+INFO: Running FieldAccesses.Collections at 2016-02-25 22:21:55 (UTC)
+INFO: Reading class "java/awt/KeyEventDispatcher"
+INFO: Class "java/awt/KeyEventDispatcher" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/KeyEventPostProcessor"
+INFO: Class "java/awt/KeyEventPostProcessor" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Appendable"
+INFO: Class "java/lang/Appendable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Closeable"
+INFO: Class "java/io/Closeable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/AutoCloseable"
+INFO: Class "java/lang/AutoCloseable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/FilterOutputStream"
+INFO: Class "java/io/FilterOutputStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/OutputStream"
+INFO: Class "java/io/OutputStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Flushable"
+INFO: Class "java/io/Flushable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/peer/ContainerPeer"
+INFO: Class "java/awt/peer/ContainerPeer" discovered in library classpath; no matching stub class
+INFO: Reading class "java/awt/peer/ComponentPeer"
+INFO: Class "java/awt/peer/ComponentPeer" discovered in library classpath; no matching stub class
+INFO: Running Checker_ReusableObjectSync at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_UnsafeIteration at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_TryLock at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_GetCheckPut at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_UnsafeContent at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_UnreleasedLocks at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_Deadlock at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_ConsistentlyGuarded at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_InconsistentSync (fields) at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_InconsistentSync (arrays) at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_InconsistentSync (collections) at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_UnsafeRemoval at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_LockedBlocking at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_FieldLockOverwritten at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_UnsafeReplacement at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_ReadOnlyVolatile at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_BadCatches at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_GuardedBy at 2016-02-25 22:21:55 (UTC)
+INFO: Running Checker_Deadlock at 2016-02-25 22:21:55 (UTC)
+INFO: 5 findings discovered in this run
+INFO: Analyser finish at 2016-02-25 22:21:55 (UTC)
+INFO: Max heap size (bytes) 682496
+INFO: Exit code: 0

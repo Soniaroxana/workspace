@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<findings>
+  <finding type="CCE_CC_CALLBACK_ACCESS">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" name="runs" type="I" key="0" filename="FJTaskRunner.java" line="371"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scan" offset="109" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="1" label="relevant_unsync_read" filename="FJTaskRunner.java" line="700"/>
+      <method className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" name="run" desc="()V" key="2" label="async_entrypoint" filename="FJTaskRunner.java" line="793"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scanWhileIdling" offset="137" desc="()V" key="3" label="relevant_unsync_read" filename="FJTaskRunner.java" line="779"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="run" offset="11" desc="()V" key="4" label="relevant_unsync_read" filename="FJTaskRunner.java" line="801"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="taskYield" offset="10" desc="()V" key="5" label="relevant_unsync_read" filename="FJTaskRunner.java" line="825"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="taskJoin" offset="11" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="6" label="relevant_unsync_read" filename="FJTaskRunner.java" line="847"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="39" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="7" label="relevant_unsync_read" filename="FJTaskRunner.java" line="877"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="58" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="8" label="relevant_unsync_read" filename="FJTaskRunner.java" line="888"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="60" desc="([LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="9" label="relevant_unsync_read" filename="FJTaskRunner.java" line="935"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="86" desc="([LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="10" label="relevant_unsync_read" filename="FJTaskRunner.java" line="949"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" method="stats" offset="28" desc="()V" key="11" label="relevant_unsync_read" filename="FJTaskRunnerGroup.java" line="383"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="&lt;init&gt;" offset="25" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup;)V" key="12" label="irrelevant_unsync_write" filename="FJTaskRunner.java" line="371"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scan" offset="112" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="13" label="relevant_unsync_write" filename="FJTaskRunner.java" line="700"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scanWhileIdling" offset="140" desc="()V" key="14" label="relevant_unsync_write" filename="FJTaskRunner.java" line="779"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="run" offset="14" desc="()V" key="15" label="relevant_unsync_write" filename="FJTaskRunner.java" line="801"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="taskYield" offset="13" desc="()V" key="16" label="relevant_unsync_write" filename="FJTaskRunner.java" line="825"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="taskJoin" offset="14" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="17" label="relevant_unsync_write" filename="FJTaskRunner.java" line="847"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="42" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="18" label="relevant_unsync_write" filename="FJTaskRunner.java" line="877"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="61" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="19" label="relevant_unsync_write" filename="FJTaskRunner.java" line="888"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="63" desc="([LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="20" label="relevant_unsync_write" filename="FJTaskRunner.java" line="935"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="89" desc="([LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="21" label="relevant_unsync_write" filename="FJTaskRunner.java" line="949"/>
+    </locations>
+    <info>
+      <message value="Field 'runs' is accessed from asynchronously invoked method without synchronization."/>
+      <guards/>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="3" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="4" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="5" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="6" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="7" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="8" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="9" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="10" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="11" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="12" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="13" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="14" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="15" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="16" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="17" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="18" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="19" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="20" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="21" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_CALLBACK_ACCESS">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" name="steals" type="I" key="0" filename="FJTaskRunner.java" line="377"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scan" offset="52" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="1" label="relevant_unsync_read" filename="FJTaskRunner.java" line="673"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scan" offset="92" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="2" label="relevant_unsync_read" filename="FJTaskRunner.java" line="694"/>
+      <method className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" name="run" desc="()V" key="3" label="async_entrypoint" filename="FJTaskRunner.java" line="793"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scanWhileIdling" offset="48" desc="()V" key="4" label="relevant_unsync_read" filename="FJTaskRunner.java" line="738"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scanWhileIdling" offset="88" desc="()V" key="5" label="relevant_unsync_read" filename="FJTaskRunner.java" line="754"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" method="stats" offset="44" desc="()V" key="6" label="relevant_unsync_read" filename="FJTaskRunnerGroup.java" line="389"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="&lt;init&gt;" offset="31" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup;)V" key="7" label="irrelevant_unsync_write" filename="FJTaskRunner.java" line="377"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scan" offset="55" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="8" label="relevant_unsync_write" filename="FJTaskRunner.java" line="673"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scan" offset="95" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="9" label="relevant_unsync_write" filename="FJTaskRunner.java" line="694"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scanWhileIdling" offset="51" desc="()V" key="10" label="relevant_unsync_write" filename="FJTaskRunner.java" line="738"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scanWhileIdling" offset="91" desc="()V" key="11" label="relevant_unsync_write" filename="FJTaskRunner.java" line="754"/>
+    </locations>
+    <info>
+      <message value="Field 'steals' is accessed from asynchronously invoked method without synchronization."/>
+      <guards/>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="4" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="5" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="6" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="7" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="8" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="9" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="10" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="11" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_CALLBACK_ACCESS">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" name="scans" type="I" key="0" filename="FJTaskRunner.java" line="374"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scan" offset="41" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="1" label="relevant_unsync_read" filename="FJTaskRunner.java" line="670"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scan" offset="80" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="2" label="relevant_unsync_read" filename="FJTaskRunner.java" line="692"/>
+      <method className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" name="run" desc="()V" key="3" label="async_entrypoint" filename="FJTaskRunner.java" line="793"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scanWhileIdling" offset="37" desc="()V" key="4" label="relevant_unsync_read" filename="FJTaskRunner.java" line="734"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scanWhileIdling" offset="76" desc="()V" key="5" label="relevant_unsync_read" filename="FJTaskRunner.java" line="750"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" method="stats" offset="36" desc="()V" key="6" label="relevant_unsync_read" filename="FJTaskRunnerGroup.java" line="386"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="&lt;init&gt;" offset="28" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup;)V" key="7" label="irrelevant_unsync_write" filename="FJTaskRunner.java" line="374"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scan" offset="44" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="8" label="relevant_unsync_write" filename="FJTaskRunner.java" line="670"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scan" offset="83" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="9" label="relevant_unsync_write" filename="FJTaskRunner.java" line="692"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scanWhileIdling" offset="40" desc="()V" key="10" label="relevant_unsync_write" filename="FJTaskRunner.java" line="734"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="scanWhileIdling" offset="79" desc="()V" key="11" label="relevant_unsync_write" filename="FJTaskRunner.java" line="750"/>
+    </locations>
+    <info>
+      <message value="Field 'scans' is accessed from asynchronously invoked method without synchronization."/>
+      <guards/>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="4" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="5" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="6" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="7" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="8" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="9" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="10" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="11" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" name="next" type="LEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;" key="0" filename="WaitFreeQueue.java" line="82"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" method="pointerEquals" offset="2" desc="(LEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;J)Z" key="1" label="relevant_sync_read" filename="WaitFreeQueue.java" line="90"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" method="commit" offset="1" desc="(LEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;JLEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;J)Z" key="2" label="relevant_sync_read" filename="WaitFreeQueue.java" line="98"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" method="insert" offset="18" desc="(Ljava/lang/Object;)V" key="3" label="relevant_sync_read" filename="WaitFreeQueue.java" line="131"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" method="insert" offset="35" desc="(Ljava/lang/Object;)V" key="4" label="relevant_sync_read" filename="WaitFreeQueue.java" line="139"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" method="extract" offset="13" desc="()Ljava/lang/Object;" key="5" label="relevant_sync_read" filename="WaitFreeQueue.java" line="173"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" method="extract" offset="32" desc="()Ljava/lang/Object;" key="6" label="relevant_sync_read" filename="WaitFreeQueue.java" line="180"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" method="extract" offset="45" desc="()Ljava/lang/Object;" key="7" label="relevant_unsync_read" filename="WaitFreeQueue.java" line="184"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" method="peek" offset="11" desc="()Ljava/lang/Object;" key="8" label="relevant_sync_read" filename="WaitFreeQueue.java" line="276"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" method="peek" offset="30" desc="()Ljava/lang/Object;" key="9" label="relevant_sync_read" filename="WaitFreeQueue.java" line="283"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" method="peek" offset="43" desc="()Ljava/lang/Object;" key="10" label="relevant_unsync_read" filename="WaitFreeQueue.java" line="287"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" method="&lt;init&gt;" offset="4" desc="(Ljava/lang/Object;)V" key="11" label="irrelevant_unsync_write" filename="WaitFreeQueue.java" line="82"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" method="commit" offset="17" desc="(LEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;JLEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;J)Z" key="12" label="relevant_sync_write" filename="WaitFreeQueue.java" line="99"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" method="&lt;init&gt;" offset="22" desc="()V" key="13" label="relevant_unsync_write" filename="WaitFreeQueue.java" line="116"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" method="&lt;init&gt;" offset="26" desc="()V" key="14" label="relevant_unsync_write" filename="WaitFreeQueue.java" line="117"/>
+      <class name="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" key="15" label="guard_type" filename="WaitFreeQueue.java"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'next' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="15" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="8" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="10" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="11" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="12" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="13" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="14" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" name="head_" type="LEDU/oswego/cs/dl/util/concurrent/LinkedNode;" key="0" filename="LinkedQueue.java" line="38"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="&lt;init&gt;" offset="18" desc="()V" key="1" label="irrelevant_unsync_read" filename="LinkedQueue.java" line="61"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="extract" offset="1" desc="()Ljava/lang/Object;" key="2" label="relevant_sync_read" filename="LinkedQueue.java" line="79"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="extract" offset="8" desc="()Ljava/lang/Object;" key="3" label="relevant_sync_read" filename="LinkedQueue.java" line="81"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="peek" offset="1" desc="()Ljava/lang/Object;" key="4" label="relevant_unsync_read" filename="LinkedQueue.java" line="136"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="peek" offset="6" desc="()Ljava/lang/Object;" key="5" label="relevant_sync_read" filename="LinkedQueue.java" line="137"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="isEmpty" offset="1" desc="()Z" key="6" label="relevant_unsync_read" filename="LinkedQueue.java" line="147"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="isEmpty" offset="6" desc="()Z" key="7" label="relevant_sync_read" filename="LinkedQueue.java" line="148"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="&lt;init&gt;" offset="15" desc="()V" key="8" label="irrelevant_unsync_write" filename="LinkedQueue.java" line="60"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="extract" offset="21" desc="()Ljava/lang/Object;" key="9" label="relevant_sync_write" filename="LinkedQueue.java" line="85"/>
+      <class name="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" key="10" label="guard_type" filename="LinkedQueue.java"/>
+      <field className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" name="head_" type="LEDU/oswego/cs/dl/util/concurrent/LinkedNode;" key="11" label="guard_field" filename="LinkedQueue.java" line="38"/>
+      <field className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" name="putLock_" type="Ljava/lang/Object;" key="12" label="guard_field" filename="LinkedQueue.java" line="43"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'head_' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="10" key="1" intrinsic="true">
+          <guardPath>
+            <locationRef key="12"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+        <guardRelative typeRef="10" key="2" intrinsic="true">
+          <guardPath>
+            <locationRef key="11"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+        <guardRelative typeRef="10" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="irrelevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="1" status="sometimes"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="2" status="always"/>
+            <guardRef key="1" status="sometimes"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="2" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="2" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="9" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="2" status="always"/>
+            <guardRef key="1" status="sometimes"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.Semaphore" name="permits_" type="J" key="0" filename="Semaphore.java" line="92"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="acquire" offset="9" desc="()V" key="1" label="relevant_unsync_read" filename="Semaphore.java" line="108"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="acquire" offset="15" desc="()V" key="2" label="relevant_unsync_read" filename="Semaphore.java" line="109"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="attempt" offset="11" desc="(J)Z" key="3" label="relevant_sync_read" filename="Semaphore.java" line="123"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="attempt" offset="17" desc="(J)Z" key="4" label="relevant_sync_read" filename="Semaphore.java" line="124"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="attempt" offset="41" desc="(J)Z" key="5" label="relevant_sync_read" filename="Semaphore.java" line="136"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="attempt" offset="47" desc="(J)Z" key="6" label="relevant_sync_read" filename="Semaphore.java" line="137"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="release" offset="2" desc="()V" key="7" label="relevant_sync_read" filename="Semaphore.java" line="157"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="release" offset="11" desc="(J)V" key="8" label="relevant_sync_read" filename="Semaphore.java" line="175"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="permits" offset="1" desc="()J" key="9" label="relevant_sync_read" filename="Semaphore.java" line="185"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="&lt;init&gt;" offset="4" desc="(J)V" key="10" label="irrelevant_unsync_write" filename="Semaphore.java" line="100"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="acquire" offset="18" desc="()V" key="11" label="relevant_unsync_write" filename="Semaphore.java" line="109"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="attempt" offset="20" desc="(J)Z" key="12" label="relevant_sync_write" filename="Semaphore.java" line="124"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="attempt" offset="50" desc="(J)Z" key="13" label="relevant_sync_write" filename="Semaphore.java" line="137"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="release" offset="5" desc="()V" key="14" label="relevant_sync_write" filename="Semaphore.java" line="157"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.Semaphore" method="release" offset="14" desc="(J)V" key="15" label="relevant_sync_write" filename="Semaphore.java" line="175"/>
+      <class name="EDU.oswego.cs.dl.util.concurrent.Semaphore" key="16" label="guard_type" filename="Semaphore.java"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'permits_' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="16" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="10" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="11" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="12" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="13" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="14" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="15" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" name="array_" type="[Ljava/lang/Object;" key="0" filename="CopyOnWriteArrayList.java" line="86"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="array" offset="1" desc="()[Ljava/lang/Object;" key="1" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="92"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="&lt;init&gt;" offset="14" desc="(Ljava/util/Collection;)V" key="2" label="irrelevant_unsync_read" filename="CopyOnWriteArrayList.java" line="112"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="copyIn" offset="7" desc="([Ljava/lang/Object;II)V" key="3" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="138"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="clone" offset="15" desc="()Ljava/lang/Object;" key="4" label="relevant_unsync_read" filename="CopyOnWriteArrayList.java" line="303"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="set" offset="1" desc="(ILjava/lang/Object;)Ljava/lang/Object;" key="5" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="385"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="set" offset="9" desc="(ILjava/lang/Object;)Ljava/lang/Object;" key="6" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="387"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="set" offset="32" desc="(ILjava/lang/Object;)Ljava/lang/Object;" key="7" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="393"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="add" offset="1" desc="(Ljava/lang/Object;)Z" key="8" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="407"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="add" offset="10" desc="(Ljava/lang/Object;)Z" key="9" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="409"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="add" offset="1" desc="(ILjava/lang/Object;)V" key="10" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="426"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="add" offset="30" desc="(ILjava/lang/Object;)V" key="11" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="431"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="add" offset="41" desc="(ILjava/lang/Object;)V" key="12" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="433"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="1" desc="(I)Ljava/lang/Object;" key="13" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="447"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="9" desc="(I)Ljava/lang/Object;" key="14" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="449"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="19" desc="(I)Ljava/lang/Object;" key="15" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="451"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="34" desc="(I)Ljava/lang/Object;" key="16" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="454"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="1" desc="(Ljava/lang/Object;)Z" key="17" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="472"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="20" desc="(Ljava/lang/Object;)Z" key="18" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="482"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="28" desc="(Ljava/lang/Object;)Z" key="19" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="483"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="43" desc="(Ljava/lang/Object;)Z" key="20" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="485"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="59" desc="(Ljava/lang/Object;)Z" key="21" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="490"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="69" desc="(Ljava/lang/Object;)Z" key="22" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="494"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="77" desc="(Ljava/lang/Object;)Z" key="23" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="495"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="removeRange" offset="1" desc="(II)V" key="24" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="519"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="removeRange" offset="33" desc="(II)V" key="25" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="528"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="removeRange" offset="40" desc="(II)V" key="26" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="529"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addIfAbsent" offset="1" desc="(Ljava/lang/Object;)Z" key="27" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="544"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addIfAbsent" offset="14" desc="(Ljava/lang/Object;)Z" key="28" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="547"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addIfAbsent" offset="22" desc="(Ljava/lang/Object;)Z" key="29" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="548"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addIfAbsent" offset="32" desc="(Ljava/lang/Object;)Z" key="30" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="551"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="removeAll" offset="1" desc="(Ljava/util/Collection;)Z" key="31" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="589"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="retainAll" offset="1" desc="(Ljava/util/Collection;)Z" key="32" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="620"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addAllAbsent" offset="8" desc="(Ljava/util/Collection;)I" key="33" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="655"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addAll" offset="8" desc="(Ljava/util/Collection;)Z" key="34" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="698"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addAll" offset="17" desc="(Ljava/util/Collection;)Z" key="35" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="700"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addAll" offset="1" desc="(ILjava/util/Collection;)Z" key="36" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="724"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addAll" offset="37" desc="(ILjava/util/Collection;)Z" key="37" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="732"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addAll" offset="50" desc="(ILjava/util/Collection;)Z" key="38" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="735"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="subList" offset="1" desc="(II)Ljava/util/List;" key="39" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1016"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="checkForComodification" offset="2" desc="()V" key="40" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1059"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="set" offset="22" desc="(ILjava/lang/Object;)Ljava/lang/Object;" key="41" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1076"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="add" offset="28" desc="(ILjava/lang/Object;)V" key="42" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1102"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="remove" offset="21" desc="(I)Ljava/lang/Object;" key="43" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1112"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="&lt;init&gt;" offset="5" desc="()V" key="44" label="irrelevant_unsync_write" filename="CopyOnWriteArrayList.java" line="99"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="&lt;init&gt;" offset="6" desc="(Ljava/util/Collection;)V" key="45" label="irrelevant_unsync_write" filename="CopyOnWriteArrayList.java" line="108"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="copyIn" offset="3" desc="([Ljava/lang/Object;II)V" key="46" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="137"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="clone" offset="11" desc="()Ljava/lang/Object;" key="47" label="relevant_unsync_write" filename="CopyOnWriteArrayList.java" line="302"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="set" offset="44" desc="(ILjava/lang/Object;)Ljava/lang/Object;" key="48" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="395"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="add" offset="22" desc="(Ljava/lang/Object;)Z" key="49" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="411"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="add" offset="53" desc="(ILjava/lang/Object;)V" key="50" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="434"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="44" desc="(I)Ljava/lang/Object;" key="51" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="455"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="53" desc="(Ljava/lang/Object;)Z" key="52" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="486"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="remove" offset="84" desc="(Ljava/lang/Object;)Z" key="53" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="496"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="removeRange" offset="48" desc="(II)V" key="54" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="530"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addIfAbsent" offset="46" desc="(Ljava/lang/Object;)Z" key="55" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="554"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="removeAll" offset="51" desc="(Ljava/util/Collection;)Z" key="56" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="608"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="retainAll" offset="51" desc="(Ljava/util/Collection;)Z" key="57" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="637"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addAllAbsent" offset="66" desc="(Ljava/util/Collection;)I" key="58" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="675"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="clear" offset="3" desc="()V" key="59" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="684"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addAll" offset="41" desc="(Ljava/util/Collection;)Z" key="60" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="704"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" method="addAll" offset="76" desc="(ILjava/util/Collection;)Z" key="61" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="739"/>
+      <class name="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" key="62" label="guard_type" filename="CopyOnWriteArrayList.java"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'array_' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="62" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="irrelevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="10" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="11" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="12" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="13" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="14" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="15" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="16" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="17" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="18" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="19" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="20" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="21" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="22" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="23" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="24" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="25" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="26" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="27" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="28" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="29" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="30" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="31" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="32" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="33" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="34" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="35" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="36" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="37" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="38" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="39" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="40" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="41" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="42" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="43" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="44" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="45" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="46" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="47" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="48" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="49" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="50" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="51" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="52" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="53" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="54" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="55" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="56" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="57" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="58" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="59" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="60" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="61" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="head_" type="LEDU/oswego/cs/dl/util/concurrent/LinkedNode;" key="0" filename="BoundedLinkedQueue.java" line="61"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="&lt;init&gt;" offset="35" desc="(I)V" key="1" label="irrelevant_unsync_read" filename="BoundedLinkedQueue.java" line="115"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="extract" offset="1" desc="()Ljava/lang/Object;" key="2" label="relevant_sync_read" filename="BoundedLinkedQueue.java" line="180"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="extract" offset="8" desc="()Ljava/lang/Object;" key="3" label="relevant_sync_read" filename="BoundedLinkedQueue.java" line="182"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="peek" offset="1" desc="()Ljava/lang/Object;" key="4" label="relevant_unsync_read" filename="BoundedLinkedQueue.java" line="195"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="peek" offset="6" desc="()Ljava/lang/Object;" key="5" label="relevant_sync_read" filename="BoundedLinkedQueue.java" line="196"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="isEmpty" offset="1" desc="()Z" key="6" label="relevant_unsync_read" filename="BoundedLinkedQueue.java" line="361"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="isEmpty" offset="6" desc="()Z" key="7" label="relevant_sync_read" filename="BoundedLinkedQueue.java" line="362"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="&lt;init&gt;" offset="32" desc="(I)V" key="8" label="irrelevant_unsync_write" filename="BoundedLinkedQueue.java" line="114"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="extract" offset="21" desc="()Ljava/lang/Object;" key="9" label="relevant_sync_write" filename="BoundedLinkedQueue.java" line="186"/>
+      <class name="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" key="10" label="guard_type" filename="BoundedLinkedQueue.java"/>
+      <field className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="head_" type="LEDU/oswego/cs/dl/util/concurrent/LinkedNode;" key="11" label="guard_field" filename="BoundedLinkedQueue.java" line="61"/>
+      <field className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="takeGuard_" type="Ljava/lang/Object;" key="12" label="guard_field" filename="BoundedLinkedQueue.java" line="79"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'head_' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="10" key="1" intrinsic="true">
+          <guardPath>
+            <locationRef key="12"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+        <guardRelative typeRef="10" key="2" intrinsic="true">
+          <guardPath>
+            <locationRef key="11"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+        <guardRelative typeRef="10" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="irrelevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="1" status="sometimes"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="2" status="always"/>
+            <guardRef key="1" status="sometimes"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="2" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="2" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="9" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="2" status="always"/>
+            <guardRef key="1" status="sometimes"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" name="deq" type="[LEDU/oswego/cs/dl/util/concurrent/FJTaskRunner$VolatileTaskRef;" key="0" filename="FJTaskRunner.java" line="285"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="deqSize" offset="1" desc="()I" key="1" label="relevant_unsync_read" filename="FJTaskRunner.java" line="288"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="push" offset="7" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="2" label="relevant_syncmixed_read" filename="FJTaskRunner.java" line="401"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="push" offset="18" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="3" label="relevant_syncmixed_read" filename="FJTaskRunner.java" line="403"/>
+      <method className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" name="run" desc="()V" key="4" label="async_entrypoint" filename="FJTaskRunner.java" line="793"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="pop" offset="15" desc="()LEDU/oswego/cs/dl/util/concurrent/FJTask;" key="5" label="relevant_unsync_read" filename="FJTaskRunner.java" line="483"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="confirmPop" offset="5" desc="(I)LEDU/oswego/cs/dl/util/concurrent/FJTask;" key="6" label="relevant_sync_read" filename="FJTaskRunner.java" line="497"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="confirmTake" offset="10" desc="(I)LEDU/oswego/cs/dl/util/concurrent/FJTask;" key="7" label="relevant_sync_read" filename="FJTaskRunner.java" line="558"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="checkOverflow" offset="10" desc="()V" key="8" label="relevant_sync_read" filename="FJTaskRunner.java" line="579"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="checkOverflow" offset="17" desc="()V" key="9" label="relevant_sync_read" filename="FJTaskRunner.java" line="581"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="checkOverflow" offset="26" desc="()V" key="10" label="relevant_sync_read" filename="FJTaskRunner.java" line="582"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="checkOverflow" offset="37" desc="()V" key="11" label="relevant_sync_read" filename="FJTaskRunner.java" line="583"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="checkOverflow" offset="70" desc="()V" key="12" label="relevant_sync_read" filename="FJTaskRunner.java" line="593"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="checkOverflow" offset="51" desc="()V" key="13" label="relevant_sync_read" filename="FJTaskRunner.java" line="594"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="checkOverflow" offset="60" desc="()V" key="14" label="relevant_sync_read" filename="FJTaskRunner.java" line="595"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="checkOverflow" offset="81" desc="()V" key="15" label="relevant_sync_read" filename="FJTaskRunner.java" line="602"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="checkOverflow" offset="105" desc="()V" key="16" label="relevant_sync_read" filename="FJTaskRunner.java" line="611"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="7" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="17" label="relevant_unsync_read" filename="FJTaskRunner.java" line="869"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="18" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTask;LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="18" label="relevant_unsync_read" filename="FJTaskRunner.java" line="871"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="16" desc="([LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="19" label="relevant_unsync_read" filename="FJTaskRunner.java" line="926"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="coInvoke" offset="30" desc="([LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" key="20" label="relevant_unsync_read" filename="FJTaskRunner.java" line="928"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="&lt;init&gt;" offset="5" desc="(LEDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup;)V" key="21" label="irrelevant_unsync_write" filename="FJTaskRunner.java" line="285"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" method="checkOverflow" offset="133" desc="()V" key="22" label="relevant_sync_write" filename="FJTaskRunner.java" line="616"/>
+      <class name="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" key="23" label="guard_type" filename="FJTaskRunner.java"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'deq' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="23" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+        <guardUnknown key="1" intrinsic="true"/>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_syncmixed_read">
+          <accessGuards>
+            <guardRef key="0" status="sometimes"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_syncmixed_read">
+          <accessGuards>
+            <guardRef key="0" status="sometimes"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="10" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="11" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="12" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="13" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="14" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="15" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="16" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="17" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="18" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="19" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="20" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="21" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="22" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_MIXED">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="putSidePutPermits_" type="I" key="0" filename="BoundedLinkedQueue.java" line="100"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="reconcilePutPermits" offset="2" desc="()I" key="1" label="relevant_sync_read" filename="BoundedLinkedQueue.java" line="132"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="reconcilePutPermits" offset="11" desc="()I" key="2" label="relevant_sync_read" filename="BoundedLinkedQueue.java" line="134"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="size" offset="5" desc="()I" key="3" label="relevant_sync_read" filename="BoundedLinkedQueue.java" line="156"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="insert" offset="2" desc="(Ljava/lang/Object;)V" key="4" label="relevant_sync_read" filename="BoundedLinkedQueue.java" line="272"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="put" offset="18" desc="(Ljava/lang/Object;)V" key="5" label="relevant_sync_read" filename="BoundedLinkedQueue.java" line="291"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="offer" offset="18" desc="(Ljava/lang/Object;J)Z" key="6" label="relevant_sync_read" filename="BoundedLinkedQueue.java" line="321"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="&lt;init&gt;" offset="26" desc="(I)V" key="7" label="irrelevant_unsync_write" filename="BoundedLinkedQueue.java" line="113"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="reconcilePutPermits" offset="6" desc="()I" key="8" label="relevant_sync_write" filename="BoundedLinkedQueue.java" line="132"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="insert" offset="5" desc="(Ljava/lang/Object;)V" key="9" label="relevant_sync_write" filename="BoundedLinkedQueue.java" line="272"/>
+      <class name="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" key="10" label="guard_type" filename="BoundedLinkedQueue.java"/>
+      <field className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="putGuard_" type="Ljava/lang/Object;" key="11" label="guard_field" filename="BoundedLinkedQueue.java" line="73"/>
+    </locations>
+    <info>
+      <message value="Access to field 'putSidePutPermits_' are synchronized using different locks."/>
+      <guards>
+        <guardRelative typeRef="10" key="1" intrinsic="true">
+          <guardPath>
+            <locationRef key="11"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+        <guardRelative typeRef="10" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="8" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" name="size" type="I" key="0" filename="CopyOnWriteArrayList.java" line="1046"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="rangeCheck" offset="4" desc="(I)V" key="1" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1065"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="rangeCheck" offset="17" desc="(I)V" key="2" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1067"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="size" offset="8" desc="()I" key="3" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1092"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="add" offset="11" desc="(ILjava/lang/Object;)V" key="4" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1099"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="add" offset="32" desc="(ILjava/lang/Object;)V" key="5" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1103"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="remove" offset="25" desc="(I)Ljava/lang/Object;" key="6" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1113"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="listIterator" offset="11" desc="(I)Ljava/util/ListIterator;" key="7" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1128"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="listIterator" offset="24" desc="(I)Ljava/util/ListIterator;" key="8" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1129"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList$COWSubListIterator" method="hasNext" offset="4" desc="()Z" key="9" label="relevant_unsync_read" filename="CopyOnWriteArrayList.java" line="1143"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="subList" offset="11" desc="(II)Ljava/util/List;" key="10" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1189"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="&lt;init&gt;" offset="17" desc="(LEDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList;II)V" key="11" label="irrelevant_unsync_write" filename="CopyOnWriteArrayList.java" line="1054"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="add" offset="35" desc="(ILjava/lang/Object;)V" key="12" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="1103"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="remove" offset="28" desc="(I)Ljava/lang/Object;" key="13" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="1113"/>
+      <field className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" name="l" type="LEDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList;" key="14" label="guard_field" filename="CopyOnWriteArrayList.java" line="1044"/>
+      <class name="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" key="15" label="guard_type" filename="CopyOnWriteArrayList.java"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'size' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="15" key="0" intrinsic="true">
+          <guardPath>
+            <locationRef key="14"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="10" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="11" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="12" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="13" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" name="entries" type="I" key="0" filename="FJTaskRunnerGroup.java" line="154"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" method="stats" offset="120" desc="()V" key="1" label="relevant_unsync_read" filename="FJTaskRunnerGroup.java" line="410"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" method="signalNewTask" offset="2" desc="()V" key="2" label="relevant_sync_read" filename="FJTaskRunnerGroup.java" line="566"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" method="&lt;init&gt;" offset="18" desc="(I)V" key="3" label="irrelevant_unsync_write" filename="FJTaskRunnerGroup.java" line="154"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" method="signalNewTask" offset="5" desc="()V" key="4" label="relevant_sync_write" filename="FJTaskRunnerGroup.java" line="566"/>
+      <class name="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" key="5" label="guard_type" filename="FJTaskRunnerGroup.java"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'entries' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="5" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="4" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_MIXED_COL">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" name="array_" type="[Ljava/lang/Object;" key="0" filename="BoundedBuffer.java" line="27"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" method="extract" offset="10" desc="()Ljava/lang/Object;" key="1" label="relevant_sync_read" filename="BoundedBuffer.java" line="87"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" method="peek" offset="11" desc="()Ljava/lang/Object;" key="2" label="relevant_sync_read" filename="BoundedBuffer.java" line="96"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" method="insert" offset="11" desc="(Ljava/lang/Object;)V" key="3" label="relevant_sync_write" filename="BoundedBuffer.java" line="81"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" method="extract" offset="17" desc="()Ljava/lang/Object;" key="4" label="relevant_sync_write" filename="BoundedBuffer.java" line="88"/>
+      <class name="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" key="5" label="guard_type" filename="BoundedBuffer.java"/>
+      <field className="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" name="putMonitor_" type="Ljava/lang/Object;" key="6" label="guard_field" filename="BoundedBuffer.java" line="38"/>
+    </locations>
+    <info>
+      <message value="Accesses to the collection in field 'array_' are synchronized using different locks."/>
+      <guards>
+        <guardRelative typeRef="5" key="1" intrinsic="true">
+          <guardPath>
+            <locationRef key="6"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+        <guardRelative typeRef="5" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT_COL">
+    <locations>
+      <field className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" name="l" type="LEDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList;" key="0" filename="CopyOnWriteArrayList.java" line="1044"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="get" offset="16" desc="(I)Ljava/lang/Object;" key="1" label="relevant_sync_read" filename="CopyOnWriteArrayList.java" line="1085"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList$COWSubListIterator" method="&lt;init&gt;" offset="15" desc="(LEDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList$COWSubList;I)V" key="2" label="relevant_unsync_read" filename="CopyOnWriteArrayList.java" line="1139"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="set" offset="17" desc="(ILjava/lang/Object;)Ljava/lang/Object;" key="3" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="1075"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="add" offset="24" desc="(ILjava/lang/Object;)V" key="4" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="1101"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" method="remove" offset="16" desc="(I)Ljava/lang/Object;" key="5" label="relevant_sync_write" filename="CopyOnWriteArrayList.java" line="1111"/>
+      <field className="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" name="l" type="LEDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList;" key="6" label="guard_field" filename="CopyOnWriteArrayList.java" line="1044"/>
+      <class name="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" key="7" label="guard_type" filename="CopyOnWriteArrayList.java"/>
+    </locations>
+    <info>
+      <message value="Accesses to the collection in field 'l' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="7" key="0" intrinsic="true">
+          <guardPath>
+            <locationRef key="6"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="3" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_FIELD_LOCK_WRITE">
+    <locations>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="extract" offset="21" desc="()Ljava/lang/Object;" key="0" filename="BoundedLinkedQueue.java" line="186"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="extract" offset="4" desc="()Ljava/lang/Object;" key="1" label="Lock acquired" filename="BoundedLinkedQueue.java" line="180"/>
+    </locations>
+    <info>
+      <message value="Field 'head_' re-assigned while holding an intrinsic lock on its value."/>
+    </info>
+  </finding>
+  <finding type="CCE_CC_FIELD_LOCK_WRITE">
+    <locations>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="extract" offset="21" desc="()Ljava/lang/Object;" key="0" filename="LinkedQueue.java" line="85"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="extract" offset="4" desc="()Ljava/lang/Object;" key="1" label="Lock acquired" filename="LinkedQueue.java" line="79"/>
+    </locations>
+    <info>
+      <message value="Field 'head_' re-assigned while holding an intrinsic lock on its value."/>
+    </info>
+  </finding>
+  <finding type="CCE_CC_FIELD_LOCK_WRITE">
+    <locations>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="insert" offset="22" desc="(Ljava/lang/Object;)V" key="0" filename="BoundedLinkedQueue.java" line="276"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" method="insert" offset="15" desc="(Ljava/lang/Object;)V" key="1" label="Lock acquired" filename="BoundedLinkedQueue.java" line="274"/>
+    </locations>
+    <info>
+      <message value="Field 'last_' re-assigned while holding an intrinsic lock on its value."/>
+    </info>
+  </finding>
+  <finding type="CCE_CC_FIELD_LOCK_WRITE">
+    <locations>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="insert" offset="21" desc="(Ljava/lang/Object;)V" key="0" filename="LinkedQueue.java" line="70"/>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" method="insert" offset="14" desc="(Ljava/lang/Object;)V" key="1" label="Lock acquired" filename="LinkedQueue.java" line="68"/>
+    </locations>
+    <info>
+      <message value="Field 'last_' re-assigned while holding an intrinsic lock on its value."/>
+    </info>
+  </finding>
+  <finding type="CCE_CC_FIELD_LOCK_WRITE">
+    <locations>
+      <instruction className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" method="commit" offset="17" desc="(LEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;JLEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;J)Z" key="0" filename="WaitFreeQueue.java" line="99"/>
+      <method className="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" name="commit" desc="(LEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;JLEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;J)Z" key="1" label="Lock acquired" filename="WaitFreeQueue.java" line="94"/>
+    </locations>
+    <info>
+      <message value="Field 'next' re-assigned while holding an intrinsic lock on its value."/>
+    </info>
+  </finding>
+</findings>

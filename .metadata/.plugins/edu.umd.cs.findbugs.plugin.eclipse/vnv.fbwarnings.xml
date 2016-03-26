@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1458939925776" analysisTimestamp="1458939923169" release="">
+  <Project projectName="vnv">
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/AnimatorAction.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/AnimatorCanvas.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/AnimatorCommand.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/AnimatorFrame.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/AnimatorIcon.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/AnimatorShape.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Cbg.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Ccolor.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Ccoords.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Cdelay.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Cdelete.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Cend.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/CexchangePos.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Cfill.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Cjump.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/CjumpRelative.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/CjumpTo.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Cmove.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/CmoveRelative.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/CmoveTo.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/CswapIds.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/CswitchPos.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Cvis.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Icircle.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Iline.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Irectangle.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Itext.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Itriangle.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Position.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/Size.class</Jar>
+    <Jar>/Users/soniamarginean/Documents/workspace/vnv/animation/XtangoAnimation/XtangoAnimator.class</Jar>
+    <AuxClasspathEntry>/Users/soniamarginean/Documents/workspace/vnv</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/soniamarginean/Documents/workspace/vnv</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.AnimatorIcon">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorIcon" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.AnimatorIcon" name="position" signature="Lanimation/XtangoAnimation/Position;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorIcon" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.AnimatorIcon">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorIcon" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.AnimatorIcon" name="colorval" signature="Ljava/awt/Color;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorIcon" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.AnimatorIcon">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorIcon" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.AnimatorIcon" name="colorvalHALF" signature="Ljava/awt/Color;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorIcon" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.AnimatorIcon">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorIcon" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.AnimatorIcon" name="id" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorIcon" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.AnimatorIcon">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorIcon" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.AnimatorIcon" name="visibility" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorIcon" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.AnimatorShape">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorShape" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.AnimatorShape" name="fillval" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorShape" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.AnimatorShape">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorShape" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.AnimatorShape" name="numHalf" signature="I" isStatic="true">
+      <SourceLine classname="animation.XtangoAnimation.AnimatorShape" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Cbg">
+      <SourceLine classname="animation.XtangoAnimation.Cbg" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cbg" name="colorval" signature="Ljava/awt/Color;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cbg" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Ccolor">
+      <SourceLine classname="animation.XtangoAnimation.Ccolor" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Ccolor" name="colorval" signature="Ljava/awt/Color;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Ccolor" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Ccolor">
+      <SourceLine classname="animation.XtangoAnimation.Ccolor" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Ccolor" name="id" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Ccolor" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Ccoords">
+      <SourceLine classname="animation.XtangoAnimation.Ccoords" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Ccoords" name="by" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Ccoords" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Ccoords">
+      <SourceLine classname="animation.XtangoAnimation.Ccoords" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Ccoords" name="lx" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Ccoords" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Ccoords">
+      <SourceLine classname="animation.XtangoAnimation.Ccoords" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Ccoords" name="rx" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Ccoords" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Ccoords">
+      <SourceLine classname="animation.XtangoAnimation.Ccoords" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Ccoords" name="ty" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Ccoords" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Cdelay">
+      <SourceLine classname="animation.XtangoAnimation.Cdelay" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cdelay" name="steps" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cdelay" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Cdelete">
+      <SourceLine classname="animation.XtangoAnimation.Cdelete" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cdelete" name="id" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cdelete" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CexchangePos">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CexchangePos" name="frameDelay" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CexchangePos">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CexchangePos" name="icon1" signature="Lanimation/XtangoAnimation/AnimatorIcon;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CexchangePos">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CexchangePos" name="icon2" signature="Lanimation/XtangoAnimation/AnimatorIcon;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CexchangePos">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CexchangePos" name="id1" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CexchangePos">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CexchangePos" name="id2" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CexchangePos">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CexchangePos" name="numMoveSteps" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CexchangePos">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CexchangePos" name="syncMode" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Cfill">
+      <SourceLine classname="animation.XtangoAnimation.Cfill" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cfill" name="fillval" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cfill" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Cfill">
+      <SourceLine classname="animation.XtangoAnimation.Cfill" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cfill" name="id" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cfill" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Cjump">
+      <SourceLine classname="animation.XtangoAnimation.Cjump" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cjump" name="id" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cjump" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Cjump">
+      <SourceLine classname="animation.XtangoAnimation.Cjump" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cjump" name="xpos" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cjump" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Cjump">
+      <SourceLine classname="animation.XtangoAnimation.Cjump" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cjump" name="ypos" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cjump" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CjumpRelative">
+      <SourceLine classname="animation.XtangoAnimation.CjumpRelative" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CjumpRelative" name="id" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CjumpRelative" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CjumpRelative">
+      <SourceLine classname="animation.XtangoAnimation.CjumpRelative" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CjumpRelative" name="xdelta" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CjumpRelative" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CjumpRelative">
+      <SourceLine classname="animation.XtangoAnimation.CjumpRelative" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CjumpRelative" name="ydelta" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CjumpRelative" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CjumpTo">
+      <SourceLine classname="animation.XtangoAnimation.CjumpTo" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CjumpTo" name="id1" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CjumpTo" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CjumpTo">
+      <SourceLine classname="animation.XtangoAnimation.CjumpTo" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CjumpTo" name="id2" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CjumpTo" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="frameDelay" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="icon" signature="Lanimation/XtangoAnimation/AnimatorIcon;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="icon2" signature="Lanimation/XtangoAnimation/AnimatorIcon;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="id" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="id2" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="moveMode" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="numMoveSteps" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="syncMode" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="xdelta" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="xpos" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="ydelta" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Cmove">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cmove" name="ypos" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CswapIds">
+      <SourceLine classname="animation.XtangoAnimation.CswapIds" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CswapIds" name="id1" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CswapIds" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CswapIds">
+      <SourceLine classname="animation.XtangoAnimation.CswapIds" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CswapIds" name="id2" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CswapIds" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CswitchPos">
+      <SourceLine classname="animation.XtangoAnimation.CswitchPos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CswitchPos" name="id1" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CswitchPos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.CswitchPos">
+      <SourceLine classname="animation.XtangoAnimation.CswitchPos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.CswitchPos" name="id2" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.CswitchPos" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Cvis">
+      <SourceLine classname="animation.XtangoAnimation.Cvis" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cvis" name="action" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cvis" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Cvis">
+      <SourceLine classname="animation.XtangoAnimation.Cvis" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Cvis" name="id" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Cvis" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Icircle">
+      <SourceLine classname="animation.XtangoAnimation.Icircle" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Icircle" name="radius" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Icircle" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Iline">
+      <SourceLine classname="animation.XtangoAnimation.Iline" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Iline" name="size" signature="Lanimation/XtangoAnimation/Size;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Iline" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Iline">
+      <SourceLine classname="animation.XtangoAnimation.Iline" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Iline" name="widthval" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Iline" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Irectangle">
+      <SourceLine classname="animation.XtangoAnimation.Irectangle" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Irectangle" name="size" signature="Lanimation/XtangoAnimation/Size;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Irectangle" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Itext">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Itext" name="centered" signature="Z" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Itext">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Itext" name="fBIG" signature="Ljava/awt/Font;" isStatic="true">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Itext">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Itext" name="fNORMAL" signature="Ljava/awt/Font;" isStatic="true">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Itext">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Itext" name="fSMALL" signature="Ljava/awt/Font;" isStatic="true">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Itext">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Itext" name="size" signature="I" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="animation.XtangoAnimation.Itext">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Itext" name="string" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Itext" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Itriangle">
+      <SourceLine classname="animation.XtangoAnimation.Itriangle" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Itriangle" name="p2" signature="Lanimation/XtangoAnimation/Position;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Itriangle" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Itriangle">
+      <SourceLine classname="animation.XtangoAnimation.Itriangle" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Itriangle" name="p3" signature="Lanimation/XtangoAnimation/Position;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Itriangle" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Position">
+      <SourceLine classname="animation.XtangoAnimation.Position" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Position" name="x" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Position" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Position">
+      <SourceLine classname="animation.XtangoAnimation.Position" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Position" name="y" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Position" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Size">
+      <SourceLine classname="animation.XtangoAnimation.Size" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Size" name="h" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Size" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.Size">
+      <SourceLine classname="animation.XtangoAnimation.Size" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.Size" name="w" signature="F" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.Size" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.XtangoAnimator">
+      <SourceLine classname="animation.XtangoAnimation.XtangoAnimator" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.XtangoAnimator" name="af" signature="Lanimation/XtangoAnimation/AnimatorFrame;" isStatic="false">
+      <SourceLine classname="animation.XtangoAnimation.XtangoAnimator" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="animation.XtangoAnimation.XtangoAnimator">
+      <SourceLine classname="animation.XtangoAnimation.XtangoAnimator" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="animation.XtangoAnimation.XtangoAnimator" name="debug" signature="Z" isStatic="true">
+      <SourceLine classname="animation.XtangoAnimation.XtangoAnimator" sourcefile="XtangoAnimator.java" sourcepath="animation/XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 25 Mar 2016 16:04:45 -0500" total_classes="31" referenced_classes="275" total_bugs="69" total_size="446" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="10.92" clock_seconds="2.62" peak_mbytes="543.99" alloc_mbytes="910.50" gc_seconds="0.02" priority_2="69">
+    <PackageStats package="animation.XtangoAnimation" total_bugs="69" total_types="31" total_size="446" priority_2="69">
+      <ClassStats class="animation.XtangoAnimation.AnimatorAction" sourceFile="XtangoAnimator.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="animation.XtangoAnimation.AnimatorCanvas" sourceFile="XtangoAnimator.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="animation.XtangoAnimation.AnimatorCommand" sourceFile="XtangoAnimator.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="animation.XtangoAnimation.AnimatorFrame" sourceFile="XtangoAnimator.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="animation.XtangoAnimation.AnimatorIcon" sourceFile="XtangoAnimator.java" interface="false" size="27" bugs="5" priority_2="5"/>
+      <ClassStats class="animation.XtangoAnimation.AnimatorShape" sourceFile="XtangoAnimator.java" interface="false" size="12" bugs="2" priority_2="2"/>
+      <ClassStats class="animation.XtangoAnimation.Cbg" sourceFile="XtangoAnimator.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="animation.XtangoAnimation.Ccolor" sourceFile="XtangoAnimator.java" interface="false" size="9" bugs="2" priority_2="2"/>
+      <ClassStats class="animation.XtangoAnimation.Ccoords" sourceFile="XtangoAnimator.java" interface="false" size="11" bugs="4" priority_2="4"/>
+      <ClassStats class="animation.XtangoAnimation.Cdelay" sourceFile="XtangoAnimator.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="animation.XtangoAnimation.Cdelete" sourceFile="XtangoAnimator.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="animation.XtangoAnimation.Cend" sourceFile="XtangoAnimator.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="animation.XtangoAnimation.CexchangePos" sourceFile="XtangoAnimator.java" interface="false" size="16" bugs="7" priority_2="7"/>
+      <ClassStats class="animation.XtangoAnimation.Cfill" sourceFile="XtangoAnimator.java" interface="false" size="9" bugs="2" priority_2="2"/>
+      <ClassStats class="animation.XtangoAnimation.Cjump" sourceFile="XtangoAnimator.java" interface="false" size="10" bugs="3" priority_2="3"/>
+      <ClassStats class="animation.XtangoAnimation.CjumpRelative" sourceFile="XtangoAnimator.java" interface="false" size="10" bugs="3" priority_2="3"/>
+      <ClassStats class="animation.XtangoAnimation.CjumpTo" sourceFile="XtangoAnimator.java" interface="false" size="9" bugs="2" priority_2="2"/>
+      <ClassStats class="animation.XtangoAnimation.Cmove" sourceFile="XtangoAnimator.java" interface="false" size="25" bugs="12" priority_2="12"/>
+      <ClassStats class="animation.XtangoAnimation.CmoveRelative" sourceFile="XtangoAnimator.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="animation.XtangoAnimation.CmoveTo" sourceFile="XtangoAnimator.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="animation.XtangoAnimation.CswapIds" sourceFile="XtangoAnimator.java" interface="false" size="9" bugs="2" priority_2="2"/>
+      <ClassStats class="animation.XtangoAnimation.CswitchPos" sourceFile="XtangoAnimator.java" interface="false" size="9" bugs="2" priority_2="2"/>
+      <ClassStats class="animation.XtangoAnimation.Cvis" sourceFile="XtangoAnimator.java" interface="false" size="12" bugs="2" priority_2="2"/>
+      <ClassStats class="animation.XtangoAnimation.Icircle" sourceFile="XtangoAnimator.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="animation.XtangoAnimation.Iline" sourceFile="XtangoAnimator.java" interface="false" size="9" bugs="2" priority_2="2"/>
+      <ClassStats class="animation.XtangoAnimation.Irectangle" sourceFile="XtangoAnimator.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="animation.XtangoAnimation.Itext" sourceFile="XtangoAnimator.java" interface="false" size="20" bugs="6" priority_2="6"/>
+      <ClassStats class="animation.XtangoAnimation.Itriangle" sourceFile="XtangoAnimator.java" interface="false" size="13" bugs="2" priority_2="2"/>
+      <ClassStats class="animation.XtangoAnimation.Position" sourceFile="XtangoAnimator.java" interface="false" size="8" bugs="2" priority_2="2"/>
+      <ClassStats class="animation.XtangoAnimation.Size" sourceFile="XtangoAnimator.java" interface="false" size="8" bugs="2" priority_2="2"/>
+      <ClassStats class="animation.XtangoAnimation.XtangoAnimator" sourceFile="XtangoAnimator.java" interface="false" size="102" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="408" invocations="1280" avgMicrosecondsPerInvocation="318" maxMicrosecondsPerInvocation="22256" standardDeviationMircosecondsPerInvocation="904"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="372" invocations="2" avgMicrosecondsPerInvocation="186097" maxMicrosecondsPerInvocation="190762" standardDeviationMircosecondsPerInvocation="4665"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="220" invocations="275" avgMicrosecondsPerInvocation="803" maxMicrosecondsPerInvocation="16062" standardDeviationMircosecondsPerInvocation="1829"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="208" invocations="275" avgMicrosecondsPerInvocation="757" maxMicrosecondsPerInvocation="14916" standardDeviationMircosecondsPerInvocation="1666"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="196" invocations="1283" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="1038" standardDeviationMircosecondsPerInvocation="172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="123" invocations="668" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="2783" standardDeviationMircosecondsPerInvocation="278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="90" invocations="275" avgMicrosecondsPerInvocation="327" maxMicrosecondsPerInvocation="24507" standardDeviationMircosecondsPerInvocation="1553"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="58" invocations="339" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="15843" standardDeviationMircosecondsPerInvocation="886"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="54" invocations="275" avgMicrosecondsPerInvocation="198" maxMicrosecondsPerInvocation="7607" standardDeviationMircosecondsPerInvocation="594"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="53" invocations="275" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="12548" standardDeviationMircosecondsPerInvocation="1205"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="47" invocations="275" avgMicrosecondsPerInvocation="173" maxMicrosecondsPerInvocation="11028" standardDeviationMircosecondsPerInvocation="702"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="46" invocations="275" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="2403" standardDeviationMircosecondsPerInvocation="304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="43" invocations="156" avgMicrosecondsPerInvocation="280" maxMicrosecondsPerInvocation="35152" standardDeviationMircosecondsPerInvocation="2801"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="38" invocations="275" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="2307" standardDeviationMircosecondsPerInvocation="285"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458939925774" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

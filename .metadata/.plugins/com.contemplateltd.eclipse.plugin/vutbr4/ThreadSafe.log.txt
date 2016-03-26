@@ -1,0 +1,570 @@
+INFO: Analyser start at 2016-02-25 22:29:12 (UTC)
+INFO: Constructing classpaths for analysis
+INFO: Analysis classpath: [Directory "/Users/soniamarginean/Documents/workspace/vutbr4/bin"]
+INFO: Library classpath: [Jarfile "/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar"]
+INFO: Stub classpath: [Jarfile "/Users/soniamarginean/eclipse/java-mars/Eclipse.app/Contents/MacOS/../../../../../.p2/pool/plugins/com.contemplateltd.analyser.macosx.x86_64_1.3.4.20150302-1149/jdk-stubs.jar"]
+INFO: Classes to analyse: all
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Barrier"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Barrier" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/BoundedBuffer"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/BoundedBuffer" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/Object"
+INFO: Class "java/lang/Object" discovered in library classpath; replaced by stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/BoundedChannel"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/BoundedChannel" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Channel"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Channel" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Puttable"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Puttable" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Takable"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Takable" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/BoundedPriorityQueue"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/BoundedPriorityQueue" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SemaphoreControlledChannel"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SemaphoreControlledChannel" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/BrokenBarrierException"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/BrokenBarrierException" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/RuntimeException"
+INFO: Class "java/lang/RuntimeException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Exception"
+INFO: Class "java/lang/Exception" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Throwable"
+INFO: Class "java/lang/Throwable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Serializable"
+INFO: Class "java/io/Serializable" discovered in library classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Callable"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Callable" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ClockDaemon$RunLoop"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ClockDaemon$RunLoop" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/Runnable"
+INFO: Class "java/lang/Runnable" discovered in library classpath; replaced by stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ClockDaemon$TaskNode"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ClockDaemon$TaskNode" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/Comparable"
+INFO: Class "java/lang/Comparable" discovered in library classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ClockDaemon"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ClockDaemon" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ThreadFactoryUser"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ThreadFactoryUser" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/CondVar"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/CondVar" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList$COWIterator"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList$COWIterator" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/util/ListIterator"
+INFO: Class "java/util/ListIterator" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Iterator"
+INFO: Class "java/util/Iterator" discovered in library classpath; replaced by stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList$COWSubList$COWSubListIterator"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList$COWSubList$COWSubListIterator" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList$COWSubList"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList$COWSubList" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/util/AbstractList"
+INFO: Class "java/util/AbstractList" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/AbstractCollection"
+INFO: Class "java/util/AbstractCollection" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Collection"
+INFO: Class "java/util/Collection" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/List"
+INFO: Class "java/util/List" discovered in library classpath; replaced by stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/Cloneable"
+INFO: Class "java/lang/Cloneable" discovered in library classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArraySet"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArraySet" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/util/AbstractSet"
+INFO: Class "java/util/AbstractSet" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Set"
+INFO: Class "java/util/Set" discovered in library classpath; replaced by stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/CountDown"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/CountDown" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Sync"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Sync" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/CyclicBarrier"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/CyclicBarrier" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/DefaultChannelCapacity"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/DefaultChannelCapacity" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/DirectExecutor"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/DirectExecutor" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Executor"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Executor" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FIFOReadWriteLock$ReaderSync"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FIFOReadWriteLock$ReaderSync" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FIFOReadWriteLock"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FIFOReadWriteLock" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ReadWriteLock"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ReadWriteLock" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FIFOSemaphore$FIFOWaitQueue"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FIFOSemaphore$FIFOWaitQueue" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore$WaitQueue"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore$WaitQueue" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FIFOSemaphore"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FIFOSemaphore" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Semaphore"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Semaphore" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FJTask$Par"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FJTask$Par" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FJTask"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FJTask" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FJTask$Par2"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FJTask$Par2" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FJTask$Seq"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FJTask$Seq" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FJTask$Seq2"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FJTask$Seq2" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FJTask$Wrap"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FJTask$Wrap" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunner$VolatileTaskRef"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunner$VolatileTaskRef" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunner"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunner" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/Thread"
+INFO: Class "java/lang/Thread" discovered in library classpath; replaced by stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup$InvokableFJTask"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup$InvokableFJTask" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FutureResult$1"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FutureResult$1" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/FutureResult"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/FutureResult" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Heap"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Heap" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Latch"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Latch" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/LayeredSync"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/LayeredSync" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/LinkedNode"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/LinkedNode" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/LinkedQueue"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/LinkedQueue" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/LockedExecutor"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/LockedExecutor" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Mutex"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Mutex" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/NullSync"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/NullSync" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ObservableSync$SyncObserver"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ObservableSync$SyncObserver" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ObservableSync"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ObservableSync" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$BlockedExecutionHandler"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$BlockedExecutionHandler" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$DiscardWhenBlocked"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$DiscardWhenBlocked" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$RunWhenBlocked"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$RunWhenBlocked" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$WaitWhenBlocked"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$WaitWhenBlocked" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$Worker"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$Worker" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/PrioritySemaphore$PriorityWaitQueue"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/PrioritySemaphore$PriorityWaitQueue" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/PrioritySemaphore"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/PrioritySemaphore" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/QueuedExecutor$RunLoop"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/QueuedExecutor$RunLoop" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/QueuedExecutor"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/QueuedExecutor" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore$WaitQueue$WaitNode"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore$WaitQueue$WaitNode" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ReaderPreferenceReadWriteLock"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ReaderPreferenceReadWriteLock" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ReentrantLock"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ReentrantLock" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ReentrantWriterPreferenceReadWriteLock"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ReentrantWriterPreferenceReadWriteLock" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Rendezvous$RendezvousFunction"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Rendezvous$RendezvousFunction" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Rendezvous$Rotator"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Rendezvous$Rotator" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Rendezvous"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Rendezvous" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/Slot"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/Slot" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SyncCollection$SyncCollectionIterator"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SyncCollection$SyncCollectionIterator" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SyncCollection"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SyncCollection" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SynchronizedBoolean"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SynchronizedBoolean" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SynchronizedVariable"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SynchronizedVariable" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SynchronizedByte"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SynchronizedByte" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SynchronizedChar"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SynchronizedChar" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SynchronizedInt"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SynchronizedInt" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SynchronizedLong"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SynchronizedLong" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SynchronizedRef"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SynchronizedRef" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SynchronizedShort"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SynchronizedShort" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SynchronousChannel"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SynchronousChannel" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SyncList$SyncCollectionListIterator"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SyncList$SyncCollectionListIterator" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SyncList"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SyncList" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SyncMap"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SyncMap" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/util/Map"
+INFO: Class "java/util/Map" discovered in library classpath; replaced by stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SyncSet"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SyncSet" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SyncSortedMap"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SyncSortedMap" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/util/SortedMap"
+INFO: Class "java/util/SortedMap" discovered in library classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/SyncSortedSet"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/SyncSortedSet" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/util/SortedSet"
+INFO: Class "java/util/SortedSet" discovered in library classpath; replaced by stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ThreadedExecutor"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ThreadedExecutor" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ThreadFactory"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ThreadFactory" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/ThreadFactoryUser$DefaultThreadFactory"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/ThreadFactoryUser$DefaultThreadFactory" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/TimeDaemon$RunLoop"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/TimeDaemon$RunLoop" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/TimeDaemon$TaskNode"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/TimeDaemon$TaskNode" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/TimeDaemon"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/TimeDaemon" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/TimedCallable"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/TimedCallable" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/TimeoutException"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/TimeoutException" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/InterruptedException"
+INFO: Class "java/lang/InterruptedException" discovered in library classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/TimeoutSync"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/TimeoutSync" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaitableBoolean"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaitableBoolean" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaitableByte"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaitableByte" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaitableChar"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaitableChar" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaitableDouble"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaitableDouble" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaitableFloat"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaitableFloat" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaitableInt"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaitableInt" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaitableLong"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaitableLong" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaitableRef"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaitableRef" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaitableShort"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaitableShort" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock$ReaderLock"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock$ReaderLock" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock$Signaller"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock$Signaller" discovered in analysis classpath; no matching stub class
+INFO: Reading class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock$WriterLock"
+INFO: Class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock$WriterLock" discovered in analysis classpath; no matching stub class
+INFO: Reading class "sor/Sor"
+INFO: Class "sor/Sor" discovered in analysis classpath; no matching stub class
+INFO: Reading class "sor/sor_first_row_even"
+INFO: Class "sor/sor_first_row_even" discovered in analysis classpath; no matching stub class
+INFO: Reading class "sor/sor_first_row_odd"
+INFO: Class "sor/sor_first_row_odd" discovered in analysis classpath; no matching stub class
+INFO: Analysing package "sor" at 2016-02-25 22:29:12 (UTC)
+INFO: Analysing class "sor/Sor"
+INFO: Reading class "java/lang/System"
+INFO: Class "java/lang/System" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/String"
+INFO: Class "java/lang/String" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/Integer"
+INFO: Class "java/lang/Integer" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/io/PrintStream"
+INFO: Class "java/io/PrintStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/Date"
+INFO: Class "java/util/Date" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/StringBuilder"
+INFO: Class "java/lang/StringBuilder" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/Long"
+INFO: Class "java/lang/Long" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/AbstractStringBuilder"
+INFO: Class "java/lang/AbstractStringBuilder" discovered in library classpath; replaced by stub class
+INFO: Analysing class "sor/sor_first_row_even"
+INFO: Analysing class "sor/sor_first_row_odd"
+INFO: Reading class "java/lang/CharSequence"
+INFO: Class "java/lang/CharSequence" discovered in library classpath; replaced by stub class
+INFO: Running FieldClassifier at 2016-02-25 22:29:12 (UTC)
+INFO: Reading class "java/lang/ThreadGroup"
+INFO: Class "java/lang/ThreadGroup" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Thread$UncaughtExceptionHandler"
+INFO: Class "java/lang/Thread$UncaughtExceptionHandler" discovered in library classpath; no matching stub class
+INFO: Running ThreadStructure at 2016-02-25 22:29:12 (UTC)
+INFO: Running FieldAccesses.Fields at 2016-02-25 22:29:12 (UTC)
+INFO: Running FieldAccesses.Arrays at 2016-02-25 22:29:12 (UTC)
+INFO: Running FieldAccesses.Collections at 2016-02-25 22:29:12 (UTC)
+INFO: Reading class "java/lang/Appendable"
+INFO: Class "java/lang/Appendable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Closeable"
+INFO: Class "java/io/Closeable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/AutoCloseable"
+INFO: Class "java/lang/AutoCloseable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/FilterOutputStream"
+INFO: Class "java/io/FilterOutputStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/OutputStream"
+INFO: Class "java/io/OutputStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Flushable"
+INFO: Class "java/io/Flushable" discovered in library classpath; no matching stub class
+INFO: Running Checker_ReusableObjectSync at 2016-02-25 22:29:12 (UTC)
+INFO: Running Checker_UnsafeIteration at 2016-02-25 22:29:12 (UTC)
+INFO: Running Checker_TryLock at 2016-02-25 22:29:12 (UTC)
+INFO: Running Checker_GetCheckPut at 2016-02-25 22:29:12 (UTC)
+INFO: Running Checker_UnsafeContent at 2016-02-25 22:29:12 (UTC)
+INFO: Running Checker_UnreleasedLocks at 2016-02-25 22:29:12 (UTC)
+INFO: Running Checker_Deadlock at 2016-02-25 22:29:12 (UTC)
+INFO: Analysing package "EDU.oswego.cs.dl.util.concurrent" at 2016-02-25 22:29:12 (UTC)
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Barrier"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/BoundedBuffer"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/BoundedChannel"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/BoundedPriorityQueue"
+INFO: Reading class "java/lang/Class"
+INFO: Class "java/lang/Class" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/reflect/Constructor"
+INFO: Class "java/lang/reflect/Constructor" discovered in library classpath; no matching stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/BrokenBarrierException"
+INFO: Reading class "java/util/Collections"
+INFO: Class "java/util/Collections" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Objects"
+INFO: Class "java/util/Objects" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Throwable$PrintStreamOrWriter"
+INFO: Class "java/lang/Throwable$PrintStreamOrWriter" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/StackTraceElement"
+INFO: Class "java/lang/StackTraceElement" discovered in library classpath; no matching stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Callable"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Channel"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ClockDaemon$RunLoop"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ClockDaemon$TaskNode"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ClockDaemon"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/CondVar"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList$COWIterator"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList$COWSubList$COWSubListIterator"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList$COWSubList"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList"
+INFO: Reading class "java/lang/reflect/Array"
+INFO: Class "java/lang/reflect/Array" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/StringBuffer"
+INFO: Class "java/lang/StringBuffer" discovered in library classpath; replaced by stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArraySet"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/CountDown"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/CyclicBarrier"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/DefaultChannelCapacity"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/DirectExecutor"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Executor"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FIFOReadWriteLock$ReaderSync"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FIFOReadWriteLock"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FIFOSemaphore$FIFOWaitQueue"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FIFOSemaphore"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FJTask$Par"
+INFO: Reading class "java/util/Random"
+INFO: Class "java/util/Random" discovered in library classpath; no matching stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FJTask$Par2"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FJTask$Seq"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FJTask$Seq2"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FJTask$Wrap"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FJTask"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunner$VolatileTaskRef"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunner"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup$InvokableFJTask"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup"
+INFO: Reading class "java/lang/Math"
+INFO: Class "java/lang/Math" discovered in library classpath; no matching stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FutureResult$1"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/FutureResult"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Heap"
+INFO: Reading class "java/util/Comparator"
+INFO: Class "java/util/Comparator" discovered in library classpath; replaced by stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Latch"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/LayeredSync"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/LinkedNode"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/LinkedQueue"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/LockedExecutor"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Mutex"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/NullSync"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ObservableSync$SyncObserver"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ObservableSync"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$BlockedExecutionHandler"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$DiscardWhenBlocked"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$RunWhenBlocked"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$WaitWhenBlocked"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor$Worker"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/PooledExecutor"
+INFO: Reading class "java/util/Vector"
+INFO: Class "java/util/Vector" discovered in library classpath; replaced by stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/PrioritySemaphore$PriorityWaitQueue"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/PrioritySemaphore"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster"
+INFO: Reading class "java/util/HashMap"
+INFO: Class "java/util/HashMap" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/beans/PropertyChangeEvent"
+INFO: Class "java/beans/PropertyChangeEvent" discovered in library classpath; no matching stub class
+INFO: Reading class "java/beans/PropertyChangeListener"
+INFO: Class "java/beans/PropertyChangeListener" discovered in library classpath; no matching stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Puttable"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/QueuedExecutor$RunLoop"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/QueuedExecutor"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore$WaitQueue$WaitNode"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore$WaitQueue"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ReaderPreferenceReadWriteLock"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ReadWriteLock"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ReentrantLock"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ReentrantWriterPreferenceReadWriteLock"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Rendezvous$RendezvousFunction"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Rendezvous$Rotator"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Rendezvous"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Semaphore"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SemaphoreControlledChannel"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Slot"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Sync"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SyncCollection$SyncCollectionIterator"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SyncCollection"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SynchronizedBoolean"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SynchronizedByte"
+INFO: Reading class "java/lang/Byte"
+INFO: Class "java/lang/Byte" discovered in library classpath; replaced by stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SynchronizedChar"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble"
+INFO: Reading class "java/lang/Double"
+INFO: Class "java/lang/Double" discovered in library classpath; replaced by stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat"
+INFO: Reading class "java/lang/Float"
+INFO: Class "java/lang/Float" discovered in library classpath; replaced by stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SynchronizedInt"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SynchronizedLong"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SynchronizedRef"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SynchronizedShort"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SynchronizedVariable"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SynchronousChannel"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SyncList$SyncCollectionListIterator"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SyncList"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SyncMap"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SyncSet"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SyncSortedMap"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/SyncSortedSet"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/Takable"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ThreadedExecutor"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ThreadFactory"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ThreadFactoryUser$DefaultThreadFactory"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/ThreadFactoryUser"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/TimeDaemon$RunLoop"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/TimeDaemon$TaskNode"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/TimeDaemon"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/TimedCallable"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/TimeoutException"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/TimeoutSync"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster"
+INFO: Reading class "java/beans/VetoableChangeListener"
+INFO: Class "java/beans/VetoableChangeListener" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/EventObject"
+INFO: Class "java/util/EventObject" discovered in library classpath; replaced by stub class
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaitableBoolean"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaitableByte"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaitableChar"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaitableDouble"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaitableFloat"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaitableInt"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaitableLong"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaitableRef"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaitableShort"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock$ReaderLock"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock$Signaller"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock$WriterLock"
+INFO: Analysing class "EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock"
+INFO: Reading class "java/lang/reflect/InvocationTargetException"
+INFO: Class "java/lang/reflect/InvocationTargetException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/ReflectiveOperationException"
+INFO: Class "java/lang/ReflectiveOperationException" discovered in library classpath; no matching stub class
+INFO: Running FieldClassifier at 2016-02-25 22:29:13 (UTC)
+INFO: Reading class "java/util/AbstractMap"
+INFO: Class "java/util/AbstractMap" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/ArrayList"
+INFO: Class "java/util/ArrayList" discovered in library classpath; replaced by stub class
+INFO: Running ThreadStructure at 2016-02-25 22:29:13 (UTC)
+INFO: Running FieldAccesses.Fields at 2016-02-25 22:29:13 (UTC)
+INFO: Running FieldAccesses.Arrays at 2016-02-25 22:29:13 (UTC)
+INFO: Running FieldAccesses.Collections at 2016-02-25 22:29:13 (UTC)
+INFO: Reading class "java/lang/reflect/GenericDeclaration"
+INFO: Class "java/lang/reflect/GenericDeclaration" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/reflect/AnnotatedElement"
+INFO: Class "java/lang/reflect/AnnotatedElement" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/reflect/Type"
+INFO: Class "java/lang/reflect/Type" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/EventListener"
+INFO: Class "java/util/EventListener" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/reflect/Executable"
+INFO: Class "java/lang/reflect/Executable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/reflect/Member"
+INFO: Class "java/lang/reflect/Member" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/reflect/AccessibleObject"
+INFO: Class "java/lang/reflect/AccessibleObject" discovered in library classpath; no matching stub class
+INFO: Running Checker_ReusableObjectSync at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_UnsafeIteration at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_TryLock at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_GetCheckPut at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_UnsafeContent at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_UnreleasedLocks at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_Deadlock at 2016-02-25 22:29:13 (UTC)
+INFO: Reading class "java/lang/Throwable$WrappedPrintWriter"
+INFO: Class "java/lang/Throwable$WrappedPrintWriter" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Throwable$WrappedPrintStream"
+INFO: Class "java/lang/Throwable$WrappedPrintStream" discovered in library classpath; no matching stub class
+INFO: Running Checker_ConsistentlyGuarded at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_InconsistentSync (fields) at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_InconsistentSync (arrays) at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_InconsistentSync (collections) at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_UnsafeRemoval at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_LockedBlocking at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_FieldLockOverwritten at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_UnsafeReplacement at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_ReadOnlyVolatile at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_BadCatches at 2016-02-25 22:29:13 (UTC)
+INFO: Reading class "java/lang/IndexOutOfBoundsException"
+INFO: Class "java/lang/IndexOutOfBoundsException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/CloneNotSupportedException"
+INFO: Class "java/lang/CloneNotSupportedException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/ClassCastException"
+INFO: Class "java/lang/ClassCastException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/beans/PropertyVetoException"
+INFO: Class "java/beans/PropertyVetoException" discovered in library classpath; no matching stub class
+INFO: Running Checker_GuardedBy at 2016-02-25 22:29:13 (UTC)
+INFO: Running Checker_Deadlock at 2016-02-25 22:29:13 (UTC)
+INFO: 19 findings discovered in this run
+INFO: Analyser finish at 2016-02-25 22:29:13 (UTC)
+INFO: Max heap size (bytes) 1174528
+INFO: Exit code: 0

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<findings>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="elevator.Elevator" name="log" type="Lelevator/Logger;" key="0" filename="Elevator.java" line="33"/>
+      <instruction className="elevator.Elevator" method="requestOpenDoor" offset="3" desc="()V" key="1" label="relevant_sync_read" filename="Elevator.java" line="80"/>
+      <instruction className="elevator.Elevator" method="run" offset="3" desc="()V" key="2" label="relevant_unsync_read" filename="Elevator.java" line="106"/>
+      <instruction className="elevator.Elevator" method="run" offset="20" desc="()V" key="3" label="relevant_unsync_read" filename="Elevator.java" line="111"/>
+      <instruction className="elevator.Elevator" method="run" offset="45" desc="()V" key="4" label="relevant_unsync_read" filename="Elevator.java" line="115"/>
+      <instruction className="elevator.Elevator" method="run" offset="67" desc="()V" key="5" label="relevant_unsync_read" filename="Elevator.java" line="120"/>
+      <instruction className="elevator.Elevator" method="run" offset="92" desc="()V" key="6" label="relevant_unsync_read" filename="Elevator.java" line="127"/>
+      <instruction className="elevator.Elevator" method="run" offset="118" desc="()V" key="7" label="relevant_unsync_read" filename="Elevator.java" line="141"/>
+      <instruction className="elevator.Elevator" method="run" offset="129" desc="()V" key="8" label="relevant_unsync_read" filename="Elevator.java" line="144"/>
+      <instruction className="elevator.Elevator" method="leaveElevator" offset="13" desc="(Lelevator/Person;)V" key="9" label="relevant_unsync_read" filename="Elevator.java" line="152"/>
+      <instruction className="elevator.Elevator" method="enterElevator" offset="3" desc="(Lelevator/Person;)V" key="10" label="relevant_unsync_read" filename="Elevator.java" line="161"/>
+      <instruction className="elevator.Elevator" method="enterElevator" offset="41" desc="(Lelevator/Person;)V" key="11" label="relevant_unsync_read" filename="Elevator.java" line="168"/>
+      <instruction className="elevator.Elevator" method="enterElevator" offset="60" desc="(Lelevator/Person;)V" key="12" label="relevant_unsync_read" filename="Elevator.java" line="173"/>
+      <instruction className="elevator.Elevator" method="moveUp" offset="10" desc="()V" key="13" label="relevant_sync_read" filename="Elevator.java" line="216"/>
+      <instruction className="elevator.Elevator" method="moveUp" offset="29" desc="()V" key="14" label="relevant_sync_read" filename="Elevator.java" line="222"/>
+      <instruction className="elevator.Elevator" method="moveUp" offset="39" desc="()V" key="15" label="relevant_sync_read" filename="Elevator.java" line="227"/>
+      <instruction className="elevator.Elevator" method="moveDown" offset="10" desc="()V" key="16" label="relevant_sync_read" filename="Elevator.java" line="236"/>
+      <instruction className="elevator.Elevator" method="moveDown" offset="29" desc="()V" key="17" label="relevant_sync_read" filename="Elevator.java" line="242"/>
+      <instruction className="elevator.Elevator" method="moveDown" offset="39" desc="()V" key="18" label="relevant_sync_read" filename="Elevator.java" line="247"/>
+      <instruction className="elevator.Elevator" method="travel" offset="6" desc="()V" key="19" label="relevant_sync_read" filename="Elevator.java" line="295"/>
+      <instruction className="elevator.Elevator" method="travel" offset="19" desc="()V" key="20" label="relevant_sync_read" filename="Elevator.java" line="299"/>
+      <instruction className="elevator.Elevator" method="travel" offset="32" desc="()V" key="21" label="relevant_sync_read" filename="Elevator.java" line="303"/>
+      <instruction className="elevator.Elevator" method="travel" offset="44" desc="()V" key="22" label="relevant_sync_read" filename="Elevator.java" line="307"/>
+      <instruction className="elevator.Elevator" method="travel" offset="59" desc="()V" key="23" label="relevant_sync_read" filename="Elevator.java" line="312"/>
+      <instruction className="elevator.Elevator" method="travel" offset="71" desc="()V" key="24" label="relevant_sync_read" filename="Elevator.java" line="317"/>
+      <instruction className="elevator.Elevator" method="travel" offset="87" desc="()V" key="25" label="relevant_sync_read" filename="Elevator.java" line="323"/>
+      <instruction className="elevator.Elevator" method="start" offset="14" desc="()V" key="26" label="relevant_unsync_write" filename="Elevator.java" line="94"/>
+      <class name="elevator.Elevator" key="27" label="guard_type" filename="Elevator.java"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'log' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="27" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="3" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="4" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="5" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="6" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="7" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="8" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="9" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="10" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="11" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="12" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="13" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="14" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="15" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="16" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="17" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="18" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="19" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="20" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="21" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="22" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="23" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="24" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="25" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="26" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="elevator.Elevator" name="motionState" type="I" key="0" filename="Elevator.java" line="23"/>
+      <instruction className="elevator.Elevator" method="setDestination" offset="5" desc="(I)V" key="1" label="relevant_sync_read" filename="Elevator.java" line="60"/>
+      <instruction className="elevator.Elevator" method="requestOpenDoor" offset="14" desc="()V" key="2" label="relevant_sync_read" filename="Elevator.java" line="81"/>
+      <instruction className="elevator.Elevator" method="requestOpenDoor" offset="23" desc="()V" key="3" label="relevant_sync_read" filename="Elevator.java" line="82"/>
+      <instruction className="elevator.Elevator" method="run" offset="15" desc="()V" key="4" label="relevant_unsync_read" filename="Elevator.java" line="108"/>
+      <instruction className="elevator.Elevator" method="getState" offset="14" desc="()Lelevator/ElevatorState;" key="5" label="relevant_sync_read" filename="Elevator.java" line="183"/>
+      <instruction className="elevator.Elevator" method="openDoor" offset="4" desc="()V" key="6" label="relevant_unsync_read" filename="Elevator.java" line="253"/>
+      <instruction className="elevator.Elevator" method="&lt;init&gt;" offset="36" desc="(I)V" key="7" label="irrelevant_unsync_write" filename="Elevator.java" line="43"/>
+      <instruction className="elevator.Elevator" method="isArrived" offset="14" desc="()Z" key="8" label="relevant_sync_write" filename="Elevator.java" line="207"/>
+      <instruction className="elevator.Elevator" method="travel" offset="11" desc="()V" key="9" label="relevant_sync_write" filename="Elevator.java" line="296"/>
+      <instruction className="elevator.Elevator" method="travel" offset="95" desc="()V" key="10" label="relevant_sync_write" filename="Elevator.java" line="325"/>
+      <instruction className="elevator.Elevator" method="stopElevator" offset="2" desc="()V" key="11" label="relevant_syncmixed_write" filename="Elevator.java" line="335"/>
+      <class name="elevator.Elevator" key="12" label="guard_type" filename="Elevator.java"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'motionState' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="12" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="7" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="8" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="10" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="11" type="relevant_syncmixed_write">
+          <accessGuards>
+            <guardRef key="0" status="sometimes"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="elevator.Elevator" name="motionDirection" type="I" key="0" filename="Elevator.java" line="24"/>
+      <instruction className="elevator.Elevator" method="getState" offset="18" desc="()Lelevator/ElevatorState;" key="1" label="relevant_sync_read" filename="Elevator.java" line="184"/>
+      <instruction className="elevator.Elevator" method="travel" offset="13" desc="()V" key="2" label="relevant_sync_read" filename="Elevator.java" line="297"/>
+      <instruction className="elevator.Elevator" method="travel" offset="26" desc="()V" key="3" label="relevant_sync_read" filename="Elevator.java" line="301"/>
+      <instruction className="elevator.Elevator" method="&lt;init&gt;" offset="30" desc="(I)V" key="4" label="irrelevant_unsync_write" filename="Elevator.java" line="41"/>
+      <instruction className="elevator.Elevator" method="run" offset="41" desc="()V" key="5" label="relevant_unsync_write" filename="Elevator.java" line="113"/>
+      <instruction className="elevator.Elevator" method="moveUp" offset="34" desc="()V" key="6" label="relevant_sync_write" filename="Elevator.java" line="223"/>
+      <instruction className="elevator.Elevator" method="moveDown" offset="34" desc="()V" key="7" label="relevant_sync_write" filename="Elevator.java" line="243"/>
+      <instruction className="elevator.Elevator" method="travel" offset="49" desc="()V" key="8" label="relevant_sync_write" filename="Elevator.java" line="308"/>
+      <instruction className="elevator.Elevator" method="travel" offset="64" desc="()V" key="9" label="relevant_sync_write" filename="Elevator.java" line="313"/>
+      <instruction className="elevator.Elevator" method="travel" offset="92" desc="()V" key="10" label="relevant_sync_write" filename="Elevator.java" line="324"/>
+      <class name="elevator.Elevator" key="11" label="guard_type" filename="Elevator.java"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'motionDirection' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="11" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="5" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="6" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="10" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+</findings>

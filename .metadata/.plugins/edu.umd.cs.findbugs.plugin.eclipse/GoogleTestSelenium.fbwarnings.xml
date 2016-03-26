@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1458700394354" analysisTimestamp="1458700393682" release="">
+  <Project projectName="GoogleTestSelenium">
+    <Jar>/Users/soniamarginean/Documents/workspace/GoogleTestSelenium/bin</Jar>
+    <AuxClasspathEntry>/Users/soniamarginean/Documents/workspace/GoogleTestSelenium/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/soniamarginean/Documents/workspace/GoogleTestSelenium/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="TestTempSite">
+      <SourceLine classname="TestTempSite" sourcefile="TestTempSite.java" sourcepath="TestTempSite.java"/>
+    </Class>
+    <Method classname="TestTempSite" name="testConversion" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="TestTempSite" start="98" end="180" startBytecode="0" endBytecode="260" sourcefile="TestTempSite.java" sourcepath="TestTempSite.java"/>
+    </Method>
+    <LocalVariable name="celsiusTemp" register="9" pc="458" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="TestTempSite" start="159" end="159" startBytecode="456" endBytecode="456" sourcefile="TestTempSite.java" sourcepath="TestTempSite.java"/>
+    <SourceLine classname="TestTempSite" start="159" end="159" startBytecode="456" endBytecode="456" sourcefile="TestTempSite.java" sourcepath="TestTempSite.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="celsiusTemp"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 22 Nov 2014 16:54:28 -0600" total_classes="3" referenced_classes="21" total_bugs="1" total_size="180" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="3.18" clock_seconds="0.67" peak_mbytes="501.95" alloc_mbytes="910.50" gc_seconds="0.02" priority_2="1">
+    <PackageStats package="" total_bugs="1" total_types="3" total_size="180" priority_2="1">
+      <ClassStats class="Example" sourceFile="Example.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="GoogleSuggest" sourceFile="GoogleSuggest.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="TestTempSite" sourceFile="TestTempSite.java" interface="false" size="150" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="141" invocations="369" avgMicrosecondsPerInvocation="384" maxMicrosecondsPerInvocation="23488" standardDeviationMircosecondsPerInvocation="1347"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="87" invocations="2" avgMicrosecondsPerInvocation="43835" maxMicrosecondsPerInvocation="75302" standardDeviationMircosecondsPerInvocation="31467"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="43" invocations="45" avgMicrosecondsPerInvocation="966" maxMicrosecondsPerInvocation="2990" standardDeviationMircosecondsPerInvocation="779"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="40" invocations="9" avgMicrosecondsPerInvocation="4510" maxMicrosecondsPerInvocation="19986" standardDeviationMircosecondsPerInvocation="7082"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="24" invocations="9" avgMicrosecondsPerInvocation="2745" maxMicrosecondsPerInvocation="11787" standardDeviationMircosecondsPerInvocation="3925"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="20" invocations="21" avgMicrosecondsPerInvocation="977" maxMicrosecondsPerInvocation="3874" standardDeviationMircosecondsPerInvocation="1216"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="20" invocations="91" avgMicrosecondsPerInvocation="224" maxMicrosecondsPerInvocation="1360" standardDeviationMircosecondsPerInvocation="213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="19" invocations="9" avgMicrosecondsPerInvocation="2220" maxMicrosecondsPerInvocation="8367" standardDeviationMircosecondsPerInvocation="2936"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="19" invocations="9" avgMicrosecondsPerInvocation="2216" maxMicrosecondsPerInvocation="10193" standardDeviationMircosecondsPerInvocation="3390"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="17" invocations="9" avgMicrosecondsPerInvocation="1965" maxMicrosecondsPerInvocation="7131" standardDeviationMircosecondsPerInvocation="2698"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="17" invocations="3" avgMicrosecondsPerInvocation="5886" maxMicrosecondsPerInvocation="14366" standardDeviationMircosecondsPerInvocation="6001"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="14" invocations="21" avgMicrosecondsPerInvocation="698" maxMicrosecondsPerInvocation="5101" standardDeviationMircosecondsPerInvocation="1081"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="14" invocations="9" avgMicrosecondsPerInvocation="1611" maxMicrosecondsPerInvocation="6254" standardDeviationMircosecondsPerInvocation="1935"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="13" invocations="9" avgMicrosecondsPerInvocation="1549" maxMicrosecondsPerInvocation="5500" standardDeviationMircosecondsPerInvocation="1858"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="12" invocations="369" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="120" standardDeviationMircosecondsPerInvocation="13"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458700394354" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,161 @@
+INFO: Analyser start at 2016-02-25 22:46:31 (UTC)
+INFO: Constructing classpaths for analysis
+INFO: Analysis classpath: [Directory "/Users/soniamarginean/Documents/workspace/crawler/bin"]
+INFO: Library classpath: [Jarfile "/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar"]
+INFO: Stub classpath: [Jarfile "/Users/soniamarginean/eclipse/java-mars/Eclipse.app/Contents/MacOS/../../../../../.p2/pool/plugins/com.contemplateltd.analyser.macosx.x86_64_1.3.4.20150302-1149/jdk-stubs.jar"]
+INFO: Classes to analyse: all
+INFO: Reading class "com/ibm/crawler/Connection"
+INFO: Class "com/ibm/crawler/Connection" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/ConnectionEvent"
+INFO: Class "com/ibm/crawler/ConnectionEvent" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/util/EventObject"
+INFO: Class "java/util/EventObject" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/Object"
+INFO: Class "java/lang/Object" discovered in library classpath; replaced by stub class
+INFO: Reading class "com/ibm/crawler/ConnectionFactory"
+INFO: Class "com/ibm/crawler/ConnectionFactory" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/ConnectionListener"
+INFO: Class "com/ibm/crawler/ConnectionListener" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/ConnectionManager"
+INFO: Class "com/ibm/crawler/ConnectionManager" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/Runnable"
+INFO: Class "java/lang/Runnable" discovered in library classpath; replaced by stub class
+INFO: Reading class "com/ibm/crawler/Timed"
+INFO: Class "com/ibm/crawler/Timed" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/util/EventListener"
+INFO: Class "java/util/EventListener" discovered in library classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/ConnectionQueue"
+INFO: Class "com/ibm/crawler/ConnectionQueue" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/Crawler"
+INFO: Class "com/ibm/crawler/Crawler" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/Database"
+INFO: Class "com/ibm/crawler/Database" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/Debug"
+INFO: Class "com/ibm/crawler/Debug" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/FilteredConnectionQueue"
+INFO: Class "com/ibm/crawler/FilteredConnectionQueue" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/Node"
+INFO: Class "com/ibm/crawler/Node" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/Random"
+INFO: Class "com/ibm/crawler/Random" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/RobotFilter"
+INFO: Class "com/ibm/crawler/RobotFilter" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/RobotFilterConnection"
+INFO: Class "com/ibm/crawler/RobotFilterConnection" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/TestConnection"
+INFO: Class "com/ibm/crawler/TestConnection" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/Timer"
+INFO: Class "com/ibm/crawler/Timer" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/Worker"
+INFO: Class "com/ibm/crawler/Worker" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/WorkerManager"
+INFO: Class "com/ibm/crawler/WorkerManager" discovered in analysis classpath; no matching stub class
+INFO: Reading class "com/ibm/crawler/WorkerPool"
+INFO: Class "com/ibm/crawler/WorkerPool" discovered in analysis classpath; no matching stub class
+INFO: Analysing package "com.ibm.crawler" at 2016-02-25 22:46:31 (UTC)
+INFO: Analysing class "com/ibm/crawler/Connection"
+INFO: Analysing class "com/ibm/crawler/ConnectionEvent"
+INFO: Analysing class "com/ibm/crawler/ConnectionFactory"
+INFO: Reading class "java/lang/System"
+INFO: Class "java/lang/System" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/io/PrintStream"
+INFO: Class "java/io/PrintStream" discovered in library classpath; no matching stub class
+INFO: Analysing class "com/ibm/crawler/ConnectionListener"
+INFO: Analysing class "com/ibm/crawler/ConnectionManager"
+INFO: Reading class "java/lang/Thread"
+INFO: Class "java/lang/Thread" discovered in library classpath; replaced by stub class
+INFO: Analysing class "com/ibm/crawler/ConnectionQueue"
+INFO: Reading class "java/util/Vector"
+INFO: Class "java/util/Vector" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/AbstractList"
+INFO: Class "java/util/AbstractList" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/AbstractCollection"
+INFO: Class "java/util/AbstractCollection" discovered in library classpath; replaced by stub class
+INFO: Analysing class "com/ibm/crawler/Crawler"
+INFO: Reading class "java/util/Random"
+INFO: Class "java/util/Random" discovered in library classpath; no matching stub class
+INFO: Analysing class "com/ibm/crawler/Database"
+INFO: Analysing class "com/ibm/crawler/Debug"
+INFO: Analysing class "com/ibm/crawler/FilteredConnectionQueue"
+INFO: Reading class "java/util/Hashtable"
+INFO: Class "java/util/Hashtable" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Enumeration"
+INFO: Class "java/util/Enumeration" discovered in library classpath; replaced by stub class
+INFO: Analysing class "com/ibm/crawler/Node"
+INFO: Analysing class "com/ibm/crawler/Random"
+INFO: Analysing class "com/ibm/crawler/RobotFilter"
+INFO: Reading class "java/lang/Math"
+INFO: Class "java/lang/Math" discovered in library classpath; no matching stub class
+INFO: Analysing class "com/ibm/crawler/RobotFilterConnection"
+INFO: Analysing class "com/ibm/crawler/TestConnection"
+INFO: Reading class "java/lang/StringBuilder"
+INFO: Class "java/lang/StringBuilder" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/AbstractStringBuilder"
+INFO: Class "java/lang/AbstractStringBuilder" discovered in library classpath; replaced by stub class
+INFO: Analysing class "com/ibm/crawler/Timed"
+INFO: Analysing class "com/ibm/crawler/Timer"
+INFO: Analysing class "com/ibm/crawler/Worker"
+INFO: Analysing class "com/ibm/crawler/WorkerManager"
+INFO: Analysing class "com/ibm/crawler/WorkerPool"
+INFO: Reading class "java/util/Stack"
+INFO: Class "java/util/Stack" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/String"
+INFO: Class "java/lang/String" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/CharSequence"
+INFO: Class "java/lang/CharSequence" discovered in library classpath; replaced by stub class
+INFO: Running FieldClassifier at 2016-02-25 22:46:31 (UTC)
+INFO: Reading class "java/util/List"
+INFO: Class "java/util/List" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Collection"
+INFO: Class "java/util/Collection" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Map"
+INFO: Class "java/util/Map" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Dictionary"
+INFO: Class "java/util/Dictionary" discovered in library classpath; replaced by stub class
+INFO: Running ThreadStructure at 2016-02-25 22:46:31 (UTC)
+INFO: Running FieldAccesses.Fields at 2016-02-25 22:46:31 (UTC)
+INFO: Running FieldAccesses.Arrays at 2016-02-25 22:46:31 (UTC)
+INFO: Running FieldAccesses.Collections at 2016-02-25 22:46:31 (UTC)
+INFO: Reading class "java/lang/Appendable"
+INFO: Class "java/lang/Appendable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Closeable"
+INFO: Class "java/io/Closeable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/AutoCloseable"
+INFO: Class "java/lang/AutoCloseable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/FilterOutputStream"
+INFO: Class "java/io/FilterOutputStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/OutputStream"
+INFO: Class "java/io/OutputStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Flushable"
+INFO: Class "java/io/Flushable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Serializable"
+INFO: Class "java/io/Serializable" discovered in library classpath; no matching stub class
+INFO: Running Checker_ReusableObjectSync at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_UnsafeIteration at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_TryLock at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_GetCheckPut at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_UnsafeContent at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_UnreleasedLocks at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_Deadlock at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_ConsistentlyGuarded at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_InconsistentSync (fields) at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_InconsistentSync (arrays) at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_InconsistentSync (collections) at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_UnsafeRemoval at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_LockedBlocking at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_FieldLockOverwritten at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_UnsafeReplacement at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_ReadOnlyVolatile at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_BadCatches at 2016-02-25 22:46:31 (UTC)
+INFO: Reading class "java/lang/InterruptedException"
+INFO: Class "java/lang/InterruptedException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Exception"
+INFO: Class "java/lang/Exception" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Throwable"
+INFO: Class "java/lang/Throwable" discovered in library classpath; no matching stub class
+INFO: Running Checker_GuardedBy at 2016-02-25 22:46:31 (UTC)
+INFO: Running Checker_Deadlock at 2016-02-25 22:46:31 (UTC)
+INFO: 9 findings discovered in this run
+INFO: Analyser finish at 2016-02-25 22:46:31 (UTC)
+INFO: Max heap size (bytes) 253952
+INFO: Exit code: 0

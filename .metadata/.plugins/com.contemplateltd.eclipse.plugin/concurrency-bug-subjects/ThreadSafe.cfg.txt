@@ -1,0 +1,6 @@
+run
+--sla-threshold=70
+--classpath=/Users/soniamarginean/Documents/workspace/concurrency-bug-subjects/bin
+--stub-classpath=/Users/soniamarginean/eclipse/java-mars/Eclipse.app/Contents/MacOS/../../../../../.p2/pool/plugins/com.contemplateltd.analyser.macosx.x86_64_1.3.4.20150302-1149/jdk-stubs.jar
+--logfile=/Users/soniamarginean/Documents/workspace/.metadata/.plugins/com.contemplateltd.eclipse.plugin/concurrency-bug-subjects/ThreadSafe.log.txt
+--report-progress

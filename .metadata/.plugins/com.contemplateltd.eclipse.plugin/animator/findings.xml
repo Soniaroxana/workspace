@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<findings>
+  <finding type="CCE_CC_GUARD_USAGE">
+    <locations>
+      <field className="XtangoAnimation.AnimatorCanvas" name="icons" type="Ljava/util/Vector;" key="0" filename="XtangoAnimator.java" line="694"/>
+      <instruction className="XtangoAnimation.AnimatorCanvas" method="paint" offset="26" desc="(Ljava/awt/Graphics;)V" key="1" label="relevant_sync_read" filename="XtangoAnimator.java" line="745"/>
+      <instruction className="XtangoAnimation.AnimatorCanvas" method="paint" offset="41" desc="(Ljava/awt/Graphics;)V" key="2" label="relevant_sync_read" filename="XtangoAnimator.java" line="748"/>
+      <instruction className="XtangoAnimation.AnimatorCanvas" method="paint" offset="48" desc="(Ljava/awt/Graphics;)V" key="3" label="relevant_sync_read" filename="XtangoAnimator.java" line="749"/>
+      <class name="XtangoAnimation.AnimatorCanvas" key="4" label="guard_type" filename="XtangoAnimator.java"/>
+      <field className="XtangoAnimation.AnimatorCanvas" name="icons" type="Ljava/util/Vector;" key="5" label="guard_field" filename="XtangoAnimator.java" line="694"/>
+    </locations>
+    <info>
+      <message value="All accesses to threadsafe collection in field 'icons' are guarded."/>
+      <guards>
+        <guardRelative typeRef="4" key="1" intrinsic="true">
+          <guardPath>
+            <locationRef key="5"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+        <guardRelative typeRef="4" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_CALLBACK_ACCESS">
+    <locations>
+      <field className="XtangoAnimation.Cmove" name="ypos" type="F" key="0" filename="XtangoAnimator.java" line="942"/>
+      <method className="XtangoAnimation.Cmove" name="run" desc="()V" key="1" label="async_entrypoint" filename="XtangoAnimator.java" line="987"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="85" desc="()V" key="2" label="relevant_sync_read" filename="XtangoAnimator.java" line="1010"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="118" desc="()V" key="3" label="relevant_sync_read" filename="XtangoAnimator.java" line="1017"/>
+      <instruction className="XtangoAnimation.Cmove" method="toString" offset="15" desc="()Ljava/lang/String;" key="4" label="relevant_unsync_read" filename="XtangoAnimator.java" line="1022"/>
+      <instruction className="XtangoAnimation.Cmove" method="&lt;init&gt;" offset="13" desc="(Ljava/lang/String;FFILjava/lang/String;FFI)V" key="5" label="irrelevant_unsync_write" filename="XtangoAnimator.java" line="942"/>
+      <instruction className="XtangoAnimation.Cmove" method="&lt;init&gt;" offset="49" desc="(Ljava/lang/String;FFILjava/lang/String;FFI)V" key="6" label="irrelevant_unsync_write" filename="XtangoAnimator.java" line="954"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="27" desc="()V" key="7" label="relevant_sync_write" filename="XtangoAnimator.java" line="997"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="58" desc="()V" key="8" label="relevant_sync_write" filename="XtangoAnimator.java" line="1004"/>
+      <field className="XtangoAnimation.Cmove" name="icon" type="LXtangoAnimation/AnimatorIcon;" key="9" label="guard_field" filename="XtangoAnimator.java" line="944"/>
+      <field className="XtangoAnimation.AnimatorIcon" name="position" type="LXtangoAnimation/Position;" key="10" label="guard_field" filename="XtangoAnimator.java" line="1393"/>
+      <class name="XtangoAnimation.Cmove" key="11" label="guard_type" filename="XtangoAnimator.java"/>
+    </locations>
+    <info>
+      <message value="Field 'ypos' is accessed from asynchronously invoked method without synchronization."/>
+      <guards>
+        <guardRelative typeRef="11" key="0" intrinsic="true">
+          <guardPath>
+            <locationRef key="9"/>
+            <locationRef key="10"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="5" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="6" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="7" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_CALLBACK_ACCESS">
+    <locations>
+      <field className="XtangoAnimation.Cmove" name="xpos" type="F" key="0" filename="XtangoAnimator.java" line="942"/>
+      <method className="XtangoAnimation.Cmove" name="run" desc="()V" key="1" label="async_entrypoint" filename="XtangoAnimator.java" line="987"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="75" desc="()V" key="2" label="relevant_sync_read" filename="XtangoAnimator.java" line="1009"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="116" desc="()V" key="3" label="relevant_sync_read" filename="XtangoAnimator.java" line="1017"/>
+      <instruction className="XtangoAnimation.Cmove" method="toString" offset="10" desc="()Ljava/lang/String;" key="4" label="relevant_unsync_read" filename="XtangoAnimator.java" line="1022"/>
+      <instruction className="XtangoAnimation.Cmove" method="&lt;init&gt;" offset="10" desc="(Ljava/lang/String;FFILjava/lang/String;FFI)V" key="5" label="irrelevant_unsync_write" filename="XtangoAnimator.java" line="942"/>
+      <instruction className="XtangoAnimation.Cmove" method="&lt;init&gt;" offset="46" desc="(Ljava/lang/String;FFILjava/lang/String;FFI)V" key="6" label="irrelevant_unsync_write" filename="XtangoAnimator.java" line="953"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="20" desc="()V" key="7" label="relevant_sync_write" filename="XtangoAnimator.java" line="996"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="54" desc="()V" key="8" label="relevant_sync_write" filename="XtangoAnimator.java" line="1003"/>
+      <field className="XtangoAnimation.Cmove" name="icon" type="LXtangoAnimation/AnimatorIcon;" key="9" label="guard_field" filename="XtangoAnimator.java" line="944"/>
+      <field className="XtangoAnimation.AnimatorIcon" name="position" type="LXtangoAnimation/Position;" key="10" label="guard_field" filename="XtangoAnimator.java" line="1393"/>
+      <class name="XtangoAnimation.Cmove" key="11" label="guard_type" filename="XtangoAnimator.java"/>
+    </locations>
+    <info>
+      <message value="Field 'xpos' is accessed from asynchronously invoked method without synchronization."/>
+      <guards>
+        <guardRelative typeRef="11" key="0" intrinsic="true">
+          <guardPath>
+            <locationRef key="9"/>
+            <locationRef key="10"/>
+          </guardPath>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="5" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="6" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="7" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="XtangoAnimation.Position" name="y" type="F" key="0" filename="XtangoAnimator.java" line="1353"/>
+      <method className="XtangoAnimation.Cmove" name="run" desc="()V" key="1" label="async_entrypoint" filename="XtangoAnimator.java" line="987"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="25" desc="()V" key="2" label="relevant_sync_read" filename="XtangoAnimator.java" line="997"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="57" desc="()V" key="3" label="relevant_sync_read" filename="XtangoAnimator.java" line="1004"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="87" desc="()V" key="4" label="relevant_sync_read" filename="XtangoAnimator.java" line="1010"/>
+      <instruction className="XtangoAnimation.CjumpTo" method="perform" offset="81" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/util/Hashtable;Ljava/util/Vector;)V" key="5" label="relevant_sync_read" filename="XtangoAnimator.java" line="1135"/>
+      <method className="XtangoAnimation.CexchangePos" name="run" desc="()V" key="6" label="async_entrypoint" filename="XtangoAnimator.java" line="1178"/>
+      <instruction className="XtangoAnimation.CexchangePos" method="run" offset="31" desc="()V" key="7" label="relevant_sync_read" filename="XtangoAnimator.java" line="1184"/>
+      <instruction className="XtangoAnimation.CexchangePos" method="run" offset="71" desc="()V" key="8" label="relevant_sync_read" filename="XtangoAnimator.java" line="1192"/>
+      <instruction className="XtangoAnimation.CexchangePos" method="run" offset="78" desc="()V" key="9" label="relevant_sync_read" filename="XtangoAnimator.java" line="1193"/>
+      <instruction className="XtangoAnimation.CswitchPos" method="perform" offset="96" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/util/Hashtable;Ljava/util/Vector;)V" key="10" label="relevant_sync_read" filename="XtangoAnimator.java" line="1289"/>
+      <instruction className="XtangoAnimation.CswitchPos" method="perform" offset="102" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/util/Hashtable;Ljava/util/Vector;)V" key="11" label="relevant_sync_read" filename="XtangoAnimator.java" line="1290"/>
+      <instruction className="XtangoAnimation.Position" method="toString" offset="10" desc="()Ljava/lang/String;" key="12" label="relevant_sync_read" filename="XtangoAnimator.java" line="1366"/>
+      <instruction className="XtangoAnimation.AnimatorIcon" method="position" offset="7" desc="()LXtangoAnimation/Position;" key="13" label="relevant_sync_read" filename="XtangoAnimator.java" line="1430"/>
+      <instruction className="XtangoAnimation.AnimatorIcon" method="positionRel" offset="10" desc="(FF)V" key="14" label="relevant_sync_read" filename="XtangoAnimator.java" line="1437"/>
+      <instruction className="XtangoAnimation.Icircle" method="draw" offset="20" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="15" label="relevant_sync_read" filename="XtangoAnimator.java" line="1508"/>
+      <instruction className="XtangoAnimation.Icircle" method="draw" offset="54" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="16" label="relevant_sync_read" filename="XtangoAnimator.java" line="1512"/>
+      <instruction className="XtangoAnimation.Icircle" method="draw" offset="102" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="17" label="relevant_sync_read" filename="XtangoAnimator.java" line="1519"/>
+      <instruction className="XtangoAnimation.Icircle" method="draw" offset="133" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="18" label="relevant_sync_read" filename="XtangoAnimator.java" line="1523"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="17" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="19" label="relevant_sync_read" filename="XtangoAnimator.java" line="1552"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="31" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="20" label="relevant_sync_read" filename="XtangoAnimator.java" line="1553"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="52" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="21" label="relevant_sync_read" filename="XtangoAnimator.java" line="1556"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="66" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="22" label="relevant_sync_read" filename="XtangoAnimator.java" line="1557"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="84" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="23" label="relevant_sync_read" filename="XtangoAnimator.java" line="1559"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="102" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="24" label="relevant_sync_read" filename="XtangoAnimator.java" line="1560"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="122" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="25" label="relevant_sync_read" filename="XtangoAnimator.java" line="1562"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="140" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="26" label="relevant_sync_read" filename="XtangoAnimator.java" line="1563"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="160" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="27" label="relevant_sync_read" filename="XtangoAnimator.java" line="1565"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="178" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="28" label="relevant_sync_read" filename="XtangoAnimator.java" line="1566"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="198" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="29" label="relevant_sync_read" filename="XtangoAnimator.java" line="1568"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="216" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="30" label="relevant_sync_read" filename="XtangoAnimator.java" line="1569"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="239" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="31" label="relevant_sync_read" filename="XtangoAnimator.java" line="1572"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="253" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="32" label="relevant_sync_read" filename="XtangoAnimator.java" line="1573"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="271" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="33" label="relevant_sync_read" filename="XtangoAnimator.java" line="1575"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="289" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="34" label="relevant_sync_read" filename="XtangoAnimator.java" line="1576"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="309" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="35" label="relevant_sync_read" filename="XtangoAnimator.java" line="1578"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="327" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="36" label="relevant_sync_read" filename="XtangoAnimator.java" line="1579"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="347" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="37" label="relevant_sync_read" filename="XtangoAnimator.java" line="1581"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="365" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="38" label="relevant_sync_read" filename="XtangoAnimator.java" line="1582"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="385" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="39" label="relevant_sync_read" filename="XtangoAnimator.java" line="1584"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="403" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="40" label="relevant_sync_read" filename="XtangoAnimator.java" line="1585"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="423" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="41" label="relevant_sync_read" filename="XtangoAnimator.java" line="1587"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="441" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="42" label="relevant_sync_read" filename="XtangoAnimator.java" line="1588"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="461" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="43" label="relevant_sync_read" filename="XtangoAnimator.java" line="1590"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="479" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="44" label="relevant_sync_read" filename="XtangoAnimator.java" line="1591"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="499" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="45" label="relevant_sync_read" filename="XtangoAnimator.java" line="1593"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="517" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="46" label="relevant_sync_read" filename="XtangoAnimator.java" line="1594"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="537" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="47" label="relevant_sync_read" filename="XtangoAnimator.java" line="1596"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="555" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="48" label="relevant_sync_read" filename="XtangoAnimator.java" line="1597"/>
+      <instruction className="XtangoAnimation.Irectangle" method="draw" offset="17" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="49" label="relevant_sync_read" filename="XtangoAnimator.java" line="1623"/>
+      <instruction className="XtangoAnimation.Irectangle" method="draw" offset="75" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="50" label="relevant_sync_read" filename="XtangoAnimator.java" line="1632"/>
+      <instruction className="XtangoAnimation.Irectangle" method="draw" offset="99" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="51" label="relevant_sync_read" filename="XtangoAnimator.java" line="1636"/>
+      <instruction className="XtangoAnimation.Irectangle" method="draw" offset="129" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="52" label="relevant_sync_read" filename="XtangoAnimator.java" line="1640"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="9" desc="(FF)V" key="53" label="relevant_sync_read" filename="XtangoAnimator.java" line="1667"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="22" desc="(FF)V" key="54" label="relevant_sync_read" filename="XtangoAnimator.java" line="1668"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="36" desc="(FF)V" key="55" label="relevant_sync_read" filename="XtangoAnimator.java" line="1669"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="10" desc="(FF)V" key="56" label="relevant_sync_read" filename="XtangoAnimator.java" line="1674"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="24" desc="(FF)V" key="57" label="relevant_sync_read" filename="XtangoAnimator.java" line="1675"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="38" desc="(FF)V" key="58" label="relevant_sync_read" filename="XtangoAnimator.java" line="1676"/>
+      <instruction className="XtangoAnimation.Itriangle" method="draw" offset="55" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="59" label="relevant_syncmixed_read" filename="XtangoAnimator.java" line="1688"/>
+      <instruction className="XtangoAnimation.Itriangle" method="draw" offset="79" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="60" label="relevant_sync_read" filename="XtangoAnimator.java" line="1689"/>
+      <instruction className="XtangoAnimation.Itext" method="draw" offset="69" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="61" label="relevant_sync_read" filename="XtangoAnimator.java" line="1749"/>
+      <instruction className="XtangoAnimation.Itext" method="draw" offset="88" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="62" label="relevant_sync_read" filename="XtangoAnimator.java" line="1751"/>
+      <instruction className="XtangoAnimation.Position" method="&lt;init&gt;" offset="7" desc="(FF)V" key="63" label="irrelevant_unsync_write" filename="XtangoAnimator.java" line="1353"/>
+      <instruction className="XtangoAnimation.Position" method="&lt;init&gt;" offset="13" desc="(FF)V" key="64" label="irrelevant_unsync_write" filename="XtangoAnimator.java" line="1362"/>
+      <instruction className="XtangoAnimation.AnimatorIcon" method="&lt;init&gt;" offset="29" desc="(Ljava/lang/String;FFLjava/awt/Color;)V" key="65" label="relevant_unsync_write" filename="XtangoAnimator.java" line="1401"/>
+      <instruction className="XtangoAnimation.AnimatorIcon" method="position" offset="7" desc="(FF)V" key="66" label="relevant_sync_write" filename="XtangoAnimator.java" line="1433"/>
+      <instruction className="XtangoAnimation.AnimatorIcon" method="positionRel" offset="13" desc="(FF)V" key="67" label="relevant_sync_write" filename="XtangoAnimator.java" line="1437"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="25" desc="(FF)V" key="68" label="relevant_sync_write" filename="XtangoAnimator.java" line="1668"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="39" desc="(FF)V" key="69" label="relevant_sync_write" filename="XtangoAnimator.java" line="1669"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="47" desc="(FF)V" key="70" label="relevant_sync_write" filename="XtangoAnimator.java" line="1670"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="13" desc="(FF)V" key="71" label="relevant_sync_write" filename="XtangoAnimator.java" line="1674"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="27" desc="(FF)V" key="72" label="relevant_sync_write" filename="XtangoAnimator.java" line="1675"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="41" desc="(FF)V" key="73" label="relevant_sync_write" filename="XtangoAnimator.java" line="1676"/>
+      <class name="XtangoAnimation.Position" key="74" label="guard_type" filename="XtangoAnimator.java"/>
+      <field className="XtangoAnimation.AnimatorIcon" name="position" type="LXtangoAnimation/Position;" key="75" label="target_field" filename="XtangoAnimator.java" line="1393"/>
+      <class name="XtangoAnimation.AnimatorIcon" key="76" label="guard_type" filename="XtangoAnimator.java"/>
+      <field className="XtangoAnimation.CexchangePos" name="icon2" type="LXtangoAnimation/AnimatorIcon;" key="77" label="guard_field" filename="XtangoAnimator.java" line="1150"/>
+      <field className="XtangoAnimation.AnimatorIcon" name="position" type="LXtangoAnimation/Position;" key="78" label="guard_field" filename="XtangoAnimator.java" line="1393"/>
+      <field className="XtangoAnimation.CexchangePos" name="icon1" type="LXtangoAnimation/AnimatorIcon;" key="79" label="target_field" filename="XtangoAnimator.java" line="1150"/>
+      <method className="XtangoAnimation.AnimatorIcon" name="position" desc="()LXtangoAnimation/Position;" key="80" label="target_method" filename="XtangoAnimator.java" line="1429"/>
+      <class name="XtangoAnimation.CexchangePos" key="81" label="guard_type" filename="XtangoAnimator.java"/>
+      <field className="XtangoAnimation.CexchangePos" name="icon1" type="LXtangoAnimation/AnimatorIcon;" key="82" label="guard_field" filename="XtangoAnimator.java" line="1150"/>
+      <field className="XtangoAnimation.CexchangePos" name="icon2" type="LXtangoAnimation/AnimatorIcon;" key="83" label="target_field" filename="XtangoAnimator.java" line="1150"/>
+      <field className="XtangoAnimation.Cmove" name="icon" type="LXtangoAnimation/AnimatorIcon;" key="84" label="guard_field" filename="XtangoAnimator.java" line="944"/>
+      <field className="XtangoAnimation.Cmove" name="icon2" type="LXtangoAnimation/AnimatorIcon;" key="85" label="target_field" filename="XtangoAnimator.java" line="944"/>
+      <class name="XtangoAnimation.Cmove" key="86" label="guard_type" filename="XtangoAnimator.java"/>
+      <field className="XtangoAnimation.Itriangle" name="p2" type="LXtangoAnimation/Position;" key="87" label="target_field" filename="XtangoAnimator.java" line="1655"/>
+      <class name="XtangoAnimation.Itriangle" key="88" label="guard_type" filename="XtangoAnimator.java"/>
+      <field className="XtangoAnimation.Itriangle" name="p3" type="LXtangoAnimation/Position;" key="89" label="target_field" filename="XtangoAnimator.java" line="1655"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'y' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="76" key="0" intrinsic="true">
+          <guardPath>
+            <locationRef key="78"/>
+          </guardPath>
+          <targetPath>
+            <locationRef key="80"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="88" key="8" intrinsic="true">
+          <guardPath/>
+          <targetPath>
+            <locationRef key="89"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="88" key="7" intrinsic="true">
+          <guardPath/>
+          <targetPath>
+            <locationRef key="87"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="86" key="1" intrinsic="true">
+          <guardPath>
+            <locationRef key="84"/>
+            <locationRef key="78"/>
+          </guardPath>
+          <targetPath>
+            <locationRef key="85"/>
+            <locationRef key="80"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="81" key="3" intrinsic="true">
+          <guardPath>
+            <locationRef key="82"/>
+            <locationRef key="78"/>
+          </guardPath>
+          <targetPath>
+            <locationRef key="83"/>
+            <locationRef key="80"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="81" key="2" intrinsic="true">
+          <guardPath>
+            <locationRef key="77"/>
+            <locationRef key="78"/>
+          </guardPath>
+          <targetPath>
+            <locationRef key="79"/>
+            <locationRef key="80"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="76" key="6" intrinsic="true">
+          <guardPath/>
+          <targetPath>
+            <locationRef key="75"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="74" key="5" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+        <guardUnknown key="4" intrinsic="true"/>
+      </guards>
+      <accesses>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="2" status="sometimes"/>
+            <guardRef key="3" status="sometimes"/>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="3" status="always"/>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="2" status="always"/>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="10" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="4" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="11" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="4" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="12" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="5" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="13" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="14" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="15" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="16" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="17" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="18" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="19" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="20" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="21" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="22" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="23" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="24" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="25" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="26" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="27" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="28" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="29" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="30" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="31" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="32" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="33" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="34" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="35" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="36" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="37" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="38" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="39" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="40" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="41" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="42" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="43" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="44" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="45" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="46" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="47" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="48" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="49" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="50" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="51" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="52" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="53" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="54" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="7" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="55" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="8" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="56" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="57" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="7" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="58" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="8" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="59" type="relevant_syncmixed_read">
+          <accessGuards>
+            <guardRef key="6" status="sometimes"/>
+            <guardRef key="7" status="sometimes"/>
+            <guardRef key="8" status="sometimes"/>
+          </accessGuards>
+        </access>
+        <access location="60" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="61" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="62" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="63" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="64" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="65" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="66" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="67" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="68" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="7" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="69" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="8" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="70" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="71" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="72" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="7" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="73" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="8" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="XtangoAnimation.Position" name="x" type="F" key="0" filename="XtangoAnimator.java" line="1352"/>
+      <method className="XtangoAnimation.Cmove" name="run" desc="()V" key="1" label="async_entrypoint" filename="XtangoAnimator.java" line="987"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="18" desc="()V" key="2" label="relevant_sync_read" filename="XtangoAnimator.java" line="996"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="53" desc="()V" key="3" label="relevant_sync_read" filename="XtangoAnimator.java" line="1003"/>
+      <instruction className="XtangoAnimation.Cmove" method="run" offset="77" desc="()V" key="4" label="relevant_sync_read" filename="XtangoAnimator.java" line="1009"/>
+      <instruction className="XtangoAnimation.CjumpTo" method="perform" offset="79" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/util/Hashtable;Ljava/util/Vector;)V" key="5" label="relevant_sync_read" filename="XtangoAnimator.java" line="1135"/>
+      <method className="XtangoAnimation.CexchangePos" name="run" desc="()V" key="6" label="async_entrypoint" filename="XtangoAnimator.java" line="1178"/>
+      <instruction className="XtangoAnimation.CexchangePos" method="run" offset="21" desc="()V" key="7" label="relevant_sync_read" filename="XtangoAnimator.java" line="1183"/>
+      <instruction className="XtangoAnimation.CexchangePos" method="run" offset="69" desc="()V" key="8" label="relevant_sync_read" filename="XtangoAnimator.java" line="1192"/>
+      <instruction className="XtangoAnimation.CexchangePos" method="run" offset="76" desc="()V" key="9" label="relevant_sync_read" filename="XtangoAnimator.java" line="1193"/>
+      <instruction className="XtangoAnimation.CswitchPos" method="perform" offset="94" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/util/Hashtable;Ljava/util/Vector;)V" key="10" label="relevant_sync_read" filename="XtangoAnimator.java" line="1289"/>
+      <instruction className="XtangoAnimation.CswitchPos" method="perform" offset="100" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/util/Hashtable;Ljava/util/Vector;)V" key="11" label="relevant_sync_read" filename="XtangoAnimator.java" line="1290"/>
+      <instruction className="XtangoAnimation.Position" method="toString" offset="5" desc="()Ljava/lang/String;" key="12" label="relevant_sync_read" filename="XtangoAnimator.java" line="1366"/>
+      <instruction className="XtangoAnimation.AnimatorIcon" method="position" offset="4" desc="()LXtangoAnimation/Position;" key="13" label="relevant_sync_read" filename="XtangoAnimator.java" line="1430"/>
+      <instruction className="XtangoAnimation.AnimatorIcon" method="positionRel" offset="3" desc="(FF)V" key="14" label="relevant_sync_read" filename="XtangoAnimator.java" line="1437"/>
+      <instruction className="XtangoAnimation.Icircle" method="draw" offset="12" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="15" label="relevant_sync_read" filename="XtangoAnimator.java" line="1508"/>
+      <instruction className="XtangoAnimation.Icircle" method="draw" offset="46" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="16" label="relevant_sync_read" filename="XtangoAnimator.java" line="1512"/>
+      <instruction className="XtangoAnimation.Icircle" method="draw" offset="95" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="17" label="relevant_sync_read" filename="XtangoAnimator.java" line="1519"/>
+      <instruction className="XtangoAnimation.Icircle" method="draw" offset="125" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="18" label="relevant_sync_read" filename="XtangoAnimator.java" line="1523"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="12" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="19" label="relevant_sync_read" filename="XtangoAnimator.java" line="1552"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="22" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="20" label="relevant_sync_read" filename="XtangoAnimator.java" line="1553"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="47" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="21" label="relevant_sync_read" filename="XtangoAnimator.java" line="1556"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="57" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="22" label="relevant_sync_read" filename="XtangoAnimator.java" line="1557"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="77" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="23" label="relevant_sync_read" filename="XtangoAnimator.java" line="1559"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="91" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="24" label="relevant_sync_read" filename="XtangoAnimator.java" line="1560"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="115" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="25" label="relevant_sync_read" filename="XtangoAnimator.java" line="1562"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="129" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="26" label="relevant_sync_read" filename="XtangoAnimator.java" line="1563"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="153" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="27" label="relevant_sync_read" filename="XtangoAnimator.java" line="1565"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="167" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="28" label="relevant_sync_read" filename="XtangoAnimator.java" line="1566"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="191" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="29" label="relevant_sync_read" filename="XtangoAnimator.java" line="1568"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="205" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="30" label="relevant_sync_read" filename="XtangoAnimator.java" line="1569"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="234" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="31" label="relevant_sync_read" filename="XtangoAnimator.java" line="1572"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="244" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="32" label="relevant_sync_read" filename="XtangoAnimator.java" line="1573"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="264" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="33" label="relevant_sync_read" filename="XtangoAnimator.java" line="1575"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="278" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="34" label="relevant_sync_read" filename="XtangoAnimator.java" line="1576"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="302" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="35" label="relevant_sync_read" filename="XtangoAnimator.java" line="1578"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="316" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="36" label="relevant_sync_read" filename="XtangoAnimator.java" line="1579"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="340" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="37" label="relevant_sync_read" filename="XtangoAnimator.java" line="1581"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="354" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="38" label="relevant_sync_read" filename="XtangoAnimator.java" line="1582"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="378" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="39" label="relevant_sync_read" filename="XtangoAnimator.java" line="1584"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="392" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="40" label="relevant_sync_read" filename="XtangoAnimator.java" line="1585"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="416" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="41" label="relevant_sync_read" filename="XtangoAnimator.java" line="1587"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="430" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="42" label="relevant_sync_read" filename="XtangoAnimator.java" line="1588"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="454" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="43" label="relevant_sync_read" filename="XtangoAnimator.java" line="1590"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="468" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="44" label="relevant_sync_read" filename="XtangoAnimator.java" line="1591"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="492" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="45" label="relevant_sync_read" filename="XtangoAnimator.java" line="1593"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="506" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="46" label="relevant_sync_read" filename="XtangoAnimator.java" line="1594"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="530" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="47" label="relevant_sync_read" filename="XtangoAnimator.java" line="1596"/>
+      <instruction className="XtangoAnimation.Iline" method="draw" offset="544" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="48" label="relevant_sync_read" filename="XtangoAnimator.java" line="1597"/>
+      <instruction className="XtangoAnimation.Irectangle" method="draw" offset="12" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="49" label="relevant_sync_read" filename="XtangoAnimator.java" line="1623"/>
+      <instruction className="XtangoAnimation.Irectangle" method="draw" offset="70" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="50" label="relevant_sync_read" filename="XtangoAnimator.java" line="1632"/>
+      <instruction className="XtangoAnimation.Irectangle" method="draw" offset="94" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="51" label="relevant_sync_read" filename="XtangoAnimator.java" line="1636"/>
+      <instruction className="XtangoAnimation.Irectangle" method="draw" offset="124" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="52" label="relevant_sync_read" filename="XtangoAnimator.java" line="1640"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="3" desc="(FF)V" key="53" label="relevant_sync_read" filename="XtangoAnimator.java" line="1666"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="15" desc="(FF)V" key="54" label="relevant_sync_read" filename="XtangoAnimator.java" line="1668"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="29" desc="(FF)V" key="55" label="relevant_sync_read" filename="XtangoAnimator.java" line="1669"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="3" desc="(FF)V" key="56" label="relevant_sync_read" filename="XtangoAnimator.java" line="1674"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="17" desc="(FF)V" key="57" label="relevant_sync_read" filename="XtangoAnimator.java" line="1675"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="31" desc="(FF)V" key="58" label="relevant_sync_read" filename="XtangoAnimator.java" line="1676"/>
+      <instruction className="XtangoAnimation.Itriangle" method="draw" offset="20" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="59" label="relevant_syncmixed_read" filename="XtangoAnimator.java" line="1686"/>
+      <instruction className="XtangoAnimation.Itriangle" method="draw" offset="44" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="60" label="relevant_sync_read" filename="XtangoAnimator.java" line="1687"/>
+      <instruction className="XtangoAnimation.Itext" method="draw" offset="60" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="61" label="relevant_sync_read" filename="XtangoAnimator.java" line="1748"/>
+      <instruction className="XtangoAnimation.Itext" method="draw" offset="83" desc="(LXtangoAnimation/AnimatorCanvas;Ljava/awt/Graphics;)V" key="62" label="relevant_sync_read" filename="XtangoAnimator.java" line="1751"/>
+      <instruction className="XtangoAnimation.Position" method="&lt;init&gt;" offset="4" desc="(FF)V" key="63" label="irrelevant_unsync_write" filename="XtangoAnimator.java" line="1352"/>
+      <instruction className="XtangoAnimation.Position" method="&lt;init&gt;" offset="10" desc="(FF)V" key="64" label="irrelevant_unsync_write" filename="XtangoAnimator.java" line="1361"/>
+      <instruction className="XtangoAnimation.AnimatorIcon" method="&lt;init&gt;" offset="25" desc="(Ljava/lang/String;FFLjava/awt/Color;)V" key="65" label="relevant_unsync_write" filename="XtangoAnimator.java" line="1401"/>
+      <instruction className="XtangoAnimation.AnimatorIcon" method="position" offset="3" desc="(FF)V" key="66" label="relevant_sync_write" filename="XtangoAnimator.java" line="1433"/>
+      <instruction className="XtangoAnimation.AnimatorIcon" method="positionRel" offset="6" desc="(FF)V" key="67" label="relevant_sync_write" filename="XtangoAnimator.java" line="1437"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="18" desc="(FF)V" key="68" label="relevant_sync_write" filename="XtangoAnimator.java" line="1668"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="32" desc="(FF)V" key="69" label="relevant_sync_write" filename="XtangoAnimator.java" line="1669"/>
+      <instruction className="XtangoAnimation.Itriangle" method="position" offset="43" desc="(FF)V" key="70" label="relevant_sync_write" filename="XtangoAnimator.java" line="1670"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="6" desc="(FF)V" key="71" label="relevant_sync_write" filename="XtangoAnimator.java" line="1674"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="20" desc="(FF)V" key="72" label="relevant_sync_write" filename="XtangoAnimator.java" line="1675"/>
+      <instruction className="XtangoAnimation.Itriangle" method="positionRel" offset="34" desc="(FF)V" key="73" label="relevant_sync_write" filename="XtangoAnimator.java" line="1676"/>
+      <class name="XtangoAnimation.Position" key="74" label="guard_type" filename="XtangoAnimator.java"/>
+      <field className="XtangoAnimation.AnimatorIcon" name="position" type="LXtangoAnimation/Position;" key="75" label="target_field" filename="XtangoAnimator.java" line="1393"/>
+      <class name="XtangoAnimation.AnimatorIcon" key="76" label="guard_type" filename="XtangoAnimator.java"/>
+      <field className="XtangoAnimation.CexchangePos" name="icon2" type="LXtangoAnimation/AnimatorIcon;" key="77" label="guard_field" filename="XtangoAnimator.java" line="1150"/>
+      <field className="XtangoAnimation.AnimatorIcon" name="position" type="LXtangoAnimation/Position;" key="78" label="guard_field" filename="XtangoAnimator.java" line="1393"/>
+      <field className="XtangoAnimation.CexchangePos" name="icon1" type="LXtangoAnimation/AnimatorIcon;" key="79" label="target_field" filename="XtangoAnimator.java" line="1150"/>
+      <method className="XtangoAnimation.AnimatorIcon" name="position" desc="()LXtangoAnimation/Position;" key="80" label="target_method" filename="XtangoAnimator.java" line="1429"/>
+      <class name="XtangoAnimation.CexchangePos" key="81" label="guard_type" filename="XtangoAnimator.java"/>
+      <field className="XtangoAnimation.CexchangePos" name="icon1" type="LXtangoAnimation/AnimatorIcon;" key="82" label="guard_field" filename="XtangoAnimator.java" line="1150"/>
+      <field className="XtangoAnimation.CexchangePos" name="icon2" type="LXtangoAnimation/AnimatorIcon;" key="83" label="target_field" filename="XtangoAnimator.java" line="1150"/>
+      <field className="XtangoAnimation.Cmove" name="icon" type="LXtangoAnimation/AnimatorIcon;" key="84" label="guard_field" filename="XtangoAnimator.java" line="944"/>
+      <field className="XtangoAnimation.Cmove" name="icon2" type="LXtangoAnimation/AnimatorIcon;" key="85" label="target_field" filename="XtangoAnimator.java" line="944"/>
+      <class name="XtangoAnimation.Cmove" key="86" label="guard_type" filename="XtangoAnimator.java"/>
+      <field className="XtangoAnimation.Itriangle" name="p2" type="LXtangoAnimation/Position;" key="87" label="target_field" filename="XtangoAnimator.java" line="1655"/>
+      <class name="XtangoAnimation.Itriangle" key="88" label="guard_type" filename="XtangoAnimator.java"/>
+      <field className="XtangoAnimation.Itriangle" name="p3" type="LXtangoAnimation/Position;" key="89" label="target_field" filename="XtangoAnimator.java" line="1655"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'x' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="76" key="0" intrinsic="true">
+          <guardPath>
+            <locationRef key="78"/>
+          </guardPath>
+          <targetPath>
+            <locationRef key="80"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="88" key="8" intrinsic="true">
+          <guardPath/>
+          <targetPath>
+            <locationRef key="89"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="88" key="7" intrinsic="true">
+          <guardPath/>
+          <targetPath>
+            <locationRef key="87"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="86" key="1" intrinsic="true">
+          <guardPath>
+            <locationRef key="84"/>
+            <locationRef key="78"/>
+          </guardPath>
+          <targetPath>
+            <locationRef key="85"/>
+            <locationRef key="80"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="81" key="3" intrinsic="true">
+          <guardPath>
+            <locationRef key="82"/>
+            <locationRef key="78"/>
+          </guardPath>
+          <targetPath>
+            <locationRef key="83"/>
+            <locationRef key="80"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="81" key="2" intrinsic="true">
+          <guardPath>
+            <locationRef key="77"/>
+            <locationRef key="78"/>
+          </guardPath>
+          <targetPath>
+            <locationRef key="79"/>
+            <locationRef key="80"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="76" key="6" intrinsic="true">
+          <guardPath/>
+          <targetPath>
+            <locationRef key="75"/>
+          </targetPath>
+        </guardRelative>
+        <guardRelative typeRef="74" key="5" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+        <guardUnknown key="4" intrinsic="true"/>
+      </guards>
+      <accesses>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="1" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="2" status="sometimes"/>
+            <guardRef key="3" status="sometimes"/>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="3" status="always"/>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="2" status="always"/>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="10" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="4" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="11" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="4" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="12" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="5" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="13" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="14" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="15" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="16" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="17" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="18" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="19" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="20" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="21" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="22" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="23" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="24" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="25" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="26" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="27" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="28" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="29" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="30" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="31" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="32" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="33" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="34" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="35" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="36" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="37" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="38" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="39" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="40" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="41" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="42" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="43" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="44" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="45" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="46" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="47" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="48" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="49" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="50" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="51" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="52" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="53" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="54" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="7" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="55" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="8" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="56" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="57" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="7" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="58" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="8" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="59" type="relevant_syncmixed_read">
+          <accessGuards>
+            <guardRef key="6" status="sometimes"/>
+            <guardRef key="7" status="sometimes"/>
+            <guardRef key="8" status="sometimes"/>
+          </accessGuards>
+        </access>
+        <access location="60" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="61" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="62" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="63" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="64" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="65" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="66" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="67" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="68" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="7" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="69" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="8" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="70" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="71" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="6" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="72" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="7" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="73" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="8" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+</findings>

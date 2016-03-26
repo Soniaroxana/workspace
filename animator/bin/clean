@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm XtangoAnimation/*.class
+rm XtangoAnimation/*.class_backup
+rm XtangoAnimation/*.tmp
+javac -cp ".:../lib/ConTest.jar" XtangoAnimation/*.java

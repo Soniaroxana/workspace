@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1458944617066" analysisTimestamp="1458944616846" release="">
+  <Project projectName="diningphil">
+    <Jar>/Users/soniamarginean/Documents/workspace/diningphil/bin</Jar>
+    <AuxClasspathEntry>/Users/soniamarginean/Documents/workspace/diningphil/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/soniamarginean/Documents/workspace/diningphil</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="DiningPhilosophers.Fork">
+      <SourceLine classname="DiningPhilosophers.Fork" sourcefile="Fork.java" sourcepath="DiningPhilosophers/Fork.java"/>
+    </Class>
+    <Method classname="DiningPhilosophers.Fork" name="release" signature="(I)V" isStatic="false">
+      <SourceLine classname="DiningPhilosophers.Fork" start="52" end="55" startBytecode="0" endBytecode="105" sourcefile="Fork.java" sourcepath="DiningPhilosophers/Fork.java"/>
+    </Method>
+    <SourceLine classname="DiningPhilosophers.Fork" start="53" end="53" startBytecode="6" endBytecode="6" sourcefile="Fork.java" sourcepath="DiningPhilosophers/Fork.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 25 Mar 2016 17:22:16 -0500" total_classes="3" referenced_classes="52" total_bugs="1" total_size="77" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="0.54" clock_seconds="0.22" peak_mbytes="893.09" alloc_mbytes="910.50" gc_seconds="0.00" priority_3="1">
+    <PackageStats package="DiningPhilosophers" total_bugs="1" total_types="3" total_size="77" priority_3="1">
+      <ClassStats class="DiningPhilosophers.DiningPhilosophers" sourceFile="DiningPhilosophers.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="DiningPhilosophers.Fork" sourceFile="Fork.java" interface="false" size="21" bugs="1" priority_3="1"/>
+      <ClassStats class="DiningPhilosophers.Philosopher" sourceFile="Philosopher.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="61" invocations="447" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="2642" standardDeviationMircosecondsPerInvocation="279"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="45" invocations="2" avgMicrosecondsPerInvocation="22752" maxMicrosecondsPerInvocation="39814" standardDeviationMircosecondsPerInvocation="17061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="13" invocations="52" avgMicrosecondsPerInvocation="255" maxMicrosecondsPerInvocation="1693" standardDeviationMircosecondsPerInvocation="363"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="13" invocations="52" avgMicrosecondsPerInvocation="251" maxMicrosecondsPerInvocation="1727" standardDeviationMircosecondsPerInvocation="368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="11" invocations="157" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="404" standardDeviationMircosecondsPerInvocation="64"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458944617066" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

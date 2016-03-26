@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1458944559204" analysisTimestamp="1458944556604" release="">
+  <Project projectName="animator">
+    <Jar>/Users/soniamarginean/Documents/workspace/animator/bin</Jar>
+    <AuxClasspathEntry>/Users/soniamarginean/Documents/workspace/animator/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/soniamarginean/Documents/workspace/animator</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="XtangoAnimation.AnimatorCanvas">
+      <SourceLine classname="XtangoAnimation.AnimatorCanvas" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="XtangoAnimation.AnimatorCanvas" name="by" signature="F" isStatic="false">
+      <SourceLine classname="XtangoAnimation.AnimatorCanvas" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+    <Int value="50" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="XtangoAnimation.AnimatorCanvas" start="760" end="760" startBytecode="11" endBytecode="11" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="XtangoAnimation.AnimatorCanvas" start="707" end="707" startBytecode="7" endBytecode="7" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="XtangoAnimation.AnimatorCanvas">
+      <SourceLine classname="XtangoAnimation.AnimatorCanvas" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="XtangoAnimation.AnimatorCanvas" name="offscreenGraphics" signature="Ljava/awt/Graphics;" isStatic="false">
+      <SourceLine classname="XtangoAnimation.AnimatorCanvas" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+    <Int value="75" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="XtangoAnimation.AnimatorCanvas" start="723" end="723" startBytecode="89" endBytecode="89" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="XtangoAnimation.AnimatorCanvas" start="742" end="742" startBytecode="15" endBytecode="15" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="XtangoAnimation.AnimatorCanvas" start="743" end="743" startBytecode="26" endBytecode="26" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="XtangoAnimation.AnimatorCanvas" start="749" end="749" startBytecode="113" endBytecode="113" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="XtangoAnimation.AnimatorFrame">
+      <SourceLine classname="XtangoAnimation.AnimatorFrame" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Method classname="XtangoAnimation.AnimatorFrame" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="XtangoAnimation.AnimatorFrame" start="600" end="655" startBytecode="0" endBytecode="1039" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Method>
+    <SourceLine classname="XtangoAnimation.AnimatorFrame" start="650" end="650" startBytecode="515" endBytecode="515" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    <SourceLine classname="XtangoAnimation.AnimatorFrame" start="650" end="650" startBytecode="515" endBytecode="515" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="XtangoAnimation.AnimatorFrame">
+      <SourceLine classname="XtangoAnimation.AnimatorFrame" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="XtangoAnimation.AnimatorFrame" name="at" signature="Ljava/lang/Thread;" isStatic="false">
+      <SourceLine classname="XtangoAnimation.AnimatorFrame" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+    <Type descriptor="Ljava/lang/Thread;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Thread" start="145" end="1967" sourcefile="Thread.java" sourcepath="java/lang/Thread.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="XtangoAnimation.AnimatorFrame">
+      <SourceLine classname="XtangoAnimation.AnimatorFrame" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Field classname="XtangoAnimation.AnimatorFrame" name="xa" signature="LXtangoAnimation/XtangoAnimator;" isStatic="false">
+      <SourceLine classname="XtangoAnimation.AnimatorFrame" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+    <Type descriptor="LXtangoAnimation/XtangoAnimator;" role="TYPE_FOUND">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" start="50" end="548" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="WA_NOT_IN_LOOP" priority="2" rank="14" abbrev="Wa" category="MT_CORRECTNESS" first="1">
+    <Class classname="XtangoAnimation.AnimatorFrame">
+      <SourceLine classname="XtangoAnimation.AnimatorFrame" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Method classname="XtangoAnimation.AnimatorFrame" name="doCommand" signature="(LXtangoAnimation/AnimatorCommand;)V" isStatic="false">
+      <SourceLine classname="XtangoAnimation.AnimatorFrame" start="660" end="682" startBytecode="0" endBytecode="286" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Method>
+    <SourceLine classname="XtangoAnimation.AnimatorFrame" start="679" end="679" startBytecode="104" endBytecode="104" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+  </BugInstance>
+  <BugInstance type="SWL_SLEEP_WITH_LOCK_HELD" priority="2" rank="14" abbrev="SWL" category="MT_CORRECTNESS" first="1">
+    <Class classname="XtangoAnimation.CexchangePos">
+      <SourceLine classname="XtangoAnimation.CexchangePos" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Method classname="XtangoAnimation.CexchangePos" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="XtangoAnimation.CexchangePos" start="1179" end="1196" startBytecode="0" endBytecode="440" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Method>
+    <SourceLine classname="XtangoAnimation.CexchangePos" start="1189" end="1189" startBytecode="108" endBytecode="108" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    <SourceLine classname="XtangoAnimation.CexchangePos" start="1189" end="1189" startBytecode="108" endBytecode="108" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+  </BugInstance>
+  <BugInstance type="SWL_SLEEP_WITH_LOCK_HELD" priority="2" rank="14" abbrev="SWL" category="MT_CORRECTNESS" first="1">
+    <Class classname="XtangoAnimation.Cmove">
+      <SourceLine classname="XtangoAnimation.Cmove" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Method classname="XtangoAnimation.Cmove" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="XtangoAnimation.Cmove" start="993" end="1019" startBytecode="0" endBytecode="547" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Method>
+    <SourceLine classname="XtangoAnimation.Cmove" start="1014" end="1014" startBytecode="200" endBytecode="200" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    <SourceLine classname="XtangoAnimation.Cmove" start="1014" end="1014" startBytecode="200" endBytecode="200" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" first="1">
+    <Class classname="XtangoAnimation.XtangoAnimator">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Method classname="XtangoAnimation.XtangoAnimator" name="coords" signature="(FFFF)V" isStatic="false">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" start="138" end="161" startBytecode="0" endBytecode="259" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Method>
+    <SourceLine classname="XtangoAnimation.XtangoAnimator" start="153" end="153" startBytecode="34" endBytecode="34" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+  </BugInstance>
+  <BugInstance type="NN_NAKED_NOTIFY" priority="2" rank="14" abbrev="NN" category="MT_CORRECTNESS" first="1">
+    <Class classname="XtangoAnimation.XtangoAnimator">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Method classname="XtangoAnimation.XtangoAnimator" name="quitPushed" signature="()V" isStatic="false">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" start="108" end="108" startBytecode="0" endBytecode="46" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Method>
+    <SourceLine classname="XtangoAnimation.XtangoAnimator" start="108" end="108" startBytecode="1" endBytecode="1" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+  </BugInstance>
+  <BugInstance type="NN_NAKED_NOTIFY" priority="2" rank="14" abbrev="NN" category="MT_CORRECTNESS" first="1">
+    <Class classname="XtangoAnimation.XtangoAnimator">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Method classname="XtangoAnimation.XtangoAnimator" name="startPushed" signature="()V" isStatic="false">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" start="107" end="107" startBytecode="0" endBytecode="46" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Method>
+    <SourceLine classname="XtangoAnimation.XtangoAnimator" start="107" end="107" startBytecode="1" endBytecode="1" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="XtangoAnimation.XtangoAnimator">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Method classname="XtangoAnimation.XtangoAnimator" name="quitPushed" signature="()V" isStatic="false">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" start="108" end="108" startBytecode="0" endBytecode="46" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Method>
+    <SourceLine classname="XtangoAnimation.XtangoAnimator" start="108" end="108" startBytecode="1" endBytecode="1" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="XtangoAnimation.XtangoAnimator">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Method classname="XtangoAnimation.XtangoAnimator" name="startPushed" signature="()V" isStatic="false">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" start="107" end="107" startBytecode="0" endBytecode="46" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Method>
+    <SourceLine classname="XtangoAnimation.XtangoAnimator" start="107" end="107" startBytecode="1" endBytecode="1" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="XtangoAnimation.XtangoAnimator">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Class>
+    <Method classname="XtangoAnimation.XtangoAnimator" name="&lt;init&gt;" signature="(IIZ)V" isStatic="false">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" start="57" end="61" startBytecode="0" endBytecode="127" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Method>
+    <Field classname="XtangoAnimation.XtangoAnimator" name="debug" signature="Z" isStatic="true">
+      <SourceLine classname="XtangoAnimation.XtangoAnimator" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    </Field>
+    <SourceLine classname="XtangoAnimation.XtangoAnimator" start="58" end="58" startBytecode="10" endBytecode="10" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+    <SourceLine classname="XtangoAnimation.XtangoAnimator" start="58" end="58" startBytecode="10" endBytecode="10" sourcefile="XtangoAnimator.java" sourcepath="XtangoAnimation/XtangoAnimator.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 25 Mar 2016 16:17:15 -0500" total_classes="31" referenced_classes="281" total_bugs="14" total_size="1363" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="17.18" clock_seconds="2.60" peak_mbytes="888.50" alloc_mbytes="910.50" gc_seconds="0.74" priority_3="4" priority_2="8" priority_1="2">
+    <PackageStats package="XtangoAnimation" total_bugs="14" total_types="31" total_size="1363" priority_3="4" priority_2="8" priority_1="2">
+      <ClassStats class="XtangoAnimation.AnimatorAction" sourceFile="XtangoAnimator.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="XtangoAnimation.AnimatorCanvas" sourceFile="XtangoAnimator.java" interface="false" size="80" bugs="2" priority_2="2"/>
+      <ClassStats class="XtangoAnimation.AnimatorCommand" sourceFile="XtangoAnimator.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="XtangoAnimation.AnimatorFrame" sourceFile="XtangoAnimator.java" interface="false" size="124" bugs="4" priority_3="2" priority_2="2"/>
+      <ClassStats class="XtangoAnimation.AnimatorIcon" sourceFile="XtangoAnimator.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="XtangoAnimation.AnimatorShape" sourceFile="XtangoAnimator.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Cbg" sourceFile="XtangoAnimator.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Ccolor" sourceFile="XtangoAnimator.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Ccoords" sourceFile="XtangoAnimator.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Cdelay" sourceFile="XtangoAnimator.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Cdelete" sourceFile="XtangoAnimator.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Cend" sourceFile="XtangoAnimator.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="XtangoAnimation.CexchangePos" sourceFile="XtangoAnimator.java" interface="false" size="51" bugs="1" priority_2="1"/>
+      <ClassStats class="XtangoAnimation.Cfill" sourceFile="XtangoAnimator.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Cjump" sourceFile="XtangoAnimator.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="XtangoAnimation.CjumpRelative" sourceFile="XtangoAnimator.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="XtangoAnimation.CjumpTo" sourceFile="XtangoAnimator.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Cmove" sourceFile="XtangoAnimator.java" interface="false" size="78" bugs="1" priority_2="1"/>
+      <ClassStats class="XtangoAnimation.CmoveRelative" sourceFile="XtangoAnimator.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="XtangoAnimation.CmoveTo" sourceFile="XtangoAnimator.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="XtangoAnimation.CswapIds" sourceFile="XtangoAnimator.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="XtangoAnimation.CswitchPos" sourceFile="XtangoAnimator.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Cvis" sourceFile="XtangoAnimator.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Icircle" sourceFile="XtangoAnimator.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Iline" sourceFile="XtangoAnimator.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Irectangle" sourceFile="XtangoAnimator.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Itext" sourceFile="XtangoAnimator.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Itriangle" sourceFile="XtangoAnimator.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Position" sourceFile="XtangoAnimator.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="XtangoAnimation.Size" sourceFile="XtangoAnimator.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="XtangoAnimation.XtangoAnimator" sourceFile="XtangoAnimator.java" interface="false" size="378" bugs="6" priority_3="2" priority_2="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="400" invocations="1301" avgMicrosecondsPerInvocation="307" maxMicrosecondsPerInvocation="41217" standardDeviationMircosecondsPerInvocation="1964"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LoadedFieldSetFactory" totalMilliseconds="364" invocations="154" avgMicrosecondsPerInvocation="2367" maxMicrosecondsPerInvocation="363263" standardDeviationMircosecondsPerInvocation="29176"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="315" invocations="1304" avgMicrosecondsPerInvocation="242" maxMicrosecondsPerInvocation="40053" standardDeviationMircosecondsPerInvocation="1472"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="174" invocations="281" avgMicrosecondsPerInvocation="621" maxMicrosecondsPerInvocation="49759" standardDeviationMircosecondsPerInvocation="3138"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="154" invocations="281" avgMicrosecondsPerInvocation="549" maxMicrosecondsPerInvocation="15794" standardDeviationMircosecondsPerInvocation="1509"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="147" invocations="2" avgMicrosecondsPerInvocation="73993" maxMicrosecondsPerInvocation="122772" standardDeviationMircosecondsPerInvocation="48778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="77" invocations="710" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="2344" standardDeviationMircosecondsPerInvocation="157"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="62" invocations="281" avgMicrosecondsPerInvocation="222" maxMicrosecondsPerInvocation="44127" standardDeviationMircosecondsPerInvocation="2626"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="58" invocations="154" avgMicrosecondsPerInvocation="378" maxMicrosecondsPerInvocation="10862" standardDeviationMircosecondsPerInvocation="983"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="44" invocations="154" avgMicrosecondsPerInvocation="290" maxMicrosecondsPerInvocation="15937" standardDeviationMircosecondsPerInvocation="1337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="43" invocations="154" avgMicrosecondsPerInvocation="285" maxMicrosecondsPerInvocation="12986" standardDeviationMircosecondsPerInvocation="1077"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="38" invocations="281" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="19586" standardDeviationMircosecondsPerInvocation="1177"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="37" invocations="1255" avgMicrosecondsPerInvocation="29" maxMicrosecondsPerInvocation="16407" standardDeviationMircosecondsPerInvocation="463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="36" invocations="281" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="12372" standardDeviationMircosecondsPerInvocation="750"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458944559203" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

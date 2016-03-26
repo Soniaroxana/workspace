@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<findings>
+  <finding type="CCE_CC_GUARD_USAGE">
+    <locations>
+      <field className="com.ibm.crawler.Database" name="nodes" type="Ljava/util/Vector;" key="0" filename="Database.java" line="14"/>
+      <instruction className="com.ibm.crawler.Database" method="&lt;init&gt;" offset="19" desc="(II)V" key="1" label="irrelevant_unsync_read" filename="Database.java" line="31"/>
+      <instruction className="com.ibm.crawler.Database" method="getNodeForRetrieval" offset="10" desc="()Lcom/ibm/crawler/Node;" key="2" label="relevant_sync_read" filename="Database.java" line="42"/>
+      <instruction className="com.ibm.crawler.Database" method="getNodeForRetrieval" offset="23" desc="()Lcom/ibm/crawler/Node;" key="3" label="relevant_sync_read" filename="Database.java" line="45"/>
+      <instruction className="com.ibm.crawler.Database" method="getNodeForRetrieval" offset="29" desc="()Lcom/ibm/crawler/Node;" key="4" label="relevant_sync_read" filename="Database.java" line="46"/>
+      <instruction className="com.ibm.crawler.Database" method="put" offset="6" desc="(Lcom/ibm/crawler/Node;)V" key="5" label="relevant_sync_read" filename="Database.java" line="55"/>
+      <class name="com.ibm.crawler.Database" key="6" label="guard_type" filename="Database.java"/>
+    </locations>
+    <info>
+      <message value="All accesses to threadsafe collection in field 'nodes' are guarded."/>
+      <guards>
+        <guardRelative typeRef="6" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="irrelevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_GUARD_USAGE">
+    <locations>
+      <field className="com.ibm.crawler.WorkerPool" name="stack" type="Ljava/util/Stack;" key="0" filename="WorkerPool.java" line="20"/>
+      <instruction className="com.ibm.crawler.WorkerPool" method="&lt;init&gt;" offset="27" desc="(I)V" key="1" label="irrelevant_unsync_read" filename="WorkerPool.java" line="34"/>
+      <instruction className="com.ibm.crawler.WorkerPool" method="grabWorker" offset="8" desc="()Lcom/ibm/crawler/Worker;" key="2" label="relevant_sync_read" filename="WorkerPool.java" line="47"/>
+      <instruction className="com.ibm.crawler.WorkerPool" method="grabWorker" offset="12" desc="()Lcom/ibm/crawler/Worker;" key="3" label="relevant_sync_read" filename="WorkerPool.java" line="49"/>
+      <instruction className="com.ibm.crawler.WorkerPool" method="returnWorker" offset="6" desc="(Lcom/ibm/crawler/Worker;)V" key="4" label="relevant_sync_read" filename="WorkerPool.java" line="59"/>
+      <instruction className="com.ibm.crawler.WorkerPool" method="returnWorker" offset="10" desc="(Lcom/ibm/crawler/Worker;)V" key="5" label="relevant_sync_read" filename="WorkerPool.java" line="62"/>
+      <class name="com.ibm.crawler.WorkerPool" key="6" label="guard_type" filename="WorkerPool.java"/>
+    </locations>
+    <info>
+      <message value="All accesses to threadsafe collection in field 'stack' are guarded."/>
+      <guards>
+        <guardRelative typeRef="6" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="irrelevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_GUARD_USAGE">
+    <locations>
+      <field className="com.ibm.crawler.FilteredConnectionQueue" name="waitingLists" type="Ljava/util/Hashtable;" key="0" filename="FilteredConnectionQueue.java" line="25"/>
+      <instruction className="com.ibm.crawler.FilteredConnectionQueue" method="enqueue" offset="18" desc="(Lcom/ibm/crawler/Connection;)V" key="1" label="relevant_sync_read" filename="FilteredConnectionQueue.java" line="61"/>
+      <instruction className="com.ibm.crawler.FilteredConnectionQueue" method="enqueue" offset="45" desc="(Lcom/ibm/crawler/Connection;)V" key="2" label="relevant_sync_write" filename="FilteredConnectionQueue.java" line="68"/>
+      <instruction className="com.ibm.crawler.FilteredConnectionQueue" method="connectionStateChanged" offset="21" desc="(Lcom/ibm/crawler/ConnectionEvent;)V" key="3" label="relevant_sync_write" filename="FilteredConnectionQueue.java" line="95"/>
+      <class name="com.ibm.crawler.FilteredConnectionQueue" key="4" label="guard_type" filename="FilteredConnectionQueue.java"/>
+    </locations>
+    <info>
+      <message value="All accesses to threadsafe collection in field 'waitingLists' are guarded."/>
+      <guards>
+        <guardRelative typeRef="4" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_GUARD_USAGE">
+    <locations>
+      <field className="com.ibm.crawler.FilteredConnectionQueue" name="robotFilters" type="Ljava/util/Hashtable;" key="0" filename="FilteredConnectionQueue.java" line="30"/>
+      <instruction className="com.ibm.crawler.FilteredConnectionQueue" method="enqueue" offset="10" desc="(Lcom/ibm/crawler/Connection;)V" key="1" label="relevant_sync_read" filename="FilteredConnectionQueue.java" line="59"/>
+      <instruction className="com.ibm.crawler.FilteredConnectionQueue" method="connectionStateChanged" offset="50" desc="(Lcom/ibm/crawler/ConnectionEvent;)V" key="2" label="relevant_sync_write" filename="FilteredConnectionQueue.java" line="103"/>
+      <class name="com.ibm.crawler.FilteredConnectionQueue" key="3" label="guard_type" filename="FilteredConnectionQueue.java"/>
+    </locations>
+    <info>
+      <message value="All accesses to threadsafe collection in field 'robotFilters' are guarded."/>
+      <guards>
+        <guardRelative typeRef="3" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_GUARD_USAGE">
+    <locations>
+      <field className="com.ibm.crawler.ConnectionQueue" name="queue" type="Ljava/util/Vector;" key="0" filename="ConnectionQueue.java" line="15"/>
+      <instruction className="com.ibm.crawler.ConnectionQueue" method="dequeue" offset="8" desc="()Lcom/ibm/crawler/Connection;" key="1" label="relevant_sync_read" filename="ConnectionQueue.java" line="43"/>
+      <instruction className="com.ibm.crawler.ConnectionQueue" method="dequeue" offset="13" desc="()Lcom/ibm/crawler/Connection;" key="2" label="relevant_sync_read" filename="ConnectionQueue.java" line="45"/>
+      <instruction className="com.ibm.crawler.ConnectionQueue" method="dequeue" offset="19" desc="()Lcom/ibm/crawler/Connection;" key="3" label="relevant_sync_read" filename="ConnectionQueue.java" line="46"/>
+      <instruction className="com.ibm.crawler.ConnectionQueue" method="dequeue" offset="22" desc="()Lcom/ibm/crawler/Connection;" key="4" label="relevant_sync_read" filename="ConnectionQueue.java" line="49"/>
+      <instruction className="com.ibm.crawler.ConnectionQueue" method="enqueue" offset="8" desc="(Lcom/ibm/crawler/Connection;)V" key="5" label="relevant_sync_read" filename="ConnectionQueue.java" line="65"/>
+      <instruction className="com.ibm.crawler.ConnectionQueue" method="enqueue" offset="15" desc="(Lcom/ibm/crawler/Connection;)V" key="6" label="relevant_sync_read" filename="ConnectionQueue.java" line="67"/>
+      <instruction className="com.ibm.crawler.ConnectionQueue" method="enqueue" offset="18" desc="(Lcom/ibm/crawler/Connection;)V" key="7" label="relevant_sync_read" filename="ConnectionQueue.java" line="70"/>
+      <instruction className="com.ibm.crawler.ConnectionQueue" method="forceEnqueue" offset="6" desc="(Lcom/ibm/crawler/Connection;)V" key="8" label="relevant_sync_read" filename="ConnectionQueue.java" line="82"/>
+      <instruction className="com.ibm.crawler.ConnectionQueue" method="forceEnqueue" offset="9" desc="(Lcom/ibm/crawler/Connection;)V" key="9" label="relevant_sync_read" filename="ConnectionQueue.java" line="85"/>
+      <class name="com.ibm.crawler.ConnectionQueue" key="10" label="guard_type" filename="ConnectionQueue.java"/>
+    </locations>
+    <info>
+      <message value="All accesses to threadsafe collection in field 'queue' are guarded."/>
+      <guards>
+        <guardRelative typeRef="10" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_CALLBACK_ACCESS">
+    <locations>
+      <field className="com.ibm.crawler.Timer" name="timerThread" type="Ljava/lang/Thread;" key="0" filename="Timer.java" line="25"/>
+      <instruction className="com.ibm.crawler.Timer" method="finish" offset="1" desc="()V" key="1" label="relevant_unsync_read" filename="Timer.java" line="63"/>
+      <instruction className="com.ibm.crawler.Timer" method="finish" offset="4" desc="()V" key="2" label="relevant_unsync_read" filename="Timer.java" line="64"/>
+      <instruction className="com.ibm.crawler.Timer" method="&lt;init&gt;" offset="4" desc="(Lcom/ibm/crawler/Timed;J)V" key="3" label="irrelevant_unsync_write" filename="Timer.java" line="25"/>
+      <method className="com.ibm.crawler.Timer" name="run" desc="()V" key="4" label="async_entrypoint" filename="Timer.java" line="42"/>
+      <instruction className="com.ibm.crawler.Timer" method="run" offset="2" desc="()V" key="5" label="relevant_unsync_write" filename="Timer.java" line="44"/>
+    </locations>
+    <info>
+      <message value="Field 'timerThread' is accessed from asynchronously invoked method without synchronization."/>
+      <guards/>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="3" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="5" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_CALLBACK_ACCESS">
+    <locations>
+      <field className="com.ibm.crawler.Worker" name="workerThread" type="Ljava/lang/Thread;" key="0" filename="Worker.java" line="25"/>
+      <instruction className="com.ibm.crawler.Worker" method="finish" offset="16" desc="()V" key="1" label="relevant_unsync_read" filename="Worker.java" line="113"/>
+      <instruction className="com.ibm.crawler.Worker" method="&lt;init&gt;" offset="7" desc="(Lcom/ibm/crawler/WorkerPool;)V" key="2" label="irrelevant_unsync_write" filename="Worker.java" line="25"/>
+      <method className="com.ibm.crawler.Worker" name="run" desc="()V" key="3" label="async_entrypoint" filename="Worker.java" line="46"/>
+      <instruction className="com.ibm.crawler.Worker" method="run" offset="2" desc="()V" key="4" label="relevant_unsync_write" filename="Worker.java" line="49"/>
+    </locations>
+    <info>
+      <message value="Field 'workerThread' is accessed from asynchronously invoked method without synchronization."/>
+      <guards/>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="4" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="com.ibm.crawler.ConnectionManager" name="managerThread" type="Ljava/lang/Thread;" key="0" filename="ConnectionManager.java" line="38"/>
+      <instruction className="com.ibm.crawler.ConnectionManager" method="timeExpired" offset="9" desc="()V" key="1" label="relevant_sync_read" filename="ConnectionManager.java" line="171"/>
+      <instruction className="com.ibm.crawler.ConnectionManager" method="timeExpired" offset="12" desc="()V" key="2" label="relevant_sync_read" filename="ConnectionManager.java" line="172"/>
+      <instruction className="com.ibm.crawler.ConnectionManager" method="&lt;init&gt;" offset="4" desc="(Lcom/ibm/crawler/Crawler;)V" key="3" label="irrelevant_unsync_write" filename="ConnectionManager.java" line="38"/>
+      <instruction className="com.ibm.crawler.ConnectionManager" method="run" offset="4" desc="()V" key="4" label="relevant_unsync_write" filename="ConnectionManager.java" line="79"/>
+      <class name="com.ibm.crawler.ConnectionManager" key="5" label="guard_type" filename="ConnectionManager.java"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'managerThread' are inconsistently synchronized."/>
+      <guards>
+        <guardRelative typeRef="5" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="4" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_CC_CALLBACK_ACCESS">
+    <locations>
+      <field className="com.ibm.crawler.Worker" name="connection" type="Lcom/ibm/crawler/Connection;" key="0" filename="Worker.java" line="20"/>
+      <method className="com.ibm.crawler.Worker" name="run" desc="()V" key="1" label="async_entrypoint" filename="Worker.java" line="46"/>
+      <instruction className="com.ibm.crawler.Worker" method="run" offset="7" desc="()V" key="2" label="relevant_unsync_read" filename="Worker.java" line="58"/>
+      <instruction className="com.ibm.crawler.Worker" method="run" offset="10" desc="()V" key="3" label="relevant_unsync_read" filename="Worker.java" line="61"/>
+      <instruction className="com.ibm.crawler.Worker" method="waitForConnection" offset="7" desc="()V" key="4" label="relevant_sync_read" filename="Worker.java" line="92"/>
+      <instruction className="com.ibm.crawler.Worker" method="finish" offset="6" desc="()V" key="5" label="relevant_unsync_read" filename="Worker.java" line="105"/>
+      <instruction className="com.ibm.crawler.Worker" method="finish" offset="13" desc="()V" key="6" label="relevant_unsync_read" filename="Worker.java" line="111"/>
+      <instruction className="com.ibm.crawler.Worker" method="&lt;init&gt;" offset="4" desc="(Lcom/ibm/crawler/WorkerPool;)V" key="7" label="irrelevant_unsync_write" filename="Worker.java" line="20"/>
+      <instruction className="com.ibm.crawler.Worker" method="run" offset="15" desc="()V" key="8" label="relevant_unsync_write" filename="Worker.java" line="64"/>
+      <instruction className="com.ibm.crawler.Worker" method="assignConnection" offset="5" desc="(Lcom/ibm/crawler/Connection;)V" key="9" label="relevant_sync_write" filename="Worker.java" line="82"/>
+      <class name="com.ibm.crawler.Worker" key="10" label="guard_type" filename="Worker.java"/>
+    </locations>
+    <info>
+      <message value="Field 'connection' is accessed from asynchronously invoked method without synchronization."/>
+      <guards>
+        <guardRelative typeRef="10" key="0" intrinsic="true">
+          <guardPath/>
+          <targetPath/>
+        </guardRelative>
+      </guards>
+      <accesses>
+        <access location="2" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="3" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="6" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="7" type="irrelevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="8" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="9" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+</findings>

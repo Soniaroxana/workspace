@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1458944979110" analysisTimestamp="1458944977736" release="">
+  <Project projectName="vutbr4">
+    <Jar>/Users/soniamarginean/Documents/workspace/vutbr4/bin</Jar>
+    <AuxClasspathEntry>/Users/soniamarginean/Documents/workspace/vutbr4/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/soniamarginean/Documents/workspace/vutbr4/fit</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" name="incEmptySlots" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="68" end="72" startBytecode="0" endBytecode="133" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="70" end="70" startBytecode="21" endBytecode="21" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" name="incUsedSlots" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="75" end="77" startBytecode="0" endBytecode="64" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="76" end="76" startBytecode="11" endBytecode="11" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" name="offer" signature="(Ljava/lang/Object;J)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="121" end="139" startBytecode="0" endBytecode="369" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="131" end="131" startBytecode="85" endBytecode="85" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" name="poll" signature="(J)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="162" end="181" startBytecode="0" endBytecode="352" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="172" end="172" startBytecode="66" endBytecode="66" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" name="put" signature="(Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="104" end="118" startBytecode="0" endBytecode="242" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="111" end="111" startBytecode="51" endBytecode="51" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" name="take" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="145" end="158" startBytecode="0" endBytecode="226" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" start="151" end="151" startBytecode="32" endBytecode="32" sourcefile="BoundedBuffer.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedBuffer.java"/>
+  </BugInstance>
+  <BugInstance type="ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD" priority="1" rank="4" abbrev="ML" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="extract" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="180" end="180" startBytecode="0" endBytecode="210" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Method>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="head_" signature="LEDU/oswego/cs/dl/util/concurrent/LinkedNode;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Field>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="186" end="186" startBytecode="33" endBytecode="33" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD" priority="2" rank="6" abbrev="ML" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="insert" signature="(Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="272" end="278" startBytecode="0" endBytecode="182" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Method>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="last_" signature="LEDU/oswego/cs/dl/util/concurrent/LinkedNode;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Field>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="276" end="276" startBytecode="36" endBytecode="36" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="allowTake" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="261" end="264" startBytecode="0" endBytecode="119" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="262" end="262" startBytecode="11" endBytecode="11" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="extract" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="180" end="180" startBytecode="0" endBytecode="210" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="188" end="188" startBytecode="47" endBytecode="47" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="offer" signature="(Ljava/lang/Object;J)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="316" end="357" startBytecode="0" endBytecode="474" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="345" end="345" startBytecode="119" endBytecode="119" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="poll" signature="(J)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="231" end="236" startBytecode="0" endBytecode="351" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="252" end="252" startBytecode="100" endBytecode="100" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="put" signature="(Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="286" end="313" startBytecode="0" endBytecode="303" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="303" end="303" startBytecode="68" endBytecode="68" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="take" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="205" end="210" startBytecode="0" endBytecode="243" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="223" end="223" startBytecode="60" endBytecode="60" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="TLW_TWO_LOCK_WAIT" priority="1" rank="12" abbrev="TLW" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="offer" signature="(Ljava/lang/Object;J)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="316" end="357" startBytecode="0" endBytecode="87" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="332" end="332" startBytecode="78" endBytecode="78" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="188" end="188" startBytecode="47" endBytecode="47" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java" role="SOURCE_NOTIFICATION_DEADLOCK"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="303" end="303" startBytecode="68" endBytecode="68" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java" role="SOURCE_NOTIFICATION_DEADLOCK"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="345" end="345" startBytecode="119" endBytecode="119" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java" role="SOURCE_NOTIFICATION_DEADLOCK"/>
+  </BugInstance>
+  <BugInstance type="TLW_TWO_LOCK_WAIT" priority="1" rank="12" abbrev="TLW" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" name="put" signature="(Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="286" end="313" startBytecode="0" endBytecode="55" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="296" end="296" startBytecode="52" endBytecode="52" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="188" end="188" startBytecode="47" endBytecode="47" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java" role="SOURCE_NOTIFICATION_DEADLOCK"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="303" end="303" startBytecode="68" endBytecode="68" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java" role="SOURCE_NOTIFICATION_DEADLOCK"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" start="345" end="345" startBytecode="119" endBytecode="119" sourcefile="BoundedLinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/BoundedLinkedQueue.java" role="SOURCE_NOTIFICATION_DEADLOCK"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.ClockDaemon">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ClockDaemon" sourcefile="ClockDaemon.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ClockDaemon.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.ClockDaemon" name="restart" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ClockDaemon" start="284" end="290" startBytecode="0" endBytecode="110" sourcefile="ClockDaemon.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ClockDaemon.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ClockDaemon" start="289" end="289" startBytecode="35" endBytecode="35" sourcefile="ClockDaemon.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ClockDaemon.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" rank="16" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.ClockDaemon$TaskNode">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ClockDaemon$TaskNode" sourcefile="ClockDaemon.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ClockDaemon.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.ClockDaemon$TaskNode" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ClockDaemon$TaskNode" start="82" end="84" startBytecode="0" endBytecode="133" sourcefile="ClockDaemon.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ClockDaemon.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NN_NAKED_NOTIFY" priority="2" rank="14" abbrev="NN" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CondVar">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CondVar" name="broadcast" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="262" end="263" startBytecode="0" endBytecode="50" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="262" end="262" startBytecode="1" endBytecode="1" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+  </BugInstance>
+  <BugInstance type="NN_NAKED_NOTIFY" priority="2" rank="14" abbrev="NN" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CondVar">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CondVar" name="signal" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="257" end="258" startBytecode="0" endBytecode="50" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="257" end="257" startBytecode="1" endBytecode="1" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CondVar">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CondVar" name="await" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="165" end="194" startBytecode="0" endBytecode="474" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="173" end="173" startBytecode="36" endBytecode="36" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CondVar">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CondVar" name="signal" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="257" end="258" startBytecode="0" endBytecode="50" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="257" end="257" startBytecode="1" endBytecode="1" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CondVar">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CondVar" name="timedwait" signature="(J)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="214" end="248" startBytecode="0" endBytecode="583" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="227" end="227" startBytecode="69" endBytecode="69" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+  </BugInstance>
+  <BugInstance type="UW_UNCOND_WAIT" priority="2" rank="14" abbrev="UW" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CondVar">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CondVar" name="await" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="165" end="194" startBytecode="0" endBytecode="474" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="170" end="170" startBytecode="28" endBytecode="28" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+  </BugInstance>
+  <BugInstance type="WA_NOT_IN_LOOP" priority="2" rank="14" abbrev="Wa" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CondVar">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CondVar" name="await" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="165" end="194" startBytecode="0" endBytecode="474" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="170" end="170" startBytecode="28" endBytecode="28" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+  </BugInstance>
+  <BugInstance type="WA_NOT_IN_LOOP" priority="3" rank="17" abbrev="Wa" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CondVar">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CondVar" name="timedwait" signature="(J)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="214" end="248" startBytecode="0" endBytecode="583" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CondVar" start="222" end="222" startBytecode="43" endBytecode="43" sourcefile="CondVar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CondVar.java"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" name="array_" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Field>
+    <Int value="98" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" start="1059" end="1059" startBytecode="4" endBytecode="4" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="1016" end="1016" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="137" end="137" startBytecode="5" endBytecode="5" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="138" end="138" startBytecode="11" endBytecode="11" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="426" end="426" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="431" end="431" startBytecode="57" endBytecode="57" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="433" end="433" startBytecode="74" endBytecode="74" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="434" end="434" startBytecode="92" endBytecode="92" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="447" end="447" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="449" end="449" startBytecode="13" endBytecode="13" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="451" end="451" startBytecode="28" endBytecode="28" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="455" end="455" startBytecode="69" endBytecode="69" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="454" end="454" startBytecode="52" endBytecode="52" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="472" end="472" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="482" end="482" startBytecode="30" endBytecode="30" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="494" end="494" startBytecode="120" endBytecode="120" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="496" end="496" startBytecode="148" endBytecode="148" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="490" end="490" startBytecode="102" endBytecode="102" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="483" end="483" startBytecode="45" endBytecode="45" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="495" end="495" startBytecode="134" endBytecode="134" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="485" end="485" startBytecode="73" endBytecode="73" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="486" end="486" startBytecode="92" endBytecode="92" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="620" end="620" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="637" end="637" startBytecode="94" endBytecode="94" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="92" end="92" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="519" end="519" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="528" end="528" startBytecode="53" endBytecode="53" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="529" end="529" startBytecode="65" endBytecode="65" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="530" end="530" startBytecode="80" endBytecode="80" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="655" end="655" startBytecode="14" endBytecode="14" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="675" end="675" startBytecode="136" endBytecode="136" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="684" end="684" startBytecode="5" endBytecode="5" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="698" end="698" startBytecode="14" endBytecode="14" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="700" end="700" startBytecode="28" endBytecode="28" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="704" end="704" startBytecode="79" endBytecode="79" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="407" end="407" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="409" end="409" startBytecode="14" endBytecode="14" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="411" end="411" startBytecode="30" endBytecode="30" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="385" end="385" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="387" end="387" startBytecode="13" endBytecode="13" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="393" end="393" startBytecode="58" endBytecode="58" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="395" end="395" startBytecode="77" endBytecode="77" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="589" end="589" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="608" end="608" startBytecode="94" endBytecode="94" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="724" end="724" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="732" end="732" startBytecode="73" endBytecode="73" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="735" end="735" startBytecode="95" endBytecode="95" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="739" end="739" startBytecode="151" endBytecode="151" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="544" end="544" startBytecode="1" endBytecode="1" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="547" end="547" startBytecode="21" endBytecode="21" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="554" end="554" startBytecode="76" endBytecode="76" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="551" end="551" startBytecode="54" endBytecode="54" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="548" end="548" startBytecode="36" endBytecode="36" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" start="1102" end="1102" startBytecode="50" endBytecode="50" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" start="1112" end="1112" startBytecode="35" endBytecode="35" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" start="1076" end="1076" startBytecode="37" endBytecode="37" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="RS_READOBJECT_SYNC" priority="2" rank="14" abbrev="RS" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" name="readObject" signature="(Ljava/io/ObjectInputStream;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="779" end="789" startBytecode="0" endBytecode="170" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SE_METHOD_MUST_BE_PRIVATE" priority="1" rank="1" abbrev="Se" category="CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" name="readObject" signature="(Ljava/io/ObjectInputStream;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="779" end="789" startBytecode="0" endBytecode="170" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SE_METHOD_MUST_BE_PRIVATE" priority="1" rank="1" abbrev="Se" category="CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" name="writeObject" signature="(Ljava/io/ObjectOutputStream;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="762" end="771" startBytecode="0" endBytecode="148" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="92" end="1019" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UG_SYNC_SET_UNSYNC_GET" priority="2" rank="14" abbrev="UG" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" name="get" signature="(I)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="369" end="371" startBytecode="0" endBytecode="85" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Method>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" name="set" signature="(ILjava/lang/Object;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" start="385" end="397" startBytecode="0" endBytecode="250" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UrF" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList$COWSubListIterator">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList$COWSubListIterator" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList$COWSubListIterator" name="index" signature="I" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList$COWSubListIterator" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+    </Field>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList$COWSubListIterator" start="1138" end="1138" startBytecode="11" endBytecode="11" sourcefile="CopyOnWriteArrayList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArrayList.java"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArraySet">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArraySet" start="74" end="100" sourcefile="CopyOnWriteArraySet.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArraySet.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="3" rank="19" abbrev="SnVI" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArraySet">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArraySet" start="74" end="100" sourcefile="CopyOnWriteArraySet.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/CopyOnWriteArraySet.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Par">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Par" sourcefile="FJTask.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTask.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Par" name="&lt;init&gt;" signature="([LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Par" start="450" end="452" startBytecode="0" endBytecode="69" sourcefile="FJTask.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTask.java"/>
+    </Method>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Par" name="tasks" signature="[LEDU/oswego/cs/dl/util/concurrent/FJTask;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Par" sourcefile="FJTask.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTask.java"/>
+    </Field>
+    <LocalVariable name="tasks" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Par" start="451" end="451" startBytecode="6" endBytecode="6" sourcefile="FJTask.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTask.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Par" start="451" end="451" startBytecode="6" endBytecode="6" sourcefile="FJTask.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTask.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Seq">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Seq" sourcefile="FJTask.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTask.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Seq" name="&lt;init&gt;" signature="([LEDU/oswego/cs/dl/util/concurrent/FJTask;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Seq" start="411" end="413" startBytecode="0" endBytecode="69" sourcefile="FJTask.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTask.java"/>
+    </Method>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Seq" name="tasks" signature="[LEDU/oswego/cs/dl/util/concurrent/FJTask;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Seq" sourcefile="FJTask.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTask.java"/>
+    </Field>
+    <LocalVariable name="tasks" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Seq" start="412" end="412" startBytecode="6" endBytecode="6" sourcefile="FJTask.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTask.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTask$Seq" start="412" end="412" startBytecode="6" endBytecode="6" sourcefile="FJTask.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTask.java"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" name="deq" signature="[LEDU/oswego/cs/dl/util/concurrent/FJTaskRunner$VolatileTaskRef;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java"/>
+    </Field>
+    <Int value="67" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="869" end="869" startBytecode="11" endBytecode="11" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="869" end="869" startBytecode="19" endBytecode="19" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="871" end="871" startBytecode="28" endBytecode="28" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="871" end="871" startBytecode="33" endBytecode="33" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="926" end="926" startBytecode="22" endBytecode="22" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="926" end="926" startBytecode="30" endBytecode="30" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="928" end="928" startBytecode="45" endBytecode="45" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="928" end="928" startBytecode="53" endBytecode="53" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="288" end="288" startBytecode="1" endBytecode="1" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="483" end="483" startBytecode="23" endBytecode="23" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="483" end="483" startBytecode="28" endBytecode="28" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="497" end="497" startBytecode="9" endBytecode="9" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="497" end="497" startBytecode="14" endBytecode="14" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="579" end="579" startBytecode="14" endBytecode="14" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="602" end="602" startBytecode="133" endBytecode="133" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="581" end="581" startBytecode="25" endBytecode="25" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="582" end="582" startBytecode="38" endBytecode="38" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="583" end="583" startBytecode="56" endBytecode="56" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="611" end="611" startBytecode="180" endBytecode="180" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="593" end="593" startBytecode="113" endBytecode="113" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="616" end="616" startBytecode="236" endBytecode="236" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="594" end="594" startBytecode="81" endBytecode="81" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="595" end="595" startBytecode="96" endBytecode="96" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="558" end="558" startBytecode="16" endBytecode="16" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="558" end="558" startBytecode="21" endBytecode="21" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="401" end="401" startBytecode="11" endBytecode="11" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="401" end="401" startBytecode="19" endBytecode="19" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="403" end="403" startBytecode="28" endBytecode="28" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="403" end="403" startBytecode="33" endBytecode="33" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="433" end="433" startBytecode="13" endBytecode="13" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="435" end="435" startBytecode="23" endBytecode="23" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="436" end="436" startBytecode="32" endBytecode="32" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="440" end="440" startBytecode="56" endBytecode="56" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" start="441" end="441" startBytecode="74" endBytecode="74" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="CI_CONFUSED_INHERITANCE" priority="3" rank="20" abbrev="CI" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner$VolatileTaskRef">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner$VolatileTaskRef" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner$VolatileTaskRef" name="ref" signature="LEDU/oswego/cs/dl/util/concurrent/FJTask;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner$VolatileTaskRef" sourcefile="FJTaskRunner.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunner.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" name="entries" signature="I" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Field>
+    <Int value="66" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" start="410" end="410" startBytecode="261" endBytecode="261" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" start="566" end="566" startBytecode="2" endBytecode="2" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" start="566" end="566" startBytecode="7" endBytecode="7" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" name="checkActive" signature="(LEDU/oswego/cs/dl/util/concurrent/FJTaskRunner;J)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" start="536" end="557" startBytecode="0" endBytecode="269" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" start="554" end="554" startBytecode="78" endBytecode="78" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" name="signalNewTask" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" start="566" end="571" startBytecode="0" endBytecode="116" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" start="570" end="570" startBytecode="45" endBytecode="45" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+  </BugInstance>
+  <BugInstance type="WA_NOT_IN_LOOP" priority="2" rank="14" abbrev="Wa" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" name="checkActive" signature="(LEDU/oswego/cs/dl/util/concurrent/FJTaskRunner;J)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" start="536" end="557" startBytecode="0" endBytecode="269" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" start="541" end="541" startBytecode="23" endBytecode="23" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+  </BugInstance>
+  <BugInstance type="CI_CONFUSED_INHERITANCE" priority="3" rank="20" abbrev="CI" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup$InvokableFJTask">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup$InvokableFJTask" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup$InvokableFJTask" name="terminated" signature="Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup$InvokableFJTask" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="CI_CONFUSED_INHERITANCE" priority="3" rank="20" abbrev="CI" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup$InvokableFJTask">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup$InvokableFJTask" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup$InvokableFJTask" name="wrapped" signature="Ljava/lang/Runnable;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup$InvokableFJTask" sourcefile="FJTaskRunnerGroup.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/FJTaskRunnerGroup.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD" priority="1" rank="4" abbrev="ML" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" name="extract" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" start="79" end="79" startBytecode="0" endBytecode="188" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Method>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" name="head_" signature="LEDU/oswego/cs/dl/util/concurrent/LinkedNode;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Field>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" start="85" end="85" startBytecode="33" endBytecode="33" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD" priority="2" rank="6" abbrev="ML" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" name="insert" signature="(Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" start="66" end="75" startBytecode="0" endBytecode="245" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Method>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" name="last_" signature="LEDU/oswego/cs/dl/util/concurrent/LinkedNode;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Field>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" start="70" end="70" startBytecode="34" endBytecode="34" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" name="insert" signature="(Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" start="66" end="75" startBytecode="0" endBytecode="245" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" start="73" end="73" startBytecode="58" endBytecode="58" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" name="poll" signature="(J)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" start="153" end="158" startBytecode="0" endBytecode="393" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" start="177" end="177" startBytecode="130" endBytecode="130" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" name="take" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" start="106" end="112" startBytecode="0" endBytecode="285" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" start="128" end="128" startBytecode="90" endBytecode="90" sourcefile="LinkedQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/LinkedQueue.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.Mutex">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Mutex" sourcefile="Mutex.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Mutex.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.Mutex" name="acquire" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Mutex" start="115" end="126" startBytecode="0" endBytecode="195" sourcefile="Mutex.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Mutex.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Mutex" start="122" end="122" startBytecode="42" endBytecode="42" sourcefile="Mutex.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Mutex.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.Mutex">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Mutex" sourcefile="Mutex.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Mutex.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.Mutex" name="attempt" signature="(J)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Mutex" start="135" end="136" startBytecode="0" endBytecode="363" sourcefile="Mutex.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Mutex.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Mutex" start="161" end="161" startBytecode="98" endBytecode="98" sourcefile="Mutex.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Mutex.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.Mutex">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Mutex" sourcefile="Mutex.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Mutex.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.Mutex" name="release" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Mutex" start="129" end="131" startBytecode="0" endBytecode="59" sourcefile="Mutex.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Mutex.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Mutex" start="130" end="130" startBytecode="6" endBytecode="6" sourcefile="Mutex.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Mutex.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" sourcefile="PooledExecutor.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PooledExecutor.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" name="addThread" signature="(Ljava/lang/Runnable;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" start="466" end="471" startBytecode="0" endBytecode="139" sourcefile="PooledExecutor.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PooledExecutor.java"/>
+    </Method>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" name="poolSize_" signature="I" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" sourcefile="PooledExecutor.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PooledExecutor.java"/>
+    </Field>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" start="466" end="466" startBytecode="7" endBytecode="7" sourcefile="PooledExecutor.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PooledExecutor.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" sourcefile="PooledExecutor.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PooledExecutor.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" name="workerDone" signature="(LEDU/oswego/cs/dl/util/concurrent/PooledExecutor$Worker;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" start="574" end="578" startBytecode="0" endBytecode="150" sourcefile="PooledExecutor.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PooledExecutor.java"/>
+    </Method>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" name="poolSize_" signature="I" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" sourcefile="PooledExecutor.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PooledExecutor.java"/>
+    </Field>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" start="575" end="575" startBytecode="14" endBytecode="14" sourcefile="PooledExecutor.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PooledExecutor.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="3" rank="20" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" name="writeObject" signature="(Ljava/io/ObjectOutputStream;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" start="439" end="448" startBytecode="0" endBytecode="31" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+    </Method>
+    <LocalVariable name="l" register="3" pc="16" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" start="442" end="442" startBytecode="15" endBytecode="15" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" start="442" end="442" startBytecode="15" endBytecode="15" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="l"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_BOOLEAN_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" name="firePropertyChange" signature="(Ljava/lang/String;ZZ)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" start="382" end="388" startBytecode="0" endBytecode="142" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" start="385" end="385" startBytecode="20" endBytecode="20" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" start="385" end="385" startBytecode="20" endBytecode="20" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" name="firePropertyChange" signature="(Ljava/lang/String;II)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" start="359" end="365" startBytecode="0" endBytecode="142" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" start="362" end="362" startBytecode="20" endBytecode="20" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" start="362" end="362" startBytecode="20" endBytecode="20" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" start="83" end="459" sourcefile="PropertyChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/PropertyChangeMulticaster.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore$WaitQueue$WaitNode">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore$WaitQueue$WaitNode" sourcefile="QueuedSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore$WaitQueue$WaitNode" name="signal" signature="()Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore$WaitQueue$WaitNode" start="100" end="105" startBytecode="0" endBytecode="99" sourcefile="QueuedSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore$WaitQueue$WaitNode" start="103" end="103" startBytecode="15" endBytecode="15" sourcefile="QueuedSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" name="acquire" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" start="33" end="50" startBytecode="0" endBytecode="251" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" start="45" end="45" startBytecode="69" endBytecode="69" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" name="attempt" signature="(J)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" start="54" end="56" startBytecode="0" endBytecode="507" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" start="91" end="91" startBytecode="163" endBytecode="163" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" name="release" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" start="103" end="110" startBytecode="0" endBytecode="117" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" start="108" end="108" startBytecode="42" endBytecode="42" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" name="release" signature="(J)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" start="123" end="131" startBytecode="0" endBytecode="144" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" start="129" end="129" startBytecode="54" endBytecode="54" sourcefile="ReentrantLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantLock.java"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.Semaphore">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" name="permits_" signature="J" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+    </Field>
+    <Int value="92" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="108" end="108" startBytecode="19" endBytecode="19" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="109" end="109" startBytecode="29" endBytecode="29" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="109" end="109" startBytecode="34" endBytecode="34" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="157" end="157" startBytecode="2" endBytecode="2" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="157" end="157" startBytecode="7" endBytecode="7" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="175" end="175" startBytecode="18" endBytecode="18" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="175" end="175" startBytecode="23" endBytecode="23" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="123" end="123" startBytecode="19" endBytecode="19" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="124" end="124" startBytecode="29" endBytecode="29" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="124" end="124" startBytecode="34" endBytecode="34" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="136" end="136" startBytecode="66" endBytecode="66" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="137" end="137" startBytecode="76" endBytecode="76" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="137" end="137" startBytecode="81" endBytecode="81" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="185" end="185" startBytecode="1" endBytecode="1" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore" start="66" end="66" startBytecode="14" endBytecode="14" sourcefile="QueuedSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore" start="66" end="66" startBytecode="19" endBytecode="19" sourcefile="QueuedSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore" start="57" end="57" startBytecode="1" endBytecode="1" sourcefile="QueuedSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore" start="58" end="58" startBytecode="21" endBytecode="21" sourcefile="QueuedSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore" start="58" end="58" startBytecode="26" endBytecode="26" sourcefile="QueuedSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore" start="51" end="51" startBytecode="1" endBytecode="1" sourcefile="QueuedSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore" start="52" end="52" startBytecode="21" endBytecode="21" sourcefile="QueuedSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore" start="52" end="52" startBytecode="26" endBytecode="26" sourcefile="QueuedSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/QueuedSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="136" end="136" startBytecode="2" endBytecode="2" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="136" end="136" startBytecode="7" endBytecode="7" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="68" end="68" startBytecode="19" endBytecode="19" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="69" end="69" startBytecode="32" endBytecode="32" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="69" end="69" startBytecode="37" endBytecode="37" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="77" end="77" startBytecode="58" endBytecode="58" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="79" end="79" startBytecode="78" endBytecode="78" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="79" end="79" startBytecode="83" endBytecode="83" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="142" end="142" startBytecode="2" endBytecode="2" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="142" end="142" startBytecode="7" endBytecode="7" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="97" end="97" startBytecode="19" endBytecode="19" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="98" end="98" startBytecode="32" endBytecode="32" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="98" end="98" startBytecode="37" endBytecode="37" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="112" end="112" startBytecode="79" endBytecode="79" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="114" end="114" startBytecode="99" endBytecode="99" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="114" end="114" startBytecode="104" endBytecode="104" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.Semaphore">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" name="acquire" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="105" end="116" startBytecode="0" endBytecode="150" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="112" end="112" startBytecode="42" endBytecode="42" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.Semaphore">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" name="attempt" signature="(J)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="120" end="122" startBytecode="0" endBytecode="377" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="148" end="148" startBytecode="112" endBytecode="112" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.Semaphore">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" name="release" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="157" end="159" startBytecode="0" endBytecode="64" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="158" end="158" startBytecode="11" endBytecode="11" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.Semaphore">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" name="release" signature="(J)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="173" end="177" startBytecode="0" endBytecode="133" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.Semaphore" start="176" end="176" startBytecode="32" endBytecode="32" sourcefile="Semaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/Semaphore.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SemaphoreControlledChannel">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SemaphoreControlledChannel" sourcefile="SemaphoreControlledChannel.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SemaphoreControlledChannel.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.SemaphoreControlledChannel" name="&lt;init&gt;" signature="(ILjava/lang/Class;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SemaphoreControlledChannel" start="57" end="72" startBytecode="0" endBytecode="261" sourcefile="SemaphoreControlledChannel.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SemaphoreControlledChannel.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SemaphoreControlledChannel" start="68" end="68" startBytecode="50" endBytecode="50" sourcefile="SemaphoreControlledChannel.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SemaphoreControlledChannel.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SemaphoreControlledChannel" start="68" end="68" startBytecode="50" endBytecode="50" sourcefile="SemaphoreControlledChannel.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SemaphoreControlledChannel.java"/>
+  </BugInstance>
+  <BugInstance type="BC_BAD_CAST_TO_ABSTRACT_COLLECTION" priority="2" rank="17" abbrev="BC" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SyncList">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SyncList" sourcefile="SyncList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SyncList.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.SyncList" name="baseList" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SyncList" start="59" end="59" startBytecode="0" endBytecode="3" sourcefile="SyncList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SyncList.java"/>
+    </Method>
+    <Type descriptor="Ljava/util/Collection;" role="TYPE_FOUND">
+      <SourceLine classname="java.util.Collection" start="410" end="602" sourcefile="Collection.java" sourcepath="java/util/Collection.java"/>
+    </Type>
+    <Type descriptor="Ljava/util/List;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.util.List" start="410" end="732" sourcefile="List.java" sourcepath="java/util/List.java"/>
+    </Type>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.SyncCollection" name="c_" signature="Ljava/util/Collection;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SyncCollection" sourcefile="SyncCollection.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SyncCollection.java"/>
+    </Field>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SyncList" start="59" end="59" startBytecode="4" endBytecode="4" sourcefile="SyncList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SyncList.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SyncList" start="59" end="59" startBytecode="4" endBytecode="4" sourcefile="SyncList.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SyncList.java"/>
+  </BugInstance>
+  <BugInstance type="BC_BAD_CAST_TO_ABSTRACT_COLLECTION" priority="2" rank="17" abbrev="BC" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SyncSortedSet">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SyncSortedSet" sourcefile="SyncSortedSet.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SyncSortedSet.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.SyncSortedSet" name="baseSortedSet" signature="()Ljava/util/SortedSet;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SyncSortedSet" start="56" end="56" startBytecode="0" endBytecode="3" sourcefile="SyncSortedSet.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SyncSortedSet.java"/>
+    </Method>
+    <Type descriptor="Ljava/util/Collection;" role="TYPE_FOUND">
+      <SourceLine classname="java.util.Collection" start="410" end="602" sourcefile="Collection.java" sourcepath="java/util/Collection.java"/>
+    </Type>
+    <Type descriptor="Ljava/util/SortedSet;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.util.SortedSet" start="256" end="256" sourcefile="SortedSet.java" sourcepath="java/util/SortedSet.java"/>
+    </Type>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.SyncCollection" name="c_" signature="Ljava/util/Collection;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SyncCollection" sourcefile="SyncCollection.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SyncCollection.java"/>
+    </Field>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SyncSortedSet" start="56" end="56" startBytecode="4" endBytecode="4" sourcefile="SyncSortedSet.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SyncSortedSet.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SyncSortedSet" start="56" end="56" startBytecode="4" endBytecode="4" sourcefile="SyncSortedSet.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SyncSortedSet.java"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedBoolean">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedBoolean" start="30" end="172" sourcefile="SynchronizedBoolean.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedBoolean.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedByte">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedByte" start="31" end="242" sourcefile="SynchronizedByte.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedByte.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedChar">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedChar" start="31" end="166" sourcefile="SynchronizedChar.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedChar.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" start="31" end="168" sourcefile="SynchronizedDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" sourcefile="SynchronizedDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" name="commit" signature="(DD)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" start="67" end="67" startBytecode="0" endBytecode="185" sourcefile="SynchronizedDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" start="68" end="68" startBytecode="14" endBytecode="14" sourcefile="SynchronizedDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="3" rank="20" abbrev="FE" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" sourcefile="SynchronizedDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" name="compareTo" signature="(D)I" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" start="143" end="144" startBytecode="0" endBytecode="107" sourcefile="SynchronizedDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" start="144" end="144" startBytecode="18" endBytecode="18" sourcefile="SynchronizedDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="3" rank="20" abbrev="FE" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" sourcefile="SynchronizedDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" start="156" end="160" startBytecode="0" endBytecode="105" sourcefile="SynchronizedDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" start="158" end="158" startBytecode="23" endBytecode="23" sourcefile="SynchronizedDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedDouble.java"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" start="31" end="167" sourcefile="SynchronizedFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" sourcefile="SynchronizedFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" name="commit" signature="(FF)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" start="67" end="67" startBytecode="0" endBytecode="182" sourcefile="SynchronizedFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" start="68" end="68" startBytecode="13" endBytecode="13" sourcefile="SynchronizedFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="3" rank="20" abbrev="FE" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" sourcefile="SynchronizedFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" name="compareTo" signature="(F)I" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" start="143" end="144" startBytecode="0" endBytecode="107" sourcefile="SynchronizedFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" start="144" end="144" startBytecode="18" endBytecode="18" sourcefile="SynchronizedFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="3" rank="20" abbrev="FE" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" sourcefile="SynchronizedFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" start="156" end="160" startBytecode="0" endBytecode="105" sourcefile="SynchronizedFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" start="158" end="158" startBytecode="23" endBytecode="23" sourcefile="SynchronizedFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedFloat.java"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedInt">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedInt" start="31" end="239" sourcefile="SynchronizedInt.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedInt.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedLong">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedLong" start="31" end="241" sourcefile="SynchronizedLong.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedLong.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedShort">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.SynchronizedShort" start="31" end="243" sourcefile="SynchronizedShort.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/SynchronizedShort.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.TimeDaemon">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.TimeDaemon" sourcefile="TimeDaemon.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/TimeDaemon.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.TimeDaemon" name="restart" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.TimeDaemon" start="235" end="241" startBytecode="0" endBytecode="110" sourcefile="TimeDaemon.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/TimeDaemon.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.TimeDaemon" start="240" end="240" startBytecode="35" endBytecode="35" sourcefile="TimeDaemon.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/TimeDaemon.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" rank="16" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.TimeDaemon$TaskNode">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.TimeDaemon$TaskNode" sourcefile="TimeDaemon.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/TimeDaemon.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.TimeDaemon$TaskNode" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.TimeDaemon$TaskNode" start="76" end="78" startBytecode="0" endBytecode="133" sourcefile="TimeDaemon.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/TimeDaemon.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="3" rank="20" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" name="writeObject" signature="(Ljava/io/ObjectOutputStream;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" start="550" end="559" startBytecode="0" endBytecode="31" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+    </Method>
+    <LocalVariable name="l" register="3" pc="16" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" start="553" end="553" startBytecode="15" endBytecode="15" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" start="553" end="553" startBytecode="15" endBytecode="15" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="l"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_BOOLEAN_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" name="fireVetoableChange" signature="(Ljava/lang/String;ZZ)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" start="481" end="487" startBytecode="0" endBytecode="142" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" start="484" end="484" startBytecode="20" endBytecode="20" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" start="484" end="484" startBytecode="20" endBytecode="20" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" name="fireVetoableChange" signature="(Ljava/lang/String;II)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" start="447" end="453" startBytecode="0" endBytecode="142" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" start="450" end="450" startBytecode="20" endBytecode="20" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" start="450" end="450" startBytecode="20" endBytecode="20" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+  </BugInstance>
+  <BugInstance type="SE_NO_SERIALVERSIONID" priority="2" rank="16" abbrev="SnVI" category="BAD_PRACTICE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" start="119" end="570" sourcefile="VetoableChangeMulticaster.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/VetoableChangeMulticaster.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="3" rank="20" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" name="peek" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" start="270" end="298" startBytecode="0" endBytecode="60" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    </Method>
+    <LocalVariable name="tailDotCount" register="5" pc="68" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" start="284" end="284" startBytecode="66" endBytecode="66" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" start="284" end="284" startBytecode="66" endBytecode="66" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="tailDotCount"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="CI_CONFUSED_INHERITANCE" priority="3" rank="20" abbrev="CI" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" name="count" signature="J" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="CI_CONFUSED_INHERITANCE" priority="3" rank="20" abbrev="CI" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" name="next" signature="LEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="CI_CONFUSED_INHERITANCE" priority="3" rank="20" abbrev="CI" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" name="value" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" name="next" signature="LEDU/oswego/cs/dl/util/concurrent/WaitFreeQueue$Node;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java"/>
+    </Field>
+    <Int value="81" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" start="184" end="184" startBytecode="85" endBytecode="85" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" start="287" end="287" startBytecode="79" endBytecode="79" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" start="90" end="90" startBytecode="2" endBytecode="2" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" start="98" end="98" startBytecode="1" endBytecode="1" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" start="99" end="99" startBytecode="32" endBytecode="32" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" start="173" end="173" startBytecode="26" endBytecode="26" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" start="180" end="180" startBytecode="60" endBytecode="60" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" start="131" end="131" startBytecode="35" endBytecode="35" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" start="139" end="139" startBytecode="64" endBytecode="64" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" start="276" end="276" startBytecode="20" endBytecode="20" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" start="283" end="283" startBytecode="54" endBytecode="54" sourcefile="WaitFreeQueue.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitFreeQueue.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaitableDouble">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableDouble" sourcefile="WaitableDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableDouble.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WaitableDouble" name="whenEqual" signature="(DLjava/lang/Runnable;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableDouble" start="92" end="96" startBytecode="0" endBytecode="164" sourcefile="WaitableDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableDouble.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableDouble" start="93" end="93" startBytecode="24" endBytecode="24" sourcefile="WaitableDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableDouble.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaitableDouble">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableDouble" sourcefile="WaitableDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableDouble.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WaitableDouble" name="whenNotEqual" signature="(DLjava/lang/Runnable;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableDouble" start="103" end="107" startBytecode="0" endBytecode="164" sourcefile="WaitableDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableDouble.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableDouble" start="104" end="104" startBytecode="24" endBytecode="24" sourcefile="WaitableDouble.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableDouble.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaitableFloat">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableFloat" sourcefile="WaitableFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableFloat.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WaitableFloat" name="whenEqual" signature="(FLjava/lang/Runnable;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableFloat" start="92" end="96" startBytecode="0" endBytecode="161" sourcefile="WaitableFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableFloat.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableFloat" start="93" end="93" startBytecode="23" endBytecode="23" sourcefile="WaitableFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableFloat.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="1" rank="15" abbrev="FE" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaitableFloat">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableFloat" sourcefile="WaitableFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableFloat.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WaitableFloat" name="whenNotEqual" signature="(FLjava/lang/Runnable;)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableFloat" start="103" end="107" startBytecode="0" endBytecode="161" sourcefile="WaitableFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableFloat.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaitableFloat" start="104" end="104" startBytecode="23" endBytecode="23" sourcefile="WaitableFloat.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaitableFloat.java"/>
+  </BugInstance>
+  <BugInstance type="CI_CONFUSED_INHERITANCE" priority="3" rank="20" abbrev="CI" category="STYLE" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" name="waits_" signature="J" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" name="acquire" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="62" end="63" startBytecode="0" endBytecode="276" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="86" end="86" startBytecode="101" endBytecode="101" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" name="attempt" signature="(J)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="94" end="96" startBytecode="0" endBytecode="436" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="128" end="128" startBytecode="155" endBytecode="155" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" name="release" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="136" end="138" startBytecode="0" endBytecode="64" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="137" end="137" startBytecode="11" endBytecode="11" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" name="release" signature="(J)V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="142" end="144" startBytecode="0" endBytecode="112" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" start="143" end="143" startBytecode="16" endBytecode="16" sourcefile="WaiterPreferenceSemaphore.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WaiterPreferenceSemaphore.java"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="3" rank="20" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Class>
+    <Field classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock" name="activeWriter_" signature="Ljava/lang/Thread;" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Field>
+    <Int value="81" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReaderPreferenceReadWriteLock" start="27" end="27" startBytecode="1" endBytecode="1" sourcefile="ReaderPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReaderPreferenceReadWriteLock.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock" start="62" end="62" startBytecode="1" endBytecode="1" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock" start="131" end="131" startBytecode="2" endBytecode="2" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock" start="77" end="77" startBytecode="1" endBytecode="1" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock" start="78" end="78" startBytecode="30" endBytecode="30" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantWriterPreferenceReadWriteLock" start="68" end="68" startBytecode="1" endBytecode="1" sourcefile="ReentrantWriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantWriterPreferenceReadWriteLock.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantWriterPreferenceReadWriteLock" start="69" end="69" startBytecode="17" endBytecode="17" sourcefile="ReentrantWriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantWriterPreferenceReadWriteLock.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantWriterPreferenceReadWriteLock" start="108" end="108" startBytecode="23" endBytecode="23" sourcefile="ReentrantWriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantWriterPreferenceReadWriteLock.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantWriterPreferenceReadWriteLock" start="82" end="82" startBytecode="35" endBytecode="35" sourcefile="ReentrantWriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantWriterPreferenceReadWriteLock.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.ReentrantWriterPreferenceReadWriteLock" start="75" end="75" startBytecode="22" endBytecode="22" sourcefile="ReentrantWriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/ReentrantWriterPreferenceReadWriteLock.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <Property name="edu.umd.cs.findbugs.detect.InconsistentSyncWarningProperty.ONLY_UNSYNC_IN_GETTERS" value="true"/>
+  </BugInstance>
+  <BugInstance type="NN_NAKED_NOTIFY" priority="2" rank="14" abbrev="NN" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$ReaderLock">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$ReaderLock" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$ReaderLock" name="signalWaiters" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$ReaderLock" start="191" end="191" startBytecode="0" endBytecode="46" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$ReaderLock" start="191" end="191" startBytecode="1" endBytecode="1" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+  </BugInstance>
+  <BugInstance type="NN_NAKED_NOTIFY" priority="2" rank="14" abbrev="NN" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" name="signalWaiters" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" start="267" end="267" startBytecode="0" endBytecode="46" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" start="267" end="267" startBytecode="1" endBytecode="1" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" name="acquire" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" start="234" end="260" startBytecode="0" endBytecode="270" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" start="246" end="246" startBytecode="56" endBytecode="56" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" name="attempt" signature="(J)Z" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" start="270" end="304" startBytecode="0" endBytecode="436" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" start="294" end="294" startBytecode="129" endBytecode="129" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+  </BugInstance>
+  <BugInstance type="NO_NOTIFY_NOT_NOTIFYALL" priority="3" rank="17" abbrev="No" category="MT_CORRECTNESS" first="1">
+    <Class classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Class>
+    <Method classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" name="signalWaiters" signature="()V" isStatic="false">
+      <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" start="267" end="267" startBytecode="0" endBytecode="46" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+    </Method>
+    <SourceLine classname="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" start="267" end="267" startBytecode="1" endBytecode="1" sourcefile="WriterPreferenceReadWriteLock.java" sourcepath="EDU/oswego/cs/dl/util/concurrent/WriterPreferenceReadWriteLock.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="sor.Sor">
+      <SourceLine classname="sor.Sor" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Class>
+    <Field classname="sor.Sor" name="black_" signature="[[F" isStatic="true">
+      <SourceLine classname="sor.Sor" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Field>
+    <SourceLine classname="sor.Sor" start="21" end="21" startBytecode="13" endBytecode="13" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+  </BugInstance>
+  <BugInstance type="MS_FINAL_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="sor.Sor">
+      <SourceLine classname="sor.Sor" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Class>
+    <Field classname="sor.Sor" name="red_" signature="[[F" isStatic="true">
+      <SourceLine classname="sor.Sor" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Field>
+    <SourceLine classname="sor.Sor" start="22" end="22" startBytecode="24" endBytecode="24" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="sor.Sor">
+      <SourceLine classname="sor.Sor" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Class>
+    <Field classname="sor.Sor" name="barrier" signature="LEDU/oswego/cs/dl/util/concurrent/CyclicBarrier;" isStatic="true">
+      <SourceLine classname="sor.Sor" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="sor.Sor">
+      <SourceLine classname="sor.Sor" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Class>
+    <Field classname="sor.Sor" name="iterations" signature="I" isStatic="true">
+      <SourceLine classname="sor.Sor" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Field>
+    <SourceLine classname="sor.Sor" start="18" end="18" startBytecode="2" endBytecode="2" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="sor.Sor">
+      <SourceLine classname="sor.Sor" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Class>
+    <Field classname="sor.Sor" name="nprocs" signature="I" isStatic="true">
+      <SourceLine classname="sor.Sor" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Field>
+    <SourceLine classname="sor.Sor" start="24" end="24" startBytecode="28" endBytecode="28" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE" first="1">
+    <Class classname="sor.Sor">
+      <SourceLine classname="sor.Sor" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Class>
+    <Method classname="sor.Sor" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="sor.Sor" start="30" end="114" startBytecode="0" endBytecode="1035" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Method>
+    <SourceLine classname="sor.Sor" start="38" end="38" startBytecode="39" endBytecode="39" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    <SourceLine classname="sor.Sor" start="38" end="38" startBytecode="39" endBytecode="39" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+  </BugInstance>
+  <BugInstance type="SA_FIELD_SELF_ASSIGNMENT" priority="1" rank="1" abbrev="SA" category="CORRECTNESS" first="1">
+    <Class classname="sor.sor_first_row_even">
+      <SourceLine classname="sor.sor_first_row_even" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Class>
+    <Method classname="sor.sor_first_row_even" name="&lt;init&gt;" signature="(II)V" isStatic="false">
+      <SourceLine classname="sor.sor_first_row_even" start="196" end="201" startBytecode="0" endBytecode="152" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Method>
+    <Field classname="sor.sor_first_row_even" name="M" signature="I" isStatic="false">
+      <SourceLine classname="sor.sor_first_row_even" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Field>
+    <SourceLine classname="sor.sor_first_row_even" start="200" end="200" startBytecode="51" endBytecode="51" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+  </BugInstance>
+  <BugInstance type="SA_FIELD_SELF_ASSIGNMENT" priority="1" rank="1" abbrev="SA" category="CORRECTNESS" first="1">
+    <Class classname="sor.sor_first_row_even">
+      <SourceLine classname="sor.sor_first_row_even" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Class>
+    <Method classname="sor.sor_first_row_even" name="&lt;init&gt;" signature="(II)V" isStatic="false">
+      <SourceLine classname="sor.sor_first_row_even" start="196" end="201" startBytecode="0" endBytecode="152" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Method>
+    <Field classname="sor.sor_first_row_even" name="N" signature="I" isStatic="false">
+      <SourceLine classname="sor.sor_first_row_even" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Field>
+    <SourceLine classname="sor.sor_first_row_even" start="199" end="199" startBytecode="43" endBytecode="43" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="sor.sor_first_row_even">
+      <SourceLine classname="sor.sor_first_row_even" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Class>
+    <Field classname="sor.sor_first_row_even" name="M" signature="I" isStatic="false">
+      <SourceLine classname="sor.sor_first_row_even" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="sor.sor_first_row_odd">
+      <SourceLine classname="sor.sor_first_row_odd" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Class>
+    <Field classname="sor.sor_first_row_odd" name="M" signature="I" isStatic="false">
+      <SourceLine classname="sor.sor_first_row_odd" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+    </Field>
+    <SourceLine classname="sor.sor_first_row_odd" start="128" end="128" startBytecode="11" endBytecode="11" sourcefile="Sor.java" sourcepath="sor/Sor.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 25 Mar 2016 17:29:07 -0500" total_classes="124" referenced_classes="247" total_bugs="122" total_size="5631" num_packages="2" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="2.45" clock_seconds="1.38" peak_mbytes="899.18" alloc_mbytes="910.50" gc_seconds="0.02" priority_3="60" priority_2="48" priority_1="14">
+    <PackageStats package="EDU.oswego.cs.dl.util.concurrent" total_bugs="112" total_types="121" total_size="5487" priority_3="59" priority_2="41" priority_1="12">
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Barrier" sourceFile="Barrier.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.BoundedBuffer" sourceFile="BoundedBuffer.java" interface="false" size="105" bugs="6" priority_3="6"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.BoundedChannel" sourceFile="BoundedChannel.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.BoundedLinkedQueue" sourceFile="BoundedLinkedQueue.java" interface="false" size="137" bugs="10" priority_3="6" priority_2="1" priority_1="3"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.BoundedPriorityQueue" sourceFile="BoundedPriorityQueue.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.BrokenBarrierException" sourceFile="BrokenBarrierException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Callable" sourceFile="Callable.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Channel" sourceFile="Channel.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ClockDaemon" sourceFile="ClockDaemon.java" interface="false" size="69" bugs="1" priority_3="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ClockDaemon$RunLoop" sourceFile="ClockDaemon.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ClockDaemon$TaskNode" sourceFile="ClockDaemon.java" interface="false" size="24" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.CondVar" sourceFile="CondVar.java" interface="false" size="56" bugs="8" priority_3="4" priority_2="4"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList" sourceFile="CopyOnWriteArrayList.java" interface="false" size="345" bugs="5" priority_2="3" priority_1="2"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWIterator" sourceFile="CopyOnWriteArrayList.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList" sourceFile="CopyOnWriteArrayList.java" interface="false" size="70" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArrayList$COWSubList$COWSubListIterator" sourceFile="CopyOnWriteArrayList.java" interface="false" size="31" bugs="1" priority_3="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.CopyOnWriteArraySet" sourceFile="CopyOnWriteArraySet.java" interface="false" size="37" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.CountDown" sourceFile="CountDown.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.CyclicBarrier" sourceFile="CyclicBarrier.java" interface="false" size="79" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.DefaultChannelCapacity" sourceFile="DefaultChannelCapacity.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.DirectExecutor" sourceFile="DirectExecutor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Executor" sourceFile="Executor.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FIFOReadWriteLock" sourceFile="FIFOReadWriteLock.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FIFOReadWriteLock$ReaderSync" sourceFile="FIFOReadWriteLock.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FIFOSemaphore" sourceFile="FIFOSemaphore.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FIFOSemaphore$FIFOWaitQueue" sourceFile="FIFOSemaphore.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FJTask" sourceFile="FJTask.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FJTask$Par" sourceFile="FJTask.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FJTask$Par2" sourceFile="FJTask.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FJTask$Seq" sourceFile="FJTask.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FJTask$Seq2" sourceFile="FJTask.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FJTask$Wrap" sourceFile="FJTask.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner" sourceFile="FJTaskRunner.java" interface="false" size="281" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FJTaskRunner$VolatileTaskRef" sourceFile="FJTaskRunner.java" interface="false" size="14" bugs="1" priority_3="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup" sourceFile="FJTaskRunnerGroup.java" interface="false" size="148" bugs="4" priority_3="2" priority_2="2"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FJTaskRunnerGroup$InvokableFJTask" sourceFile="FJTaskRunnerGroup.java" interface="false" size="22" bugs="2" priority_3="2"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FutureResult" sourceFile="FutureResult.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.FutureResult$1" sourceFile="FutureResult.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Heap" sourceFile="Heap.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Latch" sourceFile="Latch.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.LayeredSync" sourceFile="LayeredSync.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.LinkedNode" sourceFile="LinkedNode.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.LinkedQueue" sourceFile="LinkedQueue.java" interface="false" size="86" bugs="5" priority_3="3" priority_2="1" priority_1="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.LockedExecutor" sourceFile="LockedExecutor.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Mutex" sourceFile="Mutex.java" interface="false" size="39" bugs="3" priority_3="3"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.NullSync" sourceFile="NullSync.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ObservableSync" sourceFile="ObservableSync.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ObservableSync$SyncObserver" sourceFile="ObservableSync.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.PooledExecutor" sourceFile="PooledExecutor.java" interface="false" size="121" bugs="2" priority_2="2"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.PooledExecutor$BlockedExecutionHandler" sourceFile="PooledExecutor.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.PooledExecutor$DiscardWhenBlocked" sourceFile="PooledExecutor.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.PooledExecutor$RunWhenBlocked" sourceFile="PooledExecutor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.PooledExecutor$WaitWhenBlocked" sourceFile="PooledExecutor.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.PooledExecutor$Worker" sourceFile="PooledExecutor.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.PrioritySemaphore" sourceFile="PrioritySemaphore.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.PrioritySemaphore$PriorityWaitQueue" sourceFile="PrioritySemaphore.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.PropertyChangeMulticaster" sourceFile="PropertyChangeMulticaster.java" interface="false" size="138" bugs="4" priority_3="1" priority_2="3"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Puttable" sourceFile="Puttable.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.QueuedExecutor" sourceFile="QueuedExecutor.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.QueuedExecutor$RunLoop" sourceFile="QueuedExecutor.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore" sourceFile="QueuedSemaphore.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore$WaitQueue" sourceFile="QueuedSemaphore.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.QueuedSemaphore$WaitQueue$WaitNode" sourceFile="QueuedSemaphore.java" interface="false" size="45" bugs="1" priority_3="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ReadWriteLock" sourceFile="ReadWriteLock.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ReaderPreferenceReadWriteLock" sourceFile="ReaderPreferenceReadWriteLock.java" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ReentrantLock" sourceFile="ReentrantLock.java" interface="false" size="68" bugs="4" priority_3="4"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ReentrantWriterPreferenceReadWriteLock" sourceFile="ReentrantWriterPreferenceReadWriteLock.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Rendezvous" sourceFile="Rendezvous.java" interface="false" size="93" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Rendezvous$RendezvousFunction" sourceFile="Rendezvous.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Rendezvous$Rotator" sourceFile="Rendezvous.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Semaphore" sourceFile="Semaphore.java" interface="false" size="44" bugs="5" priority_3="4" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SemaphoreControlledChannel" sourceFile="SemaphoreControlledChannel.java" interface="false" size="69" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Slot" sourceFile="Slot.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Sync" sourceFile="Sync.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SyncCollection" sourceFile="SyncCollection.java" interface="false" size="141" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SyncCollection$SyncCollectionIterator" sourceFile="SyncCollection.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SyncList" sourceFile="SyncList.java" interface="false" size="111" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SyncList$SyncCollectionListIterator" sourceFile="SyncList.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SyncMap" sourceFile="SyncMap.java" interface="false" size="150" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SyncSet" sourceFile="SyncSet.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SyncSortedMap" sourceFile="SyncSortedMap.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SyncSortedSet" sourceFile="SyncSortedSet.java" interface="false" size="51" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SynchronizedBoolean" sourceFile="SynchronizedBoolean.java" interface="false" size="66" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SynchronizedByte" sourceFile="SynchronizedByte.java" interface="false" size="87" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SynchronizedChar" sourceFile="SynchronizedChar.java" interface="false" size="61" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SynchronizedDouble" sourceFile="SynchronizedDouble.java" interface="false" size="62" bugs="4" priority_3="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SynchronizedFloat" sourceFile="SynchronizedFloat.java" interface="false" size="61" bugs="4" priority_3="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SynchronizedInt" sourceFile="SynchronizedInt.java" interface="false" size="87" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SynchronizedLong" sourceFile="SynchronizedLong.java" interface="false" size="88" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SynchronizedRef" sourceFile="SynchronizedRef.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SynchronizedShort" sourceFile="SynchronizedShort.java" interface="false" size="87" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SynchronizedVariable" sourceFile="SynchronizedVariable.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.SynchronousChannel" sourceFile="SynchronousChannel.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.Takable" sourceFile="Takable.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ThreadFactory" sourceFile="ThreadFactory.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ThreadFactoryUser" sourceFile="ThreadFactoryUser.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ThreadFactoryUser$DefaultThreadFactory" sourceFile="ThreadFactoryUser.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.ThreadedExecutor" sourceFile="ThreadedExecutor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.TimeDaemon" sourceFile="TimeDaemon.java" interface="false" size="71" bugs="1" priority_3="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.TimeDaemon$RunLoop" sourceFile="TimeDaemon.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.TimeDaemon$TaskNode" sourceFile="TimeDaemon.java" interface="false" size="26" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.TimedCallable" sourceFile="TimedCallable.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.TimeoutException" sourceFile="TimeoutException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.TimeoutSync" sourceFile="TimeoutSync.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.VetoableChangeMulticaster" sourceFile="VetoableChangeMulticaster.java" interface="false" size="152" bugs="4" priority_3="1" priority_2="3"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue" sourceFile="WaitFreeQueue.java" interface="false" size="92" bugs="2" priority_3="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaitFreeQueue$Node" sourceFile="WaitFreeQueue.java" interface="false" size="14" bugs="3" priority_3="3"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaitableBoolean" sourceFile="WaitableBoolean.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaitableByte" sourceFile="WaitableByte.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaitableChar" sourceFile="WaitableChar.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaitableDouble" sourceFile="WaitableDouble.java" interface="false" size="62" bugs="2" priority_1="2"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaitableFloat" sourceFile="WaitableFloat.java" interface="false" size="62" bugs="2" priority_1="2"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaitableInt" sourceFile="WaitableInt.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaitableLong" sourceFile="WaitableLong.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaitableRef" sourceFile="WaitableRef.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaitableShort" sourceFile="WaitableShort.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WaiterPreferenceSemaphore" sourceFile="WaiterPreferenceSemaphore.java" interface="false" size="53" bugs="5" priority_3="5"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock" sourceFile="WriterPreferenceReadWriteLock.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$ReaderLock" sourceFile="WriterPreferenceReadWriteLock.java" interface="false" size="48" bugs="1" priority_2="1"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$Signaller" sourceFile="WriterPreferenceReadWriteLock.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="EDU.oswego.cs.dl.util.concurrent.WriterPreferenceReadWriteLock$WriterLock" sourceFile="WriterPreferenceReadWriteLock.java" interface="false" size="51" bugs="4" priority_3="3" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="sor" total_bugs="10" total_types="3" total_size="144" priority_3="1" priority_2="7" priority_1="2">
+      <ClassStats class="sor.Sor" sourceFile="Sor.java" interface="false" size="68" bugs="6" priority_3="1" priority_2="5"/>
+      <ClassStats class="sor.sor_first_row_even" sourceFile="Sor.java" interface="false" size="39" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="sor.sor_first_row_odd" sourceFile="Sor.java" interface="false" size="37" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="97" invocations="792" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="3106" standardDeviationMircosecondsPerInvocation="275"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="91" invocations="2" avgMicrosecondsPerInvocation="45796" maxMicrosecondsPerInvocation="48851" standardDeviationMircosecondsPerInvocation="3055"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="83" invocations="990" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="13190" standardDeviationMircosecondsPerInvocation="443"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="67" invocations="941" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="1102" standardDeviationMircosecondsPerInvocation="88"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="64" invocations="941" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="2490" standardDeviationMircosecondsPerInvocation="122"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="58" invocations="941" avgMicrosecondsPerInvocation="62" maxMicrosecondsPerInvocation="1398" standardDeviationMircosecondsPerInvocation="100"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="53" invocations="986" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="960" standardDeviationMircosecondsPerInvocation="80"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="49" invocations="1412" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="8678" standardDeviationMircosecondsPerInvocation="235"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="39" invocations="941" avgMicrosecondsPerInvocation="41" maxMicrosecondsPerInvocation="362" standardDeviationMircosecondsPerInvocation="34"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="36" invocations="743" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="849" standardDeviationMircosecondsPerInvocation="71"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="35" invocations="247" avgMicrosecondsPerInvocation="141" maxMicrosecondsPerInvocation="1867" standardDeviationMircosecondsPerInvocation="269"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="34" invocations="247" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="1784" standardDeviationMircosecondsPerInvocation="258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="20" invocations="941" avgMicrosecondsPerInvocation="22" maxMicrosecondsPerInvocation="1033" standardDeviationMircosecondsPerInvocation="49"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="15" invocations="795" avgMicrosecondsPerInvocation="19" maxMicrosecondsPerInvocation="90" standardDeviationMircosecondsPerInvocation="9"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="14" invocations="124" avgMicrosecondsPerInvocation="120" maxMicrosecondsPerInvocation="1083" standardDeviationMircosecondsPerInvocation="141"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="14" invocations="124" avgMicrosecondsPerInvocation="115" maxMicrosecondsPerInvocation="658" standardDeviationMircosecondsPerInvocation="103"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="14" invocations="124" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="704" standardDeviationMircosecondsPerInvocation="133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="13" invocations="941" avgMicrosecondsPerInvocation="14" maxMicrosecondsPerInvocation="145" standardDeviationMircosecondsPerInvocation="14"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="12" invocations="124" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="638" standardDeviationMircosecondsPerInvocation="105"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="12" invocations="247" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="696" standardDeviationMircosecondsPerInvocation="88"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="11" invocations="941" avgMicrosecondsPerInvocation="12" maxMicrosecondsPerInvocation="304" standardDeviationMircosecondsPerInvocation="19"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="11" invocations="970" avgMicrosecondsPerInvocation="11" maxMicrosecondsPerInvocation="107" standardDeviationMircosecondsPerInvocation="8"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458944979109" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

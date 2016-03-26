@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm com/ibm/crawler/*.class
+rm com/ibm/crawler/*.class_backup
+javac -cp .:../lib/coveragetest.jar com/ibm/crawler/*.java

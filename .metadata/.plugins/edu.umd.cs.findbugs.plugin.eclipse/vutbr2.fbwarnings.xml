@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1458944557765" analysisTimestamp="1458944556614" release="">
+  <Project projectName="vutbr2">
+    <Jar>/Users/soniamarginean/Documents/workspace/vutbr2/bin</Jar>
+    <AuxClasspathEntry>/Users/soniamarginean/Documents/workspace/vutbr2/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/soniamarginean/Documents/workspace/vutbr2/fit</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Elevator">
+      <SourceLine classname="elevator.Elevator" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Class>
+    <Field classname="elevator.Elevator" name="motionDirection" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Elevator" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Field>
+    <Int value="88" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="elevator.Elevator" start="113" end="113" startBytecode="116" endBytecode="116" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="324" end="324" startBytecode="218" endBytecode="218" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="297" end="297" startBytecode="29" endBytecode="29" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="301" end="301" startBytecode="60" endBytecode="60" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="308" end="308" startBytecode="115" endBytecode="115" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="313" end="313" startBytecode="150" endBytecode="150" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="243" end="243" startBytecode="76" endBytecode="76" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="223" end="223" startBytecode="77" endBytecode="77" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="184" end="184" startBytecode="34" endBytecode="34" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="2" rank="17" abbrev="IS" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Elevator">
+      <SourceLine classname="elevator.Elevator" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Class>
+    <Field classname="elevator.Elevator" name="motionState" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Elevator" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Field>
+    <Int value="70" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="elevator.Elevator" start="253" end="253" startBytecode="8" endBytecode="8" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="335" end="335" startBytecode="2" endBytecode="2" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="108" end="108" startBytecode="36" endBytecode="36" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="82" end="82" startBytecode="55" endBytecode="55" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="81" end="81" startBytecode="32" endBytecode="32" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="325" end="325" startBytecode="223" endBytecode="223" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="296" end="296" startBytecode="25" endBytecode="25" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="60" end="60" startBytecode="11" endBytecode="11" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="207" end="207" startBytecode="20" endBytecode="20" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="elevator.Elevator" start="183" end="183" startBytecode="26" endBytecode="26" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="elevator.Elevator">
+      <SourceLine classname="elevator.Elevator" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Class>
+    <Method classname="elevator.Elevator" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Elevator" start="105" end="145" startBytecode="0" endBytecode="545" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Method>
+    <SourceLine classname="elevator.Elevator" start="108" end="136" startBytecode="39" endBytecode="293" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    <SourceLine classname="elevator.Elevator" start="108" end="136" startBytecode="39" endBytecode="293" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Elevator">
+      <SourceLine classname="elevator.Elevator" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Class>
+    <Method classname="elevator.Elevator" name="moveDown" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Elevator" start="233" end="250" startBytecode="0" endBytecode="214" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Method>
+    <Field classname="elevator.Elevator" name="currentFloorNumber" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Elevator" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Field>
+    <SourceLine classname="elevator.Elevator" start="238" end="238" startBytecode="45" endBytecode="45" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Elevator">
+      <SourceLine classname="elevator.Elevator" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Class>
+    <Method classname="elevator.Elevator" name="moveUp" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Elevator" start="213" end="230" startBytecode="0" endBytecode="215" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Method>
+    <Field classname="elevator.Elevator" name="currentFloorNumber" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Elevator" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+    </Field>
+    <SourceLine classname="elevator.Elevator" start="218" end="218" startBytecode="46" endBytecode="46" sourcefile="Elevator.java" sourcepath="elevator/Elevator.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="elevator.ElevatorState">
+      <SourceLine classname="elevator.ElevatorState" sourcefile="ElevatorState.java" sourcepath="elevator/ElevatorState.java"/>
+    </Class>
+    <Method classname="elevator.ElevatorState" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="elevator.ElevatorState" start="13" end="44" startBytecode="0" endBytecode="392" sourcefile="ElevatorState.java" sourcepath="elevator/ElevatorState.java"/>
+    </Method>
+    <SourceLine classname="elevator.ElevatorState" start="15" end="23" startBytecode="48" endBytecode="102" sourcefile="ElevatorState.java" sourcepath="elevator/ElevatorState.java"/>
+    <SourceLine classname="elevator.ElevatorState" start="15" end="23" startBytecode="48" endBytecode="102" sourcefile="ElevatorState.java" sourcepath="elevator/ElevatorState.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="elevator.Logger">
+      <SourceLine classname="elevator.Logger" sourcefile="Logger.java" sourcepath="elevator/Logger.java"/>
+    </Class>
+    <Field classname="elevator.Logger" name="fileName" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="elevator.Logger" sourcefile="Logger.java" sourcepath="elevator/Logger.java"/>
+    </Field>
+    <SourceLine classname="elevator.Logger" start="16" end="16" startBytecode="46" endBytecode="46" sourcefile="Logger.java" sourcepath="elevator/Logger.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="elevator.Logger">
+      <SourceLine classname="elevator.Logger" sourcefile="Logger.java" sourcepath="elevator/Logger.java"/>
+    </Class>
+    <Field classname="elevator.Logger" name="lineSeparator" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="elevator.Logger" sourcefile="Logger.java" sourcepath="elevator/Logger.java"/>
+    </Field>
+    <SourceLine classname="elevator.Logger" start="15" end="15" startBytecode="16" endBytecode="16" sourcefile="Logger.java" sourcepath="elevator/Logger.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="elevator.Logger">
+      <SourceLine classname="elevator.Logger" sourcefile="Logger.java" sourcepath="elevator/Logger.java"/>
+    </Class>
+    <Field classname="elevator.Logger" name="file" signature="Ljava/io/File;" isStatic="false">
+      <SourceLine classname="elevator.Logger" sourcefile="Logger.java" sourcepath="elevator/Logger.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="elevator.Logger">
+      <SourceLine classname="elevator.Logger" sourcefile="Logger.java" sourcepath="elevator/Logger.java"/>
+    </Class>
+    <Field classname="elevator.Logger" name="out" signature="Ljava/io/BufferedWriter;" isStatic="false">
+      <SourceLine classname="elevator.Logger" sourcefile="Logger.java" sourcepath="elevator/Logger.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="ICAST_INTEGER_MULTIPLY_CAST_TO_LONG" priority="3" rank="20" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="setWaitTime" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="237" end="240" startBytecode="0" endBytecode="132" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <SourceLine classname="elevator.Person" start="237" end="237" startBytecode="19" endBytecode="19" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    <SourceLine classname="elevator.Person" start="237" end="237" startBytecode="19" endBytecode="19" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="ICAST_INTEGER_MULTIPLY_CAST_TO_LONG" priority="3" rank="20" abbrev="ICAST" category="STYLE" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="setWorkingTime" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="243" end="246" startBytecode="0" endBytecode="133" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <SourceLine classname="elevator.Person" start="243" end="243" startBytecode="19" endBytecode="19" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    <SourceLine classname="elevator.Person" start="243" end="243" startBytecode="19" endBytecode="19" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="81" end="203" startBytecode="0" endBytecode="1179" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <SourceLine classname="elevator.Person" start="82" end="195" startBytecode="7" endBytecode="639" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    <SourceLine classname="elevator.Person" start="82" end="195" startBytecode="7" endBytecode="639" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="leaveElevator" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="309" end="326" startBytecode="0" endBytecode="243" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <Field classname="elevator.Building" name="peopleWorking" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Building" sourcefile="Building.java" sourcepath="elevator/Building.java"/>
+    </Field>
+    <SourceLine classname="elevator.Person" start="314" end="314" startBytecode="49" endBytecode="49" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="81" end="203" startBytecode="0" endBytecode="1179" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <Field classname="elevator.Building" name="peopleOutside" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Building" sourcefile="Building.java" sourcepath="elevator/Building.java"/>
+    </Field>
+    <SourceLine classname="elevator.Person" start="85" end="85" startBytecode="56" endBytecode="56" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="81" end="203" startBytecode="0" endBytecode="1179" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <Field classname="elevator.Building" name="peopleOutside" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Building" sourcefile="Building.java" sourcepath="elevator/Building.java"/>
+    </Field>
+    <SourceLine classname="elevator.Person" start="146" end="146" startBytecode="379" endBytecode="379" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="81" end="203" startBytecode="0" endBytecode="1179" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <Field classname="elevator.Building" name="peopleTakingStairs" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Building" sourcefile="Building.java" sourcepath="elevator/Building.java"/>
+    </Field>
+    <SourceLine classname="elevator.Person" start="111" end="111" startBytecode="198" endBytecode="198" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="81" end="203" startBytecode="0" endBytecode="1179" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <Field classname="elevator.Building" name="peopleTakingStairs" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Building" sourcefile="Building.java" sourcepath="elevator/Building.java"/>
+    </Field>
+    <SourceLine classname="elevator.Person" start="130" end="130" startBytecode="311" endBytecode="311" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="81" end="203" startBytecode="0" endBytecode="1179" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <Field classname="elevator.Building" name="peopleWorking" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Building" sourcefile="Building.java" sourcepath="elevator/Building.java"/>
+    </Field>
+    <SourceLine classname="elevator.Person" start="95" end="95" startBytecode="128" endBytecode="128" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="81" end="203" startBytecode="0" endBytecode="1179" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <Field classname="elevator.Building" name="peopleWorking" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Building" sourcefile="Building.java" sourcepath="elevator/Building.java"/>
+    </Field>
+    <SourceLine classname="elevator.Person" start="112" end="112" startBytecode="210" endBytecode="210" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="81" end="203" startBytecode="0" endBytecode="1179" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <Field classname="elevator.Building" name="peopleWorking" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Building" sourcefile="Building.java" sourcepath="elevator/Building.java"/>
+    </Field>
+    <SourceLine classname="elevator.Person" start="147" end="147" startBytecode="391" endBytecode="391" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="81" end="203" startBytecode="0" endBytecode="1179" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <Field classname="elevator.Building" name="peopleWorking" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Building" sourcefile="Building.java" sourcepath="elevator/Building.java"/>
+    </Field>
+    <SourceLine classname="elevator.Person" start="156" end="156" startBytecode="444" endBytecode="444" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="81" end="203" startBytecode="0" endBytecode="1179" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <Field classname="elevator.Building" name="peopleWorking" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Building" sourcefile="Building.java" sourcepath="elevator/Building.java"/>
+    </Field>
+    <SourceLine classname="elevator.Person" start="171" end="171" startBytecode="516" endBytecode="516" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS" first="1">
+    <Class classname="elevator.Person">
+      <SourceLine classname="elevator.Person" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Class>
+    <Method classname="elevator.Person" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="elevator.Person" start="81" end="203" startBytecode="0" endBytecode="1179" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+    </Method>
+    <Field classname="elevator.Building" name="peopleWorking" signature="I" isStatic="false">
+      <SourceLine classname="elevator.Building" sourcefile="Building.java" sourcepath="elevator/Building.java"/>
+    </Field>
+    <SourceLine classname="elevator.Person" start="177" end="177" startBytecode="563" endBytecode="563" sourcefile="Person.java" sourcepath="elevator/Person.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="elevator.PersonState">
+      <SourceLine classname="elevator.PersonState" sourcefile="PersonState.java" sourcepath="elevator/PersonState.java"/>
+    </Class>
+    <Method classname="elevator.PersonState" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="elevator.PersonState" start="13" end="50" startBytecode="0" endBytecode="457" sourcefile="PersonState.java" sourcepath="elevator/PersonState.java"/>
+    </Method>
+    <SourceLine classname="elevator.PersonState" start="25" end="40" startBytecode="108" endBytecode="220" sourcefile="PersonState.java" sourcepath="elevator/PersonState.java"/>
+    <SourceLine classname="elevator.PersonState" start="25" end="40" startBytecode="108" endBytecode="220" sourcefile="PersonState.java" sourcepath="elevator/PersonState.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="elevator.Simulator">
+      <SourceLine classname="elevator.Simulator" sourcefile="Simulator.java" sourcepath="elevator/Simulator.java"/>
+    </Class>
+    <Field classname="elevator.Simulator" name="MAX_PEOPLE" signature="I" isStatic="true">
+      <SourceLine classname="elevator.Simulator" sourcefile="Simulator.java" sourcepath="elevator/Simulator.java"/>
+    </Field>
+    <SourceLine classname="elevator.Simulator" start="6" end="6" startBytecode="5" endBytecode="5" sourcefile="Simulator.java" sourcepath="elevator/Simulator.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="elevator.Simulator">
+      <SourceLine classname="elevator.Simulator" sourcefile="Simulator.java" sourcepath="elevator/Simulator.java"/>
+    </Class>
+    <Field classname="elevator.Simulator" name="debug" signature="Z" isStatic="true">
+      <SourceLine classname="elevator.Simulator" sourcefile="Simulator.java" sourcepath="elevator/Simulator.java"/>
+    </Field>
+    <SourceLine classname="elevator.Simulator" start="5" end="5" startBytecode="1" endBytecode="1" sourcefile="Simulator.java" sourcepath="elevator/Simulator.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 25 Mar 2016 16:17:15 -0500" total_classes="12" referenced_classes="51" total_bugs="27" total_size="952" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="8.49" clock_seconds="1.15" peak_mbytes="815.29" alloc_mbytes="910.50" gc_seconds="0.20" priority_3="2" priority_2="25">
+    <PackageStats package="elevator" total_bugs="27" total_types="12" total_size="952" priority_3="2" priority_2="25">
+      <ClassStats class="elevator.Building" sourceFile="Building.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="elevator.DoorClosedException" sourceFile="DoorClosedException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="elevator.Elevator" sourceFile="Elevator.java" interface="false" size="278" bugs="5" priority_2="5"/>
+      <ClassStats class="elevator.ElevatorController" sourceFile="ElevatorController.java" interface="false" size="178" bugs="0"/>
+      <ClassStats class="elevator.ElevatorFullException" sourceFile="ElevatorFullException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="elevator.ElevatorMovingException" sourceFile="ElevatorMovingException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="elevator.ElevatorState" sourceFile="ElevatorState.java" interface="false" size="30" bugs="1" priority_2="1"/>
+      <ClassStats class="elevator.Floor" sourceFile="Floor.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="elevator.Logger" sourceFile="Logger.java" interface="false" size="16" bugs="4" priority_2="4"/>
+      <ClassStats class="elevator.Person" sourceFile="Person.java" interface="false" size="261" bugs="14" priority_3="2" priority_2="12"/>
+      <ClassStats class="elevator.PersonState" sourceFile="PersonState.java" interface="false" size="34" bugs="1" priority_2="1"/>
+      <ClassStats class="elevator.Simulator" sourceFile="Simulator.java" interface="false" size="37" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="229" invocations="483" avgMicrosecondsPerInvocation="475" maxMicrosecondsPerInvocation="37353" standardDeviationMircosecondsPerInvocation="2782"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="189" invocations="2" avgMicrosecondsPerInvocation="94548" maxMicrosecondsPerInvocation="175144" standardDeviationMircosecondsPerInvocation="80596"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="86" invocations="51" avgMicrosecondsPerInvocation="1694" maxMicrosecondsPerInvocation="46854" standardDeviationMircosecondsPerInvocation="6606"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="74" invocations="485" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="18001" standardDeviationMircosecondsPerInvocation="904"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="52" invocations="51" avgMicrosecondsPerInvocation="1020" maxMicrosecondsPerInvocation="30771" standardDeviationMircosecondsPerInvocation="4258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="45" invocations="12" avgMicrosecondsPerInvocation="3780" maxMicrosecondsPerInvocation="39810" standardDeviationMircosecondsPerInvocation="10880"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="37" invocations="12" avgMicrosecondsPerInvocation="3113" maxMicrosecondsPerInvocation="33552" standardDeviationMircosecondsPerInvocation="9197"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="36" invocations="105" avgMicrosecondsPerInvocation="349" maxMicrosecondsPerInvocation="5220" standardDeviationMircosecondsPerInvocation="829"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="31" invocations="100" avgMicrosecondsPerInvocation="315" maxMicrosecondsPerInvocation="4564" standardDeviationMircosecondsPerInvocation="785"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="29" invocations="256" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="1496" standardDeviationMircosecondsPerInvocation="182"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="27" invocations="100" avgMicrosecondsPerInvocation="275" maxMicrosecondsPerInvocation="2553" standardDeviationMircosecondsPerInvocation="455"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="25" invocations="100" avgMicrosecondsPerInvocation="258" maxMicrosecondsPerInvocation="3621" standardDeviationMircosecondsPerInvocation="583"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458944557765" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

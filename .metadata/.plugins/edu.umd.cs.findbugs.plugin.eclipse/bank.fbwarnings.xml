@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1458944557307" analysisTimestamp="1458944556602" release="">
+  <Project projectName="bank">
+    <Jar>/Users/soniamarginean/Documents/workspace/bank/bin</Jar>
+    <AuxClasspathEntry>/Users/soniamarginean/Documents/workspace/bank/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/soniamarginean/Documents/workspace/bank/bank</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="3" rank="19" abbrev="DE" category="BAD_PRACTICE" first="1">
+    <Class classname="Account">
+      <SourceLine classname="Account" sourcefile="Account.java" sourcepath="Account.java"/>
+    </Class>
+    <Method classname="Account" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="Account" start="49" end="60" startBytecode="0" endBytecode="167" sourcefile="Account.java" sourcepath="Account.java"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception" sourcefile="Exception.java" sourcepath="java/lang/Exception.java"/>
+    </Class>
+    <SourceLine classname="Account" start="56" end="56" startBytecode="33" endBytecode="33" sourcefile="Account.java" sourcepath="Account.java"/>
+    <SourceLine classname="Account" start="56" end="56" startBytecode="33" endBytecode="33" sourcefile="Account.java" sourcepath="Account.java"/>
+    <SourceLine classname="Account" start="56" end="56" startBytecode="33" endBytecode="33" sourcefile="Account.java" sourcepath="Account.java"/>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Account">
+      <SourceLine classname="Account" sourcefile="Account.java" sourcepath="Account.java"/>
+    </Class>
+    <Field classname="Account" name="Balance" signature="I" isStatic="false">
+      <SourceLine classname="Account" sourcefile="Account.java" sourcepath="Account.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Account">
+      <SourceLine classname="Account" sourcefile="Account.java" sourcepath="Account.java"/>
+    </Class>
+    <Method classname="Account" name="Action" signature="()V" isStatic="false">
+      <SourceLine classname="Account" start="36" end="40" startBytecode="0" endBytecode="80" sourcefile="Account.java" sourcepath="Account.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="3" rank="19" abbrev="DE" category="BAD_PRACTICE" first="1">
+    <Class classname="Bank">
+      <SourceLine classname="Bank" sourcefile="Bank.java" sourcepath="Bank.java"/>
+    </Class>
+    <Method classname="Bank" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Bank" start="29" end="70" startBytecode="0" endBytecode="441" sourcefile="Bank.java" sourcepath="Bank.java"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception" sourcefile="Exception.java" sourcepath="java/lang/Exception.java"/>
+    </Class>
+    <SourceLine classname="Bank" start="50" end="50" startBytecode="95" endBytecode="95" sourcefile="Bank.java" sourcepath="Bank.java"/>
+    <SourceLine classname="Bank" start="50" end="50" startBytecode="95" endBytecode="95" sourcefile="Bank.java" sourcepath="Bank.java"/>
+    <SourceLine classname="Bank" start="50" end="50" startBytecode="95" endBytecode="95" sourcefile="Bank.java" sourcepath="Bank.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Bank">
+      <SourceLine classname="Bank" sourcefile="Bank.java" sourcepath="Bank.java"/>
+    </Class>
+    <Method classname="Bank" name="Service" signature="(II)V" isStatic="true">
+      <SourceLine classname="Bank" start="77" end="79" startBytecode="0" endBytecode="82" sourcefile="Bank.java" sourcepath="Bank.java"/>
+    </Method>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 25 Mar 2016 16:17:15 -0500" total_classes="2" referenced_classes="51" total_bugs="5" total_size="63" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="5.18" clock_seconds="0.70" peak_mbytes="815.25" alloc_mbytes="910.50" gc_seconds="0.13" priority_3="4" priority_2="1">
+    <PackageStats package="" total_bugs="5" total_types="2" total_size="63" priority_3="4" priority_2="1">
+      <ClassStats class="Account" sourceFile="Account.java" interface="false" size="26" bugs="3" priority_3="3"/>
+      <ClassStats class="Bank" sourceFile="Bank.java" interface="false" size="37" bugs="2" priority_3="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="156" invocations="441" avgMicrosecondsPerInvocation="354" maxMicrosecondsPerInvocation="31086" standardDeviationMircosecondsPerInvocation="1752"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="146" invocations="2" avgMicrosecondsPerInvocation="73490" maxMicrosecondsPerInvocation="138874" standardDeviationMircosecondsPerInvocation="65384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="125" invocations="444" avgMicrosecondsPerInvocation="282" maxMicrosecondsPerInvocation="30200" standardDeviationMircosecondsPerInvocation="1685"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="50" invocations="8" avgMicrosecondsPerInvocation="6278" maxMicrosecondsPerInvocation="49837" standardDeviationMircosecondsPerInvocation="16463"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="38" invocations="155" avgMicrosecondsPerInvocation="246" maxMicrosecondsPerInvocation="12265" standardDeviationMircosecondsPerInvocation="1023"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="30" invocations="51" avgMicrosecondsPerInvocation="593" maxMicrosecondsPerInvocation="7987" standardDeviationMircosecondsPerInvocation="1280"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458944557307" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

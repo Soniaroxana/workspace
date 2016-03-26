@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="2" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="/Users/soniamarginean/concurrency-bug-subjects/.git" key="GitSelectRepositoryPage.lastRepository"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/Soniaroxana/concurrency-bug-subjects"/>
+	</list>
+	<section name="GitImportWizard">
+	</section>
+</section>

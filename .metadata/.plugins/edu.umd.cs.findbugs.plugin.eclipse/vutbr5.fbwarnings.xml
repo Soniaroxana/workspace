@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1458944557891" analysisTimestamp="1458944557224" release="">
+  <Project projectName="vutbr5">
+    <Jar>/Users/soniamarginean/Documents/workspace/vutbr5/bin</Jar>
+    <AuxClasspathEntry>/Users/soniamarginean/Documents/workspace/vutbr5/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/soniamarginean/Documents/workspace/vutbr5/fit</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="tsp.Tsp">
+      <SourceLine classname="tsp.Tsp" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Class>
+    <Method classname="tsp.Tsp" name="read_tsp" signature="(Ljava/lang/String;)I" isStatic="true">
+      <SourceLine classname="tsp.Tsp" start="106" end="120" startBytecode="0" endBytecode="351" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="tsp.Tsp" start="106" end="106" startBytecode="9" endBytecode="9" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    <SourceLine classname="tsp.Tsp" start="106" end="106" startBytecode="9" endBytecode="9" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="3" rank="19" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.Tsp">
+      <SourceLine classname="tsp.Tsp" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Class>
+    <Method classname="tsp.Tsp" name="read_tsp" signature="(Ljava/lang/String;)I" isStatic="true">
+      <SourceLine classname="tsp.Tsp" start="106" end="120" startBytecode="0" endBytecode="351" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Method>
+    <SourceLine classname="tsp.Tsp" start="118" end="118" startBytecode="105" endBytecode="105" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    <SourceLine classname="tsp.Tsp" start="118" end="118" startBytecode="105" endBytecode="105" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.Tsp">
+      <SourceLine classname="tsp.Tsp" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Class>
+    <Field classname="tsp.Tsp" name="NodesFromEnd" signature="I" isStatic="true">
+      <SourceLine classname="tsp.Tsp" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.Tsp">
+      <SourceLine classname="tsp.Tsp" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Class>
+    <Field classname="tsp.Tsp" name="StartNode" signature="I" isStatic="true">
+      <SourceLine classname="tsp.Tsp" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.Tsp">
+      <SourceLine classname="tsp.Tsp" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Class>
+    <Field classname="tsp.Tsp" name="TspSize" signature="I" isStatic="true">
+      <SourceLine classname="tsp.Tsp" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" first="1">
+    <Class classname="tsp.Tsp">
+      <SourceLine classname="tsp.Tsp" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Class>
+    <Method classname="tsp.Tsp" name="read_tsp" signature="(Ljava/lang/String;)I" isStatic="true">
+      <SourceLine classname="tsp.Tsp" start="106" end="120" startBytecode="0" endBytecode="351" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Method>
+    <LocalVariable name="line" register="1" pc="44" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="tsp.Tsp" start="111" end="111" startBytecode="46" endBytecode="46" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    <SourceLine classname="tsp.Tsp" start="111" end="111" startBytecode="46" endBytecode="46" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.Tsp">
+      <SourceLine classname="tsp.Tsp" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Class>
+    <Method classname="tsp.Tsp" name="read_tsp" signature="(Ljava/lang/String;)I" isStatic="true">
+      <SourceLine classname="tsp.Tsp" start="106" end="120" startBytecode="0" endBytecode="51" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader" start="66" end="249" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Type>
+    <SourceLine classname="tsp.Tsp" start="106" end="106" startBytecode="0" endBytecode="0" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    <SourceLine classname="tsp.Tsp" start="106" end="106" startBytecode="0" endBytecode="0" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE" first="1">
+    <Class classname="tsp.Tsp">
+      <SourceLine classname="tsp.Tsp" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Class>
+    <Method classname="tsp.Tsp" name="read_tsp" signature="(Ljava/lang/String;)I" isStatic="true">
+      <SourceLine classname="tsp.Tsp" start="106" end="120" startBytecode="0" endBytecode="351" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    </Method>
+    <SourceLine classname="tsp.Tsp" start="116" end="116" startBytecode="97" endBytecode="97" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+    <SourceLine classname="tsp.Tsp" start="116" end="116" startBytecode="97" endBytecode="97" sourcefile="Tsp.java" sourcepath="tsp/Tsp.java"/>
+  </BugInstance>
+  <BugInstance type="DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE" priority="2" rank="14" abbrev="DL" category="MT_CORRECTNESS" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="calc_bound" signature="(I)I" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" start="148" end="150" startBytecode="0" endBytecode="855" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Type>
+    <Field classname="tsp.TspSolver" name="TourLock" signature="Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+    <SourceLine classname="tsp.TspSolver" start="150" end="150" startBytecode="13" endBytecode="13" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    <SourceLine classname="tsp.TspSolver" start="150" end="150" startBytecode="13" endBytecode="13" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+  </BugInstance>
+  <BugInstance type="DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE" priority="2" rank="14" abbrev="DL" category="MT_CORRECTNESS" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="find_solvable_tour" signature="()I" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" start="364" end="364" startBytecode="0" endBytecode="892" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Type>
+    <Field classname="tsp.TspSolver" name="TourLock" signature="Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+    <SourceLine classname="tsp.TspSolver" start="364" end="364" startBytecode="6" endBytecode="6" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    <SourceLine classname="tsp.TspSolver" start="364" end="364" startBytecode="6" endBytecode="6" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+  </BugInstance>
+  <BugInstance type="DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE" priority="2" rank="14" abbrev="DL" category="MT_CORRECTNESS" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="get_tour" signature="(I)I" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" start="456" end="460" startBytecode="0" endBytecode="133" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Type>
+    <Field classname="tsp.TspSolver" name="TourLock" signature="Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+    <SourceLine classname="tsp.TspSolver" start="456" end="456" startBytecode="5" endBytecode="5" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    <SourceLine classname="tsp.TspSolver" start="456" end="456" startBytecode="5" endBytecode="5" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+  </BugInstance>
+  <BugInstance type="DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE" priority="2" rank="14" abbrev="DL" category="MT_CORRECTNESS" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="new_tour" signature="(II)I" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" start="62" end="66" startBytecode="0" endBytecode="443" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Type>
+    <Field classname="tsp.TspSolver" name="TourLock" signature="Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+    <SourceLine classname="tsp.TspSolver" start="66" end="66" startBytecode="8" endBytecode="8" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    <SourceLine classname="tsp.TspSolver" start="66" end="66" startBytecode="8" endBytecode="8" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+  </BugInstance>
+  <BugInstance type="DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE" priority="2" rank="14" abbrev="DL" category="MT_CORRECTNESS" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="set_best" signature="(I[I)V" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" start="106" end="124" startBytecode="0" endBytecode="197" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Type>
+    <Field classname="tsp.TspSolver" name="MinLock" signature="Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+    <SourceLine classname="tsp.TspSolver" start="111" end="111" startBytecode="13" endBytecode="13" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    <SourceLine classname="tsp.TspSolver" start="111" end="111" startBytecode="13" endBytecode="13" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+  </BugInstance>
+  <BugInstance type="DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE" priority="2" rank="14" abbrev="DL" category="MT_CORRECTNESS" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="split_tour" signature="(I)V" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" start="278" end="349" startBytecode="0" endBytecode="943" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Type>
+    <Field classname="tsp.TspSolver" name="TourLock" signature="Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+    <SourceLine classname="tsp.TspSolver" start="278" end="278" startBytecode="6" endBytecode="6" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    <SourceLine classname="tsp.TspSolver" start="278" end="278" startBytecode="6" endBytecode="6" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="recursive_solve" signature="(I)V" isStatic="false">
+      <SourceLine classname="tsp.TspSolver" start="475" end="509" startBytecode="0" endBytecode="367" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+    <SourceLine classname="tsp.TspSolver" start="492" end="492" startBytecode="127" endBytecode="127" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    <SourceLine classname="tsp.TspSolver" start="492" end="492" startBytecode="127" endBytecode="127" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="3" rank="19" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="new_tour" signature="(II)I" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" start="62" end="66" startBytecode="0" endBytecode="443" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+    <SourceLine classname="tsp.TspSolver" start="74" end="74" startBytecode="57" endBytecode="57" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    <SourceLine classname="tsp.TspSolver" start="74" end="74" startBytecode="57" endBytecode="57" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="3" rank="19" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="split_tour" signature="(I)V" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" start="278" end="349" startBytecode="0" endBytecode="943" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+    <SourceLine classname="tsp.TspSolver" start="319" end="319" startBytecode="176" endBytecode="176" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    <SourceLine classname="tsp.TspSolver" start="319" end="319" startBytecode="176" endBytecode="176" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" start="15" end="26" startBytecode="0" endBytecode="137" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="849" end="851" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="tsp.TspSolver" start="21" end="21" startBytecode="23" endBytecode="23" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    <SourceLine classname="tsp.TspSolver" start="21" end="21" startBytecode="23" endBytecode="23" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="CurDist" signature="I" isStatic="false">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="Done" signature="I" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="MinLock" signature="Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="MinTour" signature="[I" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="MinTourLen" signature="I" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="Path" signature="[I" isStatic="false">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="PathLen" signature="I" isStatic="false">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="PrioQ" signature="[Ltsp/PrioQElement;" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="PrioQLast" signature="I" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="TourLock" signature="Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="TourStack" signature="[I" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="TourStackTop" signature="I" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="Tours" signature="[Ltsp/TourElement;" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="Visit" signature="[I" isStatic="false">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="DumpPrioQ" signature="()V" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" start="252" end="262" startBytecode="0" endBytecode="284" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="MakeTourString" signature="(I[I)V" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" start="129" end="137" startBytecode="0" endBytecode="197" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="3" rank="19" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Method classname="tsp.TspSolver" name="Worker" signature="()V" isStatic="false">
+      <SourceLine classname="tsp.TspSolver" start="39" end="52" startBytecode="0" endBytecode="112" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="tsp.TspSolver">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Class>
+    <Field classname="tsp.TspSolver" name="barrier" signature="Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="tsp.TspSolver" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+    </Field>
+    <SourceLine classname="tsp.TspSolver" start="23" end="23" startBytecode="48" endBytecode="48" sourcefile="TspSolver.java" sourcepath="tsp/TspSolver.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 25 Mar 2016 16:17:16 -0500" total_classes="4" referenced_classes="56" total_bugs="36" total_size="334" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="4.85" clock_seconds="0.67" peak_mbytes="820.67" alloc_mbytes="910.50" gc_seconds="0.15" priority_3="25" priority_2="10" priority_1="1">
+    <PackageStats package="tsp" total_bugs="36" total_types="4" total_size="334" priority_3="25" priority_2="10" priority_1="1">
+      <ClassStats class="tsp.PrioQElement" sourceFile="PrioQElement.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="tsp.TourElement" sourceFile="TourElement.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="tsp.Tsp" sourceFile="Tsp.java" interface="false" size="73" bugs="8" priority_3="5" priority_2="2" priority_1="1"/>
+      <ClassStats class="tsp.TspSolver" sourceFile="TspSolver.java" interface="false" size="246" bugs="28" priority_3="20" priority_2="8"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="163" invocations="2" avgMicrosecondsPerInvocation="81704" maxMicrosecondsPerInvocation="117154" standardDeviationMircosecondsPerInvocation="35450"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="130" invocations="452" avgMicrosecondsPerInvocation="289" maxMicrosecondsPerInvocation="31250" standardDeviationMircosecondsPerInvocation="1523"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="43" invocations="455" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="6254" standardDeviationMircosecondsPerInvocation="400"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InheritanceUnsafeGetResource" totalMilliseconds="40" invocations="4" avgMicrosecondsPerInvocation="10025" maxMicrosecondsPerInvocation="40037" standardDeviationMircosecondsPerInvocation="17327"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="25" invocations="184" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="1121" standardDeviationMircosecondsPerInvocation="135"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="24" invocations="56" avgMicrosecondsPerInvocation="439" maxMicrosecondsPerInvocation="3474" standardDeviationMircosecondsPerInvocation="668"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="23" invocations="24" avgMicrosecondsPerInvocation="988" maxMicrosecondsPerInvocation="3507" standardDeviationMircosecondsPerInvocation="1209"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="21" invocations="56" avgMicrosecondsPerInvocation="389" maxMicrosecondsPerInvocation="3216" standardDeviationMircosecondsPerInvocation="617"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="15" invocations="23" avgMicrosecondsPerInvocation="656" maxMicrosecondsPerInvocation="2278" standardDeviationMircosecondsPerInvocation="781"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="13" invocations="23" avgMicrosecondsPerInvocation="595" maxMicrosecondsPerInvocation="1999" standardDeviationMircosecondsPerInvocation="702"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1458944557891" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

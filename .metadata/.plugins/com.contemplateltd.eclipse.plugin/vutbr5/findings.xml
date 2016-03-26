@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<findings>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="tsp.TourElement" name="conn" type="I" key="0" filename="TourElement.java" line="13"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="49" desc="(II)I" key="1" label="relevant_sync_read" filename="TspSolver.java" line="82"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="86" desc="(II)I" key="2" label="relevant_sync_read" filename="TspSolver.java" line="92"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="18" desc="(I)I" key="3" label="relevant_sync_read" filename="TspSolver.java" line="163"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="101" desc="(I)I" key="4" label="relevant_sync_read" filename="TspSolver.java" line="200"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="124" desc="(I)I" key="5" label="relevant_sync_read" filename="TspSolver.java" line="206"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="30" desc="(I)V" key="6" label="relevant_sync_read" filename="TspSolver.java" line="303"/>
+      <instruction className="tsp.Tsp" method="main" offset="72" desc="([Ljava/lang/String;)V" key="7" label="relevant_unsync_write" filename="Tsp.java" line="59"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="50" desc="(II)I" key="8" label="relevant_sync_write" filename="TspSolver.java" line="82"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="91" desc="(II)I" key="9" label="relevant_sync_write" filename="TspSolver.java" line="92"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'conn' are inconsistently synchronized."/>
+      <guards>
+        <guardUnknown key="0" intrinsic="true"/>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="8" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="tsp.PrioQElement" name="index" type="I" key="0" filename="PrioQElement.java" line="12"/>
+      <instruction className="tsp.TspSolver" method="less_than" offset="12" desc="(Ltsp/PrioQElement;Ltsp/PrioQElement;)Z" key="1" label="relevant_unsync_read" filename="TspSolver.java" line="240"/>
+      <instruction className="tsp.TspSolver" method="DumpPrioQ" offset="9" desc="()V" key="2" label="relevant_unsync_read" filename="TspSolver.java" line="254"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="115" desc="(I)V" key="3" label="relevant_sync_read" filename="TspSolver.java" line="337"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="122" desc="(I)V" key="4" label="relevant_sync_read" filename="TspSolver.java" line="339"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="15" desc="()I" key="5" label="relevant_sync_read" filename="TspSolver.java" line="376"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="33" desc="()I" key="6" label="relevant_sync_read" filename="TspSolver.java" line="390"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="81" desc="()I" key="7" label="relevant_sync_read" filename="TspSolver.java" line="416"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="88" desc="()I" key="8" label="relevant_sync_read" filename="TspSolver.java" line="418"/>
+      <instruction className="tsp.Tsp" method="main" offset="90" desc="([Ljava/lang/String;)V" key="9" label="relevant_unsync_write" filename="Tsp.java" line="65"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="100" desc="(I)V" key="10" label="relevant_sync_write" filename="TspSolver.java" line="327"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="123" desc="(I)V" key="11" label="relevant_sync_write" filename="TspSolver.java" line="339"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="130" desc="(I)V" key="12" label="relevant_sync_write" filename="TspSolver.java" line="341"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="34" desc="()I" key="13" label="relevant_sync_write" filename="TspSolver.java" line="390"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="89" desc="()I" key="14" label="relevant_sync_write" filename="TspSolver.java" line="418"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="96" desc="()I" key="15" label="relevant_sync_write" filename="TspSolver.java" line="420"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'index' are inconsistently synchronized."/>
+      <guards>
+        <guardUnknown key="0" intrinsic="true"/>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="10" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="11" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="12" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="13" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="14" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="15" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="tsp.TspSolver" name="PrioQLast" type="I" key="0" filename="TspSolver.java" line="18"/>
+      <instruction className="tsp.TspSolver" method="DumpPrioQ" offset="73" desc="()V" key="1" label="relevant_unsync_read" filename="TspSolver.java" line="253"/>
+      <instruction className="tsp.TspSolver" method="DumpPrioQ" offset="30" desc="()V" key="2" label="relevant_unsync_read" filename="TspSolver.java" line="256"/>
+      <instruction className="tsp.TspSolver" method="DumpPrioQ" offset="47" desc="()V" key="3" label="relevant_unsync_read" filename="TspSolver.java" line="258"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="74" desc="(I)V" key="4" label="relevant_sync_read" filename="TspSolver.java" line="317"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="82" desc="(I)V" key="5" label="relevant_sync_read" filename="TspSolver.java" line="318"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="88" desc="(I)V" key="6" label="relevant_sync_read" filename="TspSolver.java" line="325"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="141" desc="()I" key="7" label="relevant_sync_read" filename="TspSolver.java" line="374"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="28" desc="()I" key="8" label="relevant_sync_read" filename="TspSolver.java" line="389"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="39" desc="()I" key="9" label="relevant_sync_read" filename="TspSolver.java" line="392"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="105" desc="()I" key="10" label="relevant_sync_read" filename="TspSolver.java" line="395"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="61" desc="()I" key="11" label="relevant_sync_read" filename="TspSolver.java" line="404"/>
+      <instruction className="tsp.Tsp" method="main" offset="100" desc="([Ljava/lang/String;)V" key="12" label="relevant_unsync_write" filename="Tsp.java" line="67"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="92" desc="(I)V" key="13" label="relevant_sync_write" filename="TspSolver.java" line="325"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="42" desc="()I" key="14" label="relevant_sync_write" filename="TspSolver.java" line="392"/>
+      <field className="tsp.TspSolver" name="TourLock" type="Ljava/lang/Integer;" key="15" label="guard_field" filename="TspSolver.java" line="22"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'PrioQLast' are inconsistently synchronized."/>
+      <guards>
+        <guardAbsolute key="0" intrinsic="true">
+          <guardPath>
+            <locationRef key="15"/>
+          </guardPath>
+        </guardAbsolute>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="3" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="10" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="11" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="12" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="13" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="14" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="tsp.TspSolver" name="TourStackTop" type="I" key="0" filename="TspSolver.java" line="16"/>
+      <instruction className="tsp.Tsp" method="main" offset="105" desc="([Ljava/lang/String;)V" key="1" label="relevant_unsync_read" filename="Tsp.java" line="71"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="6" desc="(II)I" key="2" label="relevant_sync_read" filename="TspSolver.java" line="70"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="9" desc="(II)I" key="3" label="relevant_sync_read" filename="TspSolver.java" line="71"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="22" desc="(II)I" key="4" label="relevant_sync_read" filename="TspSolver.java" line="73"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="73" desc="(I)I" key="5" label="relevant_sync_read" filename="TspSolver.java" line="180"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="134" desc="()I" key="6" label="relevant_sync_read" filename="TspSolver.java" line="442"/>
+      <instruction className="tsp.TspSolver" method="get_tour" offset="8" desc="(I)I" key="7" label="relevant_sync_read" filename="TspSolver.java" line="457"/>
+      <instruction className="tsp.Tsp" method="main" offset="31" desc="([Ljava/lang/String;)V" key="8" label="relevant_unsync_write" filename="Tsp.java" line="44"/>
+      <instruction className="tsp.Tsp" method="main" offset="109" desc="([Ljava/lang/String;)V" key="9" label="relevant_unsync_write" filename="Tsp.java" line="71"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="13" desc="(II)I" key="10" label="relevant_sync_write" filename="TspSolver.java" line="71"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="77" desc="(I)I" key="11" label="relevant_sync_write" filename="TspSolver.java" line="180"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="138" desc="()I" key="12" label="relevant_sync_write" filename="TspSolver.java" line="442"/>
+      <instruction className="tsp.TspSolver" method="get_tour" offset="12" desc="(I)I" key="13" label="relevant_sync_write" filename="TspSolver.java" line="457"/>
+      <field className="tsp.TspSolver" name="TourLock" type="Ljava/lang/Integer;" key="14" label="guard_field" filename="TspSolver.java" line="22"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'TourStackTop' are inconsistently synchronized."/>
+      <guards>
+        <guardAbsolute key="0" intrinsic="true">
+          <guardPath>
+            <locationRef key="14"/>
+          </guardPath>
+        </guardAbsolute>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="9" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="10" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="11" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="12" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="13" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="tsp.TourElement" name="prefix_weight" type="I" key="0" filename="TourElement.java" line="15"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="61" desc="(II)I" key="1" label="relevant_sync_read" filename="TspSolver.java" line="85"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="38" desc="(I)I" key="2" label="relevant_sync_read" filename="TspSolver.java" line="169"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="61" desc="(I)I" key="3" label="relevant_sync_read" filename="TspSolver.java" line="172"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="65" desc="(I)I" key="4" label="relevant_sync_read" filename="TspSolver.java" line="174"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="198" desc="(I)I" key="5" label="relevant_sync_read" filename="TspSolver.java" line="224"/>
+      <instruction className="tsp.TspSolver" method="recursive_solve" offset="6" desc="(I)V" key="6" label="relevant_unsync_read" filename="TspSolver.java" line="480"/>
+      <instruction className="tsp.Tsp" method="main" offset="82" desc="([Ljava/lang/String;)V" key="7" label="relevant_unsync_write" filename="Tsp.java" line="61"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="72" desc="(II)I" key="8" label="relevant_sync_write" filename="TspSolver.java" line="85"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="59" desc="(I)I" key="9" label="relevant_sync_write" filename="TspSolver.java" line="170"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'prefix_weight' are inconsistently synchronized."/>
+      <guards>
+        <guardUnknown key="0" intrinsic="true"/>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="7" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="8" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="9" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT">
+    <locations>
+      <field className="tsp.TourElement" name="lower_bound" type="I" key="0" filename="TourElement.java" line="16"/>
+      <instruction className="tsp.Tsp" method="main" offset="97" desc="([Ljava/lang/String;)V" key="1" label="relevant_unsync_read" filename="Tsp.java" line="66"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="47" desc="(I)V" key="2" label="relevant_sync_read" filename="TspSolver.java" line="305"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="103" desc="(I)V" key="3" label="relevant_sync_read" filename="TspSolver.java" line="328"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="71" desc="(I)I" key="4" label="relevant_sync_write" filename="TspSolver.java" line="178"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="200" desc="(I)I" key="5" label="relevant_sync_write" filename="TspSolver.java" line="224"/>
+    </locations>
+    <info>
+      <message value="Accesses to field 'lower_bound' are inconsistently synchronized."/>
+      <guards>
+        <guardUnknown key="0" intrinsic="true"/>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT_COL">
+    <locations>
+      <field className="tsp.TourElement" name="prefix" type="[I" key="0" filename="TourElement.java" line="12"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="45" desc="(II)I" key="1" label="relevant_sync_read" filename="TspSolver.java" line="81"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="67" desc="(II)I" key="2" label="relevant_sync_read" filename="TspSolver.java" line="86"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="45" desc="(I)I" key="3" label="relevant_sync_read" filename="TspSolver.java" line="169"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="55" desc="(I)I" key="4" label="relevant_sync_read" filename="TspSolver.java" line="170"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="134" desc="(I)I" key="5" label="relevant_sync_read" filename="TspSolver.java" line="206"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="141" desc="(I)I" key="6" label="relevant_sync_read" filename="TspSolver.java" line="207"/>
+      <instruction className="tsp.TspSolver" method="split_tour" offset="18" desc="(I)V" key="7" label="relevant_sync_read" filename="TspSolver.java" line="295"/>
+      <instruction className="tsp.TspSolver" method="recursive_solve" offset="35" desc="(I)V" key="8" label="relevant_unsync_read" filename="TspSolver.java" line="486"/>
+      <instruction className="tsp.Tsp" method="main" offset="67" desc="([Ljava/lang/String;)V" key="9" label="relevant_unsync_write" filename="Tsp.java" line="58"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="46" desc="(II)I" key="10" label="relevant_sync_write" filename="TspSolver.java" line="81"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="83" desc="(II)I" key="11" label="relevant_sync_write" filename="TspSolver.java" line="87"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="30" desc="(I)I" key="12" label="relevant_sync_write" filename="TspSolver.java" line="165"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="35" desc="(I)I" key="13" label="relevant_sync_write" filename="TspSolver.java" line="166"/>
+    </locations>
+    <info>
+      <message value="Accesses to the collection in field 'prefix' are inconsistently synchronized."/>
+      <guards>
+        <guardUnknown key="0" intrinsic="true"/>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="3" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="6" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="7" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="8" type="relevant_unsync_read">
+          <accessGuards/>
+        </access>
+        <access location="9" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="10" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="11" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="12" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="13" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+  <finding type="CCE_SL_INCONSISTENT_COL">
+    <locations>
+      <field className="tsp.TspSolver" name="TourStack" type="[I" key="0" filename="TspSolver.java" line="25"/>
+      <instruction className="tsp.TspSolver" method="new_tour" offset="14" desc="(II)I" key="1" label="relevant_sync_read" filename="TspSolver.java" line="71"/>
+      <instruction className="tsp.Tsp" method="main" offset="111" desc="([Ljava/lang/String;)V" key="2" label="relevant_unsync_write" filename="Tsp.java" line="71"/>
+      <instruction className="tsp.TspSolver" method="calc_bound" offset="79" desc="(I)I" key="3" label="relevant_sync_write" filename="TspSolver.java" line="180"/>
+      <instruction className="tsp.TspSolver" method="find_solvable_tour" offset="140" desc="()I" key="4" label="relevant_sync_write" filename="TspSolver.java" line="442"/>
+      <instruction className="tsp.TspSolver" method="get_tour" offset="14" desc="(I)I" key="5" label="relevant_sync_write" filename="TspSolver.java" line="457"/>
+      <field className="tsp.TspSolver" name="TourLock" type="Ljava/lang/Integer;" key="6" label="guard_field" filename="TspSolver.java" line="22"/>
+    </locations>
+    <info>
+      <message value="Accesses to the collection in field 'TourStack' are inconsistently synchronized."/>
+      <guards>
+        <guardAbsolute key="0" intrinsic="true">
+          <guardPath>
+            <locationRef key="6"/>
+          </guardPath>
+        </guardAbsolute>
+      </guards>
+      <accesses>
+        <access location="1" type="relevant_sync_read">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="2" type="relevant_unsync_write">
+          <accessGuards/>
+        </access>
+        <access location="3" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="4" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+        <access location="5" type="relevant_sync_write">
+          <accessGuards>
+            <guardRef key="0" status="always"/>
+          </accessGuards>
+        </access>
+      </accesses>
+    </info>
+  </finding>
+</findings>

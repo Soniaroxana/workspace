@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/concurrency-bug-subjects/src"/>
+	<classpathentry kind="src" path="/concurrency-bug-subjects/src_bugtest"/>
+	<classpathentry kind="src" path="/concurrency-bug-subjects/src_cache4j"/>
+	<classpathentry kind="src" path="/concurrency-bug-subjects/src_contest"/>
+	<classpathentry kind="src" path="/concurrency-bug-subjects/src_grande"/>
+	<classpathentry kind="src" path="/concurrency-bug-subjects/src_grande1"/>
+	<classpathentry kind="src" path="/concurrency-bug-subjects/src_grande2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lib"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

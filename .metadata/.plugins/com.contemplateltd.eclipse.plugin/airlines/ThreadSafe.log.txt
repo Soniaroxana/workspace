@@ -1,0 +1,131 @@
+INFO: Analyser start at 2016-02-25 22:21:42 (UTC)
+INFO: Constructing classpaths for analysis
+INFO: Analysis classpath: [Directory "/Users/soniamarginean/Documents/workspace/airlines/bin"]
+INFO: Library classpath: [Jarfile "/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar"]
+INFO: Stub classpath: [Jarfile "/Users/soniamarginean/eclipse/java-mars/Eclipse.app/Contents/MacOS/../../../../../.p2/pool/plugins/com.contemplateltd.analyser.macosx.x86_64_1.3.4.20150302-1149/jdk-stubs.jar"]
+INFO: Classes to analyse: all
+INFO: Reading class "cz/vutbr/fit/airlines/Airlines"
+INFO: Class "cz/vutbr/fit/airlines/Airlines" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/Object"
+INFO: Class "java/lang/Object" discovered in library classpath; replaced by stub class
+INFO: Reading class "cz/vutbr/fit/airlines/Customer"
+INFO: Class "cz/vutbr/fit/airlines/Customer" discovered in analysis classpath; no matching stub class
+INFO: Reading class "cz/vutbr/fit/airlines/CustomerGenerator"
+INFO: Class "cz/vutbr/fit/airlines/CustomerGenerator" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/Runnable"
+INFO: Class "java/lang/Runnable" discovered in library classpath; replaced by stub class
+INFO: Reading class "cz/vutbr/fit/airlines/Flight"
+INFO: Class "cz/vutbr/fit/airlines/Flight" discovered in analysis classpath; no matching stub class
+INFO: Reading class "cz/vutbr/fit/airlines/FlightsTable"
+INFO: Class "cz/vutbr/fit/airlines/FlightsTable" discovered in analysis classpath; no matching stub class
+INFO: Reading class "cz/vutbr/fit/airlines/FlightTicket"
+INFO: Class "cz/vutbr/fit/airlines/FlightTicket" discovered in analysis classpath; no matching stub class
+INFO: Reading class "cz/vutbr/fit/airlines/InternetSeller"
+INFO: Class "cz/vutbr/fit/airlines/InternetSeller" discovered in analysis classpath; no matching stub class
+INFO: Reading class "cz/vutbr/fit/airlines/Simulator"
+INFO: Class "cz/vutbr/fit/airlines/Simulator" discovered in analysis classpath; no matching stub class
+INFO: Analysing package "cz.vutbr.fit.airlines" at 2016-02-25 22:21:42 (UTC)
+INFO: Analysing class "cz/vutbr/fit/airlines/Airlines"
+INFO: Reading class "java/lang/StringBuilder"
+INFO: Class "java/lang/StringBuilder" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/AbstractStringBuilder"
+INFO: Class "java/lang/AbstractStringBuilder" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Random"
+INFO: Class "java/util/Random" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/HashSet"
+INFO: Class "java/util/HashSet" discovered in library classpath; replaced by stub class
+INFO: Analysing class "cz/vutbr/fit/airlines/Customer"
+INFO: Analysing class "cz/vutbr/fit/airlines/CustomerGenerator"
+INFO: Reading class "java/lang/Thread"
+INFO: Class "java/lang/Thread" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/System"
+INFO: Class "java/lang/System" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/Integer"
+INFO: Class "java/lang/Integer" discovered in library classpath; replaced by stub class
+INFO: Analysing class "cz/vutbr/fit/airlines/Flight"
+INFO: Analysing class "cz/vutbr/fit/airlines/FlightsTable"
+INFO: Reading class "java/util/HashMap"
+INFO: Class "java/util/HashMap" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/AbstractMap"
+INFO: Class "java/util/AbstractMap" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Collection"
+INFO: Class "java/util/Collection" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Iterator"
+INFO: Class "java/util/Iterator" discovered in library classpath; replaced by stub class
+INFO: Analysing class "cz/vutbr/fit/airlines/FlightTicket"
+INFO: Analysing class "cz/vutbr/fit/airlines/InternetSeller"
+INFO: Reading class "java/util/LinkedList"
+INFO: Class "java/util/LinkedList" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/AbstractList"
+INFO: Class "java/util/AbstractList" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/AbstractCollection"
+INFO: Class "java/util/AbstractCollection" discovered in library classpath; replaced by stub class
+INFO: Analysing class "cz/vutbr/fit/airlines/Simulator"
+INFO: Reading class "java/io/PrintStream"
+INFO: Class "java/io/PrintStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/String"
+INFO: Class "java/lang/String" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/CharSequence"
+INFO: Class "java/lang/CharSequence" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/AbstractSet"
+INFO: Class "java/util/AbstractSet" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Set"
+INFO: Class "java/util/Set" discovered in library classpath; replaced by stub class
+INFO: Running FieldClassifier at 2016-02-25 22:21:42 (UTC)
+INFO: Reading class "java/util/List"
+INFO: Class "java/util/List" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/util/Map"
+INFO: Class "java/util/Map" discovered in library classpath; replaced by stub class
+INFO: Running ThreadStructure at 2016-02-25 22:21:42 (UTC)
+INFO: Running FieldAccesses.Fields at 2016-02-25 22:21:42 (UTC)
+INFO: Running FieldAccesses.Arrays at 2016-02-25 22:21:42 (UTC)
+INFO: Running FieldAccesses.Collections at 2016-02-25 22:21:42 (UTC)
+INFO: Reading class "java/lang/Appendable"
+INFO: Class "java/lang/Appendable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Closeable"
+INFO: Class "java/io/Closeable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/AutoCloseable"
+INFO: Class "java/lang/AutoCloseable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/FilterOutputStream"
+INFO: Class "java/io/FilterOutputStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/OutputStream"
+INFO: Class "java/io/OutputStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Flushable"
+INFO: Class "java/io/Flushable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Serializable"
+INFO: Class "java/io/Serializable" discovered in library classpath; no matching stub class
+INFO: Running Checker_ReusableObjectSync at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_UnsafeIteration at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_TryLock at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_GetCheckPut at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_UnsafeContent at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_UnreleasedLocks at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_Deadlock at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_ConsistentlyGuarded at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_InconsistentSync (fields) at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_InconsistentSync (arrays) at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_InconsistentSync (collections) at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_UnsafeRemoval at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_LockedBlocking at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_FieldLockOverwritten at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_UnsafeReplacement at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_ReadOnlyVolatile at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_BadCatches at 2016-02-25 22:21:42 (UTC)
+INFO: Reading class "java/lang/InterruptedException"
+INFO: Class "java/lang/InterruptedException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Exception"
+INFO: Class "java/lang/Exception" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Throwable"
+INFO: Class "java/lang/Throwable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/NumberFormatException"
+INFO: Class "java/lang/NumberFormatException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/IllegalArgumentException"
+INFO: Class "java/lang/IllegalArgumentException" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/RuntimeException"
+INFO: Class "java/lang/RuntimeException" discovered in library classpath; no matching stub class
+INFO: Running Checker_GuardedBy at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_Deadlock at 2016-02-25 22:21:42 (UTC)
+INFO: 2 findings discovered in this run
+INFO: Analyser finish at 2016-02-25 22:21:42 (UTC)
+INFO: Max heap size (bytes) 222208
+INFO: Exit code: 0

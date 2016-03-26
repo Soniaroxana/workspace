@@ -1,0 +1,107 @@
+INFO: Analyser start at 2016-02-25 22:21:42 (UTC)
+INFO: Constructing classpaths for analysis
+INFO: Analysis classpath: [Directory "/Users/soniamarginean/Documents/workspace/vutbr5/bin"]
+INFO: Library classpath: [Jarfile "/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar"]
+INFO: Stub classpath: [Jarfile "/Users/soniamarginean/eclipse/java-mars/Eclipse.app/Contents/MacOS/../../../../../.p2/pool/plugins/com.contemplateltd.analyser.macosx.x86_64_1.3.4.20150302-1149/jdk-stubs.jar"]
+INFO: Classes to analyse: all
+INFO: Reading class "tsp/PrioQElement"
+INFO: Class "tsp/PrioQElement" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/Object"
+INFO: Class "java/lang/Object" discovered in library classpath; replaced by stub class
+INFO: Reading class "tsp/TourElement"
+INFO: Class "tsp/TourElement" discovered in analysis classpath; no matching stub class
+INFO: Reading class "tsp/Tsp"
+INFO: Class "tsp/Tsp" discovered in analysis classpath; no matching stub class
+INFO: Reading class "tsp/TspSolver"
+INFO: Class "tsp/TspSolver" discovered in analysis classpath; no matching stub class
+INFO: Reading class "java/lang/Thread"
+INFO: Class "java/lang/Thread" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/Runnable"
+INFO: Class "java/lang/Runnable" discovered in library classpath; replaced by stub class
+INFO: Analysing package "tsp" at 2016-02-25 22:21:42 (UTC)
+INFO: Analysing class "tsp/PrioQElement"
+INFO: Analysing class "tsp/TourElement"
+INFO: Analysing class "tsp/Tsp"
+INFO: Reading class "java/lang/System"
+INFO: Class "java/lang/System" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/String"
+INFO: Class "java/lang/String" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/Integer"
+INFO: Class "java/lang/Integer" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/io/PrintStream"
+INFO: Class "java/io/PrintStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/Date"
+INFO: Class "java/util/Date" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/StringBuilder"
+INFO: Class "java/lang/StringBuilder" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/AbstractStringBuilder"
+INFO: Class "java/lang/AbstractStringBuilder" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/lang/Exception"
+INFO: Class "java/lang/Exception" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Throwable"
+INFO: Class "java/lang/Throwable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/BufferedReader"
+INFO: Class "java/io/BufferedReader" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/StringTokenizer"
+INFO: Class "java/util/StringTokenizer" discovered in library classpath; no matching stub class
+INFO: Analysing class "tsp/TspSolver"
+INFO: Reading class "java/lang/CharSequence"
+INFO: Class "java/lang/CharSequence" discovered in library classpath; replaced by stub class
+INFO: Running FieldClassifier at 2016-02-25 22:21:42 (UTC)
+INFO: Reading class "java/lang/ThreadGroup"
+INFO: Class "java/lang/ThreadGroup" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Thread$UncaughtExceptionHandler"
+INFO: Class "java/lang/Thread$UncaughtExceptionHandler" discovered in library classpath; no matching stub class
+INFO: Running ThreadStructure at 2016-02-25 22:21:42 (UTC)
+INFO: Running FieldAccesses.Fields at 2016-02-25 22:21:42 (UTC)
+INFO: Running FieldAccesses.Arrays at 2016-02-25 22:21:42 (UTC)
+INFO: Running FieldAccesses.Collections at 2016-02-25 22:21:42 (UTC)
+INFO: Reading class "java/lang/Appendable"
+INFO: Class "java/lang/Appendable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Closeable"
+INFO: Class "java/io/Closeable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/AutoCloseable"
+INFO: Class "java/lang/AutoCloseable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/FilterOutputStream"
+INFO: Class "java/io/FilterOutputStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/OutputStream"
+INFO: Class "java/io/OutputStream" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Flushable"
+INFO: Class "java/io/Flushable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/util/Enumeration"
+INFO: Class "java/util/Enumeration" discovered in library classpath; replaced by stub class
+INFO: Reading class "java/io/Serializable"
+INFO: Class "java/io/Serializable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Cloneable"
+INFO: Class "java/lang/Cloneable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Comparable"
+INFO: Class "java/lang/Comparable" discovered in library classpath; no matching stub class
+INFO: Reading class "java/io/Reader"
+INFO: Class "java/io/Reader" discovered in library classpath; no matching stub class
+INFO: Reading class "java/lang/Readable"
+INFO: Class "java/lang/Readable" discovered in library classpath; no matching stub class
+INFO: Running Checker_ReusableObjectSync at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_UnsafeIteration at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_TryLock at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_GetCheckPut at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_UnsafeContent at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_UnreleasedLocks at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_Deadlock at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_ConsistentlyGuarded at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_InconsistentSync (fields) at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_InconsistentSync (arrays) at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_InconsistentSync (collections) at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_UnsafeRemoval at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_LockedBlocking at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_FieldLockOverwritten at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_UnsafeReplacement at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_ReadOnlyVolatile at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_BadCatches at 2016-02-25 22:21:42 (UTC)
+INFO: Reading class "java/lang/InterruptedException"
+INFO: Class "java/lang/InterruptedException" discovered in library classpath; no matching stub class
+INFO: Running Checker_GuardedBy at 2016-02-25 22:21:42 (UTC)
+INFO: Running Checker_Deadlock at 2016-02-25 22:21:42 (UTC)
+INFO: 8 findings discovered in this run
+INFO: Analyser finish at 2016-02-25 22:21:42 (UTC)
+INFO: Max heap size (bytes) 222208
+INFO: Exit code: 0
